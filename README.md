@@ -2,7 +2,7 @@
 
 * tlpi-book
 
-    《Unix 系统编程手册》 src
+    《Unix 系统编程手册》
 
     对 sockets/ 下的一些文件进行修改，使得可以通过编译。
 
