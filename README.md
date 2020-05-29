@@ -23,3 +23,5 @@
 * [深入理解 Linux 程序设计源码](https://github.com/hanxinle/understanding-unix-linux-programming)
 
 * [大话计算机随书附赠的资料](https://github.com/hanxinle/bigtalk_about_computer)
+
+* [编译原理之美 - 手把手教你实现一个编译器(宫文学) - src](https://github.com/RichardGong/PlayWithCompiler)
