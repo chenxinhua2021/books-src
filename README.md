@@ -1,6 +1,6 @@
 # 一些书籍的源码
 
-* tlpi-book
+* [tlpi-book](./unpv13e)
 
     《Unix 系统编程手册》
 
@@ -8,7 +8,7 @@
 
     编译步骤，先进入 lib/ 执行 make，然后进入主目录执行 make
 
-* unpv13e
+* [unpv13e](./unpv13e)
 
     《Unix 网络编程卷1-套接字联网 API》
 
