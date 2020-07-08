@@ -27,3 +27,25 @@
 * [编译原理之美 - 手把手教你实现一个编译器(宫文学) - src](https://github.com/RichardGong/PlayWithCompiler)
 
 * [Head First Java](./Head-First-Java)
+
+* [慢雾安全提供的资料](https://github.com/slowmist)
+
+* [Antlr4 语法](https://github.com/antlr/grammars-v4)
+
+* [红色警戒1 代码](https://github.com/electronicarts/CnC_Remastered_Collection)
+
+* [深入理解计算机系统的导读（关注博客）](https://www.cnblogs.com/figure9/archive/2010/04/10/1708942.html)
+
+* [clasp](https://github.com/clasp-developers/clasp)
+
+* [I hate regex](https://ihateregex.io/)-[GitHub](https://github.com/geongeorge/i-hate-regex) 
+
+* 公众号：高性能服务器开发 上面有些很好的资料
+
+* [milo yip 的 json 库教程](https://github.com/miloyip/json-tutorial)
+
+* [cpp template 2nd 翻译](https://github.com/Walton1128/CPP-Templates-2nd--)
+
+* [深度学习21天 随书资料](https://github.com/zhaoyongke/Caffe21Days)
+
+* [caffe windows](https://github.com/HolidayXue/CaffeMerge)
