@@ -19,6 +19,7 @@
     1. 提示缺少某个宏 MAX_RA，请去定义其为 1024（#define MAX_RA 1024）；
     1. 提示 size 类型错误，将其类型由 ssize_t 改为 socklen_t 。
 
+* [孟宁-命令行工具（C语言版）-软件工程实践](./software_practice_in_c_by_mengning)
 
 * [深入理解 Linux 程序设计源码](https://github.com/hanxinle/understanding-unix-linux-programming)
 
