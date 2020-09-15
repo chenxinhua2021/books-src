@@ -47,10 +47,16 @@
 
 * [cpp template 2nd 翻译](https://github.com/Walton1128/CPP-Templates-2nd--)
 
-* [深度学习21天 随书资料](https://github.com/zhaoyongke/Caffe21Days)
+* [深度学习21天-随书资料](https://github.com/zhaoyongke/Caffe21Days)
 
 * [caffe windows](https://github.com/HolidayXue/CaffeMerge)
 
-* [boost_cook_book](./boost_cookbook_2013)
-* [自治编程语言源码](./make_your_own_language)
+* [boost_cook_book-src](./boost_cookbook_2013)
+* [自制编程语言（Japan）-src](./make_your_own_language)
+* [自制编程语言-基于C语言（郑钢）](./stepByStep)
 
+《操作系统真象还原》（郑钢）代码的 3 个版本，代码应该一致，上传者直接上传了自己运行程序的版本，包括运行不通过时自己的调试。运行不通过去 Github 上找其它 repo 学习。
+
+* [操作系统真象还原-src-1/3](./os_truth_src)
+* [操作系统真象还原-src-2/3](./OS_lab-master)
+* [操作系统真象还原-src-3/3](./tiny-os-master)
