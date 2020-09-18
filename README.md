@@ -60,3 +60,5 @@
 * [操作系统真象还原-src-1/3](./os_truth_src)
 * [操作系统真象还原-src-2/3](./OS_lab-master)
 * [操作系统真象还原-src-3/3](./tiny-os-master)
+
+* [Windows 程序设计（第5版）](./Windows-programming-5th)
