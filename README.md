@@ -62,3 +62,4 @@
 * [操作系统真象还原-src-3/3](./tiny-os-master)
 
 * [Windows 程序设计（第5版）](./Windows-programming-5th)
+* [30天自制操作系统-src](./30天自制操作系统)
