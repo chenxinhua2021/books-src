@@ -63,3 +63,4 @@
 
 * [Windows 程序设计（第5版）](./Windows-programming-5th)
 * [30天自制操作系统-src](./30天自制操作系统)
+* [多核和 GPU 编程课程资料（源码、课后答案、勘误） ](./multi_cores_gpu_programming)
