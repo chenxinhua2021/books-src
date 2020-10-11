@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: sgl - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /Fp"Release/sgl.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\prj\sgl\ddraw_utility.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP56.tmp" 
+Creating command line "link.exe -lib /nologo /out:"Release\sgl.lib"  .\Release\draw.obj .\Release\sglcallback.obj .\Release\sglcore.obj .\Release\sgldef.obj .\Release\sglutility.obj .\Release\ddpixel.obj .\Release\ddraw_utility.obj .\Release\sglwin32.obj "
+<h3>Output Window</h3>
+Compiling...
+ddraw_utility.c
+Creating library...
+
+
+
+<h3>Results</h3>
+sgl.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

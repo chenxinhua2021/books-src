@@ -1,0 +1,6668 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            true def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 612 792 0 1 19 FMDOCUMENT
+0 0 /AvantGarde-Demi FMFONTDEFINE
+1 0 /Palatino-Roman FMFONTDEFINE
+2 0 /Palatino-Bold FMFONTDEFINE
+3 0 /Palatino-Italic FMFONTDEFINE
+4 0 /Courier-Bold FMFONTDEFINE
+5 1 /ZapfDingbats FMFONTDEFINE
+6 0 /Palatino-BoldItalic FMFONTDEFINE
+7 0 /Courier FMFONTDEFINE
+8 0 /Times-Italic FMFONTDEFINE
+9 0 /Times-Roman FMFONTDEFINE
+10 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "121" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(JUN 1997) 72 748 T
+( WORKING DRAFT) 247.32 748 T
+(J3/97-007) 465.36 748 T
+(JUN 1997) 72 34.67 T
+(WORKING DRAFT) 249 34.67 T
+0 10 Q
+(121) 505.2 34.67 T
+72 684 522 720 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 16 Q
+0 X
+0 0 0 1 0 0 0 K
+1.12 (Section 8:  Ex) 72 673.33 P
+1.12 (ecution contr) 176.48 673.33 P
+1.12 (ol) 280.4 673.33 P
+1 10 Q
+3.94 0.1 (The execution sequence may be contr) 72 653.33 B
+3.94 0.1 (olled by constr) 260.06 653.33 B
+3.94 0.1 (ucts containing blocks and by certain) 334.8 653.33 B
+0.52 0.1 (executable statements that ar) 72 641.33 B
+0.52 0.1 (e used to alter the execution sequence.) 204.26 641.33 B
+0 12 Q
+0.84 (8.1) 72 610 P
+0.84 (Ex) 102.24 610 P
+0.84 (ecuta) 114.96 610 P
+0.84 (ble constr) 149.1 610 P
+0.84 (ucts containing bloc) 207.3 610 P
+0.84 (ks) 327.6 610 P
+1 10 Q
+2.97 0.1 (The following ar) 72 591.33 B
+2.97 0.1 (e executable constr) 152.74 591.33 B
+2.97 0.1 (ucts that contain blocks and may be used to contr) 244.15 591.33 B
+2.97 0.1 (ol the) 493.69 591.33 B
+0.52 0.1 (execution sequence:) 72 579.33 B
+0.1 (\0501\051) 99 563.33 S
+0.52 0.1 (IF Constr) 126 563.33 B
+0.52 0.1 (uct) 168.59 563.33 B
+0.1 (\0502\051) 99 548.33 S
+0.52 0.1 (CASE Constr) 126 548.33 B
+0.52 0.1 (uct) 186.09 548.33 B
+0.1 (\0503\051) 99 533.33 S
+0.52 0.1 (DO Constr) 126 533.33 B
+0.52 0.1 (uct) 175.26 533.33 B
+1 8 Q
+0.42 0.08 (Ther) 72 518.67 B
+0.42 0.08 (e is also a nonblock form of the DO constr) 88.73 518.67 B
+0.42 0.08 (uct.) 243.8 518.67 B
+1 10 Q
+0.52 0.1 (A) 72 501.33 B
+2 F
+0.52 0.1 (block) 83 501.33 B
+1 F
+0.52 0.1 ( is a sequence of executable constr) 109.05 501.33 B
+0.52 0.1 (ucts that is tr) 265.9 501.33 B
+0.52 0.1 (eated as a unit.) 325.95 501.33 B
+0.1 (R801) 72 485.33 S
+3 F
+0.1 (block) 108 485.33 S
+2 F
+0.1 (is) 234 485.33 S
+1 F
+0.52 0.1 ([) 252 485.33 B
+3 F
+0.52 0.1 (execution-) 258.55 485.33 B
+0.52 0.1 (part-) 301.4 485.33 B
+0.52 0.1 (construct) 321.89 485.33 B
+1 F
+0.52 0.1 ( ] ...) 360.93 485.33 B
+1.99 0.1 (Executable constr) 72 467.33 B
+1.99 0.1 (ucts may be used to contr) 153.3 467.33 B
+1.99 0.1 (ol which blocks of a pr) 278.59 467.33 B
+1.99 0.1 (ogram ar) 390.77 467.33 B
+1.99 0.1 (e executed or how) 433.63 467.33 B
+1.16 0.1 (many times a block is executed.  Blocks ar) 72 455.33 B
+1.16 0.1 (e always bounded by statements that ar) 270.1 455.33 B
+1.16 0.1 (e particular to) 456.22 455.33 B
+0.21 0.1 (the constr) 72 443.33 B
+0.21 0.1 (uct in which they ar) 116.67 443.33 B
+0.21 0.1 (e embedded;) 207.5 443.33 B
+1 8 Q
+0.17 0.08 ( however) 265.66 443.33 B
+0.17 0.08 (, in some forms of the DO constr) 298.92 443.33 B
+0.17 0.08 (uct, a sequence of executable) 417.23 443.33 B
+0.42 0.08 (constr) 72 431.33 B
+0.42 0.08 (ucts without a terminating boundary statement shall obey all other r) 94.15 431.33 B
+0.42 0.08 (ules governing blocks \0508.1.1\051.) 345.4 431.33 B
+1 10 Q
+0.64 0.1 (Any of these constr) 72 377.33 B
+0.64 0.1 (ucts may be named.  If a constr) 161.27 377.33 B
+0.64 0.1 (uct is named, the name shall be the \336rst lexical) 305.89 377.33 B
+0.44 0.1 (token of the \336rst statement of the constr) 72 365.33 B
+0.44 0.1 (uct and the last lexical token of the constr) 254.7 365.33 B
+0.44 0.1 (uct.) 445.28 365.33 B
+1 8 Q
+0.35 0.08 (In \336xed sour) 467.98 365.33 B
+0.35 0.08 (ce) 514.28 365.33 B
+0.42 0.08 (form, the name pr) 72 353.33 B
+0.42 0.08 (eceding the constr) 138.34 353.33 B
+0.42 0.08 (uct shall be placed after character position 6.) 204.91 353.33 B
+1 10 Q
+0.87 0.1 (A statement) 72 335.33 B
+2 F
+0.87 0.1 (belongs) 130.96 335.33 B
+1 F
+0.87 0.1 ( to the innermost constr) 167.77 335.33 B
+0.87 0.1 (uct in which it appears unless it contains a constr) 278.39 335.33 B
+0.87 0.1 (uct) 507.97 335.33 B
+0.52 0.1 (name, in which case it belongs to the named constr) 72 323.33 B
+0.52 0.1 (uct.) 306.36 323.33 B
+0 11 Q
+0.77 (8.1.1) 72 217.67 P
+0.77 (Rules go) 108.96 217.67 P
+0.77 (v) 154.28 217.67 P
+0.77 (er) 160.22 217.67 P
+0.77 (ning bloc) 171.01 217.67 P
+0.77 (ks) 221.78 217.67 P
+0 10 Q
+0.73 0.1 (8.1.1.1) 72 193.33 B
+0.73 0.1 (Ex) 114.9 193.33 B
+0.73 0.1 (ecuta) 125.7 193.33 B
+0.73 0.1 (ble constr) 154.65 193.33 B
+0.73 0.1 (ucts in bloc) 204.17 193.33 B
+0.73 0.1 (ks) 262.27 193.33 B
+1 F
+1.61 0.1 (If a block contains an executable constr) 72 175.33 B
+1.61 0.1 (uct, the executable constr) 257.79 175.33 B
+1.61 0.1 (uct shall be entir) 376.6 175.33 B
+1.61 0.1 (ely within the) 456.2 175.33 B
+0.52 0.1 (block.) 72 163.33 B
+0 F
+0.73 0.1 (8.1.1.2) 72 139.33 B
+0.73 0.1 (Contr) 114.9 139.33 B
+0.73 0.1 (ol \337o) 141.65 139.33 B
+0.73 0.1 (w in bloc) 165.87 139.33 B
+0.73 0.1 (ks) 211.87 139.33 B
+1 F
+0.53 0.1 (Transfer of contr) 72 121.33 B
+0.53 0.1 (ol to the interior of a block fr) 148.51 121.33 B
+0.53 0.1 (om outside the block is pr) 281.75 121.33 B
+0.53 0.1 (ohibited.  T) 401.3 121.33 B
+0.53 0.1 (ransfers within) 453.09 121.33 B
+0.52 0.1 (a block and transfers fr) 72 109.33 B
+0.52 0.1 (om the interior of a block to outside the block may occur) 177.99 109.33 B
+0.52 0.1 (.) 438.07 109.33 B
+2 F
+(NOTE 8.1) 90 415.33 T
+90.12 398.12 521.88 411.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (A block need not contain any executable constr) 92 403.33 B
+0.52 0.1 (ucts.  Execution of such a block has no ef) 308.35 403.33 B
+0.52 0.1 (fect.) 496.67 403.33 B
+2 F
+(NOTE 8.2) 90 307.33 T
+90.12 241.12 521.88 303.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (An example of a constr) 92 295.33 B
+0.52 0.1 (uct containing a block is:) 198.25 295.33 B
+4 9 Q
+0.09 (IF) 92 279 S
+0.09 (\050A) 108.47 279 S
+0.09 (>) 124.94 279 S
+0.09 (0.0\051) 135.92 279 S
+0.09 (THEN) 163.37 279 S
+0.09 (B) 108.47 268 S
+0.09 (=) 119.45 268 S
+0.09 (SQRT) 130.43 268 S
+0.09 (\050A\051) 157.88 268 S
+0.09 (!) 185.33 268 S
+0.09 (These) 196.31 268 S
+0.09 (two) 229.25 268 S
+0.09 (statements) 251.21 268 S
+0.09 (C) 108.47 257 S
+0.09 (=) 119.45 257 S
+0.09 (LOG) 130.43 257 S
+0.09 (\050A\051) 152.39 257 S
+0.09 (!) 185.33 257 S
+0.09 (form) 196.31 257 S
+0.09 (a) 223.76 257 S
+0.09 (block.) 234.74 257 S
+0.09 (END) 92 246 S
+0.09 (IF) 113.96 246 S
+90 411.88 90 398.12 2 L
+V
+0.25 H
+0 Z
+N
+522 411.88 522 398.12 2 L
+V
+N
+89.88 412 522.12 412 2 L
+V
+N
+89.88 398 522.12 398 2 L
+V
+N
+90 303.88 90 241.12 2 L
+V
+N
+522 303.88 522 241.12 2 L
+V
+N
+89.88 304 522.12 304 2 L
+V
+N
+89.88 241 522.12 241 2 L
+V
+N
+0 X
+0 8 Q
+0.1 (1) 30 673.33 S
+0.1 (2) 30 653.33 S
+0.1 (3) 30 641.33 S
+0.1 (4) 30 610.00 S
+0.1 (5) 30 591.33 S
+0.1 (6) 30 579.33 S
+0.1 (7) 30 563.33 S
+0.1 (8) 30 548.33 S
+0.1 (9) 30 533.33 S
+0.1 (10) 30 518.67 S
+0.1 (11) 30 501.33 S
+0.1 (12) 30 485.33 S
+0.1 (13) 30 467.33 S
+0.1 (14) 30 455.33 S
+0.1 (15) 30 443.33 S
+0.1 (16) 30 431.33 S
+0.1 (17) 30 415.33 S
+0.1 (18) 30 403.33 S
+0.1 (19) 30 377.33 S
+0.1 (20) 30 365.33 S
+0.1 (21) 30 353.33 S
+0.1 (22) 30 335.33 S
+0.1 (23) 30 323.33 S
+0.1 (24) 30 307.33 S
+0.1 (25) 30 295.33 S
+0.1 (26) 30 279.00 S
+0.1 (27) 30 268.00 S
+0.1 (28) 30 257.00 S
+0.1 (29) 30 246.00 S
+0.1 (30) 30 217.67 S
+0.1 (31) 30 193.33 S
+0.1 (32) 30 175.33 S
+0.1 (33) 30 163.33 S
+0.1 (34) 30 139.33 S
+0.1 (35) 30 121.33 S
+0.1 (36) 30 109.33 S
+FMENDPAGE
+%%EndPage: "121" 1
+%%Page: "122" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(J3/97-007) 72 748 T
+(WORKING DRAFT) 249 748 T
+(JUN 1997) 469.44 748 T
+0 10 Q
+(122) 72 34.67 T
+0 12 Q
+(WORKING DRAFT) 249 34.67 T
+(JUN 1997) 469.44 34.67 T
+1 10 Q
+0.52 0.1 (Subr) 72 657.33 B
+0.52 0.1 (outine and function r) 92.98 657.33 B
+0.52 0.1 (efer) 190.18 657.33 B
+0.52 0.1 (ences \05012.4.2, 12.4.3\051 may appear in a block.) 207.26 657.33 B
+0 F
+0.73 0.1 (8.1.1.3) 72 633.33 B
+0.73 0.1 (Ex) 114.9 633.33 B
+0.73 0.1 (ecution of a bloc) 125.7 633.33 B
+0.73 0.1 (k) 212.02 633.33 B
+1 F
+0.2 0.1 (Execution of a block begins with the execution of the \336rst executable constr) 72 615.33 B
+0.2 0.1 (uct in the block.  Unless) 413.37 615.33 B
+0.46 0.1 (ther) 72 603.33 B
+0.46 0.1 (e is a transfer of contr) 90.04 603.33 B
+0.46 0.1 (ol out of the block, the execution of the block is completed when the last) 190.07 603.33 B
+2.46 0.1 (executable constr) 72 591.33 B
+2.46 0.1 (uct in the sequence is executed.  The action that takes place at the terminal) 152.45 591.33 B
+0.45 0.1 (boundary depends on the particular constr) 72 579.33 B
+0.45 0.1 (uct and on the block within that constr) 267.87 579.33 B
+0.45 0.1 (uct.  It is usually) 445.61 579.33 B
+0.52 0.1 (a transfer of contr) 72 567.33 B
+0.52 0.1 (ol.) 153.84 567.33 B
+0 11 Q
+0.77 (8.1.2) 72 540.67 P
+0.77 (IF constr) 108.96 540.67 P
+0.77 (uct) 153.73 540.67 P
+1 10 Q
+0.34 0.1 (The) 72 522.33 B
+2 F
+0.34 0.1 (IF construct) 91.98 522.33 B
+1 F
+0.34 0.1 ( selects for execution no mor) 147.12 522.33 B
+0.34 0.1 (e than one of its constituent blocks.  The) 277.61 522.33 B
+2 F
+0.34 0.1 (IF statement) 464.08 522.33 B
+1 F
+0.52 0.1 (contr) 72 510.33 B
+0.52 0.1 (ols the execution of a single statement \0508.1.2.4\051.) 95.25 510.33 B
+0 F
+0.73 0.1 (8.1.2.1) 72 486.33 B
+0.73 0.1 (For) 114.9 486.33 B
+0.73 0.1 (m of the IF constr) 129.75 486.33 B
+0.73 0.1 (uct) 216.85 486.33 B
+1 F
+0.1 (R802) 72 468.33 S
+3 F
+0.1 (if-) 108 468.33 S
+0.1 (construct) 117.19 468.33 S
+2 F
+0.1 (is) 234 468.33 S
+3 F
+0.52 0.1 (if-) 252 468.33 B
+0.52 0.1 (then-) 261.19 468.33 B
+0.52 0.1 (stmt) 282.8 468.33 B
+0.52 0.1 (block) 288 456.33 B
+1 F
+0.52 0.1 ([) 270 444.33 B
+3 F
+0.52 0.1 (else-) 276.55 444.33 B
+0.52 0.1 (if-) 294.83 444.33 B
+0.52 0.1 (stmt) 304.02 444.33 B
+0.52 0.1 (block) 288 432.33 B
+1 F
+0.52 0.1 ( ] ...) 308.86 432.33 B
+0.52 0.1 ([) 270 420.33 B
+3 F
+0.52 0.1 (else-) 276.55 420.33 B
+0.52 0.1 (stmt) 294.83 420.33 B
+0.52 0.1 (block) 288 408.33 B
+1 F
+0.52 0.1 ( ]) 308.86 408.33 B
+3 F
+0.52 0.1 (end-) 270 396.33 B
+0.52 0.1 (if-) 288.18 396.33 B
+0.52 0.1 (stmt) 297.37 396.33 B
+1 F
+0.1 (R803) 72 378.33 S
+3 F
+0.1 (if-) 108 378.33 S
+0.1 (then-) 117.19 378.33 S
+0.1 (stmt) 138.8 378.33 S
+2 F
+0.1 (is) 234 378.33 S
+1 F
+0.52 0.1 ([) 252 378.33 B
+3 F
+0.52 0.1 (if-) 258.55 378.33 B
+0.52 0.1 (construct-) 267.74 378.33 B
+0.52 0.1 (name) 310.21 378.33 B
+1 F
+0.52 0.1 ( : ] IF \050) 332.28 378.33 B
+3 F
+0.52 0.1 (scalar-) 366.47 378.33 B
+0.52 0.1 (logical-) 394.01 378.33 B
+0.52 0.1 (expr) 424.43 378.33 B
+1 F
+0.52 0.1 ( \051 THEN) 442.61 378.33 B
+0.1 (R804) 72 360.33 S
+3 F
+0.1 (else-) 108 360.33 S
+0.1 (if-) 126.28 360.33 S
+0.1 (stmt) 135.47 360.33 S
+2 F
+0.1 (is) 234 360.33 S
+1 F
+0.52 0.1 (ELSE IF \050) 252 360.33 B
+3 F
+0.52 0.1 (scalar-) 297.9 360.33 B
+0.52 0.1 (logical-) 325.44 360.33 B
+0.52 0.1 (expr) 355.86 360.33 B
+1 F
+0.52 0.1 ( \051 THEN [) 374.04 360.33 B
+3 F
+0.52 0.1 (if-) 422.65 360.33 B
+0.52 0.1 (construct-) 431.84 360.33 B
+0.52 0.1 (name) 474.31 360.33 B
+1 F
+0.52 0.1 ( ]) 496.38 360.33 B
+0.1 (R805) 72 342.33 S
+3 F
+0.1 (else-) 108 342.33 S
+0.1 (stmt) 126.28 342.33 S
+2 F
+0.1 (is) 234 342.33 S
+1 F
+0.52 0.1 (ELSE [) 252 342.33 B
+3 F
+0.52 0.1 (if-) 285.65 342.33 B
+0.52 0.1 (construct-) 294.84 342.33 B
+0.52 0.1 (name) 337.31 342.33 B
+1 F
+0.52 0.1 ( ]) 359.38 342.33 B
+0.1 (R806) 72 324.33 S
+3 F
+0.1 (end-) 108 324.33 S
+0.1 (if-) 126.18 324.33 S
+0.1 (stmt) 135.37 324.33 S
+2 F
+0.1 (is) 234 324.33 S
+1 F
+0.52 0.1 (END IF [) 252 324.33 B
+3 F
+0.52 0.1 (if-) 296.38 324.33 B
+0.52 0.1 (construct-) 305.57 324.33 B
+0.52 0.1 (name) 348.04 324.33 B
+1 F
+0.52 0.1 ( ]) 370.11 324.33 B
+0.1 (Constraint:) 72 308.33 S
+5.06 0.1 (If the) 135 308.33 B
+3 F
+5.06 0.1 (if-) 171.39 308.33 B
+5.06 0.1 (then-) 180.58 308.33 B
+5.06 0.1 (stmt) 202.19 308.33 B
+1 F
+5.06 0.1 ( of an) 220.92 308.33 B
+3 F
+5.06 0.1 (if-) 263.91 308.33 B
+5.06 0.1 (construct) 273.1 308.33 B
+1 F
+5.06 0.1 ( is identi\336ed by an) 312.14 308.33 B
+3 F
+5.06 0.1 (if-) 423.74 308.33 B
+5.06 0.1 (construct-) 432.93 308.33 B
+5.06 0.1 (name) 475.4 308.33 B
+1 F
+5.06 0.1 (, the) 497.47 308.33 B
+1.15 0.1 (corr) 135 297.33 B
+1.15 0.1 (esponding) 153.02 297.33 B
+3 F
+1.15 0.1 (end-) 204.39 297.33 B
+1.15 0.1 (if-) 222.57 297.33 B
+1.15 0.1 (stmt) 231.76 297.33 B
+1 F
+1.15 0.1 ( shall specify the same) 250.49 297.33 B
+3 F
+1.15 0.1 (if-) 360.05 297.33 B
+1.15 0.1 (construct-) 369.24 297.33 B
+1.15 0.1 (name) 411.71 297.33 B
+1 F
+1.15 0.1 (.  If the) 433.78 297.33 B
+3 F
+1.15 0.1 (if-) 472.47 297.33 B
+1.15 0.1 (then-) 481.66 297.33 B
+1.15 0.1 (stmt) 503.27 297.33 B
+1 F
+4.84 0.1 (of an) 135 286.33 B
+3 F
+4.84 0.1 (if-) 169.88 286.33 B
+4.84 0.1 (construct) 179.07 286.33 B
+1 F
+4.84 0.1 ( is not identi\336ed by an) 218.11 286.33 B
+3 F
+4.84 0.1 (if-) 350.89 286.33 B
+4.84 0.1 (construct-) 360.08 286.33 B
+4.84 0.1 (name) 402.55 286.33 B
+1 F
+4.84 0.1 (, the corr) 424.62 286.33 B
+4.84 0.1 (esponding) 474.28 286.33 B
+3 F
+3.01 0.1 (end-) 135 275.33 B
+3.01 0.1 (if-) 153.18 275.33 B
+3.01 0.1 (stmt) 162.37 275.33 B
+1 F
+3.01 0.1 ( shall not specify an) 181.1 275.33 B
+3 F
+3.01 0.1 (if-) 288.35 275.33 B
+3.01 0.1 (construct-) 297.54 275.33 B
+3.01 0.1 (name) 340 275.33 B
+1 F
+3.01 0.1 (.  If an) 362.07 275.33 B
+3 F
+3.01 0.1 (else-) 405.02 275.33 B
+3.01 0.1 (if-) 423.3 275.33 B
+3.01 0.1 (stmt) 432.48 275.33 B
+1 F
+3.01 0.1 ( or) 451.21 275.33 B
+3 F
+3.01 0.1 (else-) 472.04 275.33 B
+3.01 0.1 (stmt) 490.32 275.33 B
+1 F
+3.01 0.1 ( is) 509.05 275.33 B
+2.7 0.1 (identi\336ed by an) 135 264.33 B
+3 F
+2.7 0.1 (if-) 216.87 264.33 B
+2.7 0.1 (construct-) 226.06 264.33 B
+2.7 0.1 (name) 268.53 264.33 B
+1 F
+2.7 0.1 (, the corr) 290.6 264.33 B
+2.7 0.1 (esponding) 336 264.33 B
+3 F
+2.7 0.1 (if-) 388.93 264.33 B
+2.7 0.1 (then-) 398.12 264.33 B
+2.7 0.1 (stmt) 419.73 264.33 B
+1 F
+2.7 0.1 ( shall specify the) 438.46 264.33 B
+0.52 0.1 (same) 135 253.33 B
+3 F
+0.52 0.1 (if-) 161.38 253.33 B
+0.52 0.1 (construct-) 170.57 253.33 B
+0.52 0.1 (name) 213.04 253.33 B
+1 F
+0.52 0.1 (.) 235.11 253.33 B
+0 F
+0.73 0.1 (8.1.2.2) 72 230.33 B
+0.73 0.1 (Ex) 114.9 230.33 B
+0.73 0.1 (ecution of an IF constr) 125.7 230.33 B
+0.73 0.1 (uct) 237.7 230.33 B
+1 F
+1.64 0.1 (At most one of the blocks in the IF constr) 72 212.33 B
+1.64 0.1 (uct is executed.  If ther) 271.78 212.33 B
+1.64 0.1 (e is an ELSE statement in the) 382.07 212.33 B
+0.18 0.1 (constr) 72 200.33 B
+0.18 0.1 (uct, exactly one of the blocks in the constr) 99.69 200.33 B
+0.18 0.1 (uct will be executed.  The scalar logical expr) 289.4 200.33 B
+0.18 0.1 (essions) 489.6 200.33 B
+1.41 0.1 (ar) 72 188.33 B
+1.41 0.1 (e evaluated in the or) 80.97 188.33 B
+1.41 0.1 (der of their appearance in the constr) 178.87 188.33 B
+1.41 0.1 (uct until a tr) 350.9 188.33 B
+1.41 0.1 (ue value is found or an) 410.82 188.33 B
+0.13 0.1 (ELSE statement or END IF statement is encounter) 72 176.33 B
+0.13 0.1 (ed.  If a tr) 297.04 176.33 B
+0.13 0.1 (ue value or an ELSE statement is found,) 341.01 176.33 B
+0.17 0.1 (the block immediately following is executed and this completes the execution of the constr) 72 164.33 B
+0.17 0.1 (uct.  The) 482.79 164.33 B
+3.49 0.1 (scalar logical expr) 72 152.33 B
+3.49 0.1 (essions in any r) 160.33 152.33 B
+3.49 0.1 (emaining ELSE IF statements of the IF constr) 240.47 152.33 B
+3.49 0.1 (uct ar) 467.1 152.33 B
+3.49 0.1 (e not) 496.18 152.33 B
+2.65 0.1 (evaluated.  If none of the evaluated expr) 72 140.33 B
+2.65 0.1 (essions is tr) 272.73 140.33 B
+2.65 0.1 (ue and ther) 330.32 140.33 B
+2.65 0.1 (e is no ELSE statement, the) 387.11 140.33 B
+0.52 0.1 (execution of the constr) 72 128.33 B
+0.52 0.1 (uct is completed without the execution of any block within the constr) 175.77 128.33 B
+0.52 0.1 (uct.) 494.06 128.33 B
+3.28 0.1 (An ELSE IF statement or an ELSE statement shall not be a branch tar) 72 110.33 B
+3.28 0.1 (get statement.  It is) 423.63 110.33 B
+0.81 0.1 (permissible to branch to an END IF statement only fr) 72 98.33 B
+0.81 0.1 (om within the IF constr) 318.08 98.33 B
+0.81 0.1 (uct.  Execution of an) 426.85 98.33 B
+0.52 0.1 (END IF statement has no ef) 72 86.33 B
+0.52 0.1 (fect.) 198.32 86.33 B
+2 F
+(NOTE 8.3) 90 705.33 T
+90.12 677.12 521.88 701.88 R
+6 X
+V
+1 F
+0 X
+0.99 0.1 (For example, if a statement inside the block has a statement label, a GO T) 92 693.33 B
+0.99 0.1 (O statement using) 435.65 693.33 B
+0.52 0.1 (that label is only allowed to appear in the same block.) 92 682.33 B
+90 701.88 90 677.12 2 L
+V
+0.25 H
+0 Z
+N
+522 701.88 522 677.12 2 L
+V
+N
+89.88 702 522.12 702 2 L
+V
+N
+89.88 677 522.12 677 2 L
+V
+N
+0 X
+0 8 Q
+0.1 (1) 30 705.33 S
+0.1 (2) 30 693.33 S
+0.1 (3) 30 682.33 S
+0.1 (4) 30 657.33 S
+0.1 (5) 30 633.33 S
+0.1 (6) 30 615.33 S
+0.1 (7) 30 603.33 S
+0.1 (8) 30 591.33 S
+0.1 (9) 30 579.33 S
+0.1 (10) 30 567.33 S
+0.1 (11) 30 540.67 S
+0.1 (12) 30 522.33 S
+0.1 (13) 30 510.33 S
+0.1 (14) 30 486.33 S
+0.1 (15) 30 468.33 S
+0.1 (16) 30 456.33 S
+0.1 (17) 30 444.33 S
+0.1 (18) 30 432.33 S
+0.1 (19) 30 420.33 S
+0.1 (20) 30 408.33 S
+0.1 (21) 30 396.33 S
+0.1 (22) 30 378.33 S
+0.1 (23) 30 360.33 S
+0.1 (24) 30 342.33 S
+0.1 (25) 30 324.33 S
+0.1 (26) 30 308.33 S
+0.1 (27) 30 297.33 S
+0.1 (28) 30 286.33 S
+0.1 (29) 30 275.33 S
+0.1 (30) 30 264.33 S
+0.1 (31) 30 253.33 S
+0.1 (32) 30 230.33 S
+0.1 (33) 30 212.33 S
+0.1 (34) 30 200.33 S
+0.1 (35) 30 188.33 S
+0.1 (36) 30 176.33 S
+0.1 (37) 30 164.33 S
+0.1 (38) 30 152.33 S
+0.1 (39) 30 140.33 S
+0.1 (40) 30 128.33 S
+0.1 (41) 30 110.33 S
+0.1 (42) 30 98.33 S
+0.1 (43) 30 86.33 S
+FMENDPAGE
+%%EndPage: "122" 2
+%%Page: "123" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(JUN 1997) 72 748 T
+( WORKING DRAFT) 247.32 748 T
+(J3/97-007) 465.36 748 T
+(JUN 1997) 72 34.67 T
+(WORKING DRAFT) 249 34.67 T
+0 10 Q
+(123) 505.2 34.67 T
+0.73 0.1 (8.1.2.3) 72 713.33 B
+0.73 0.1 (Examples of IF constr) 114.9 713.33 B
+0.73 0.1 (ucts) 220.57 713.33 B
+0.73 0.1 (8.1.2.4) 72 428.33 B
+0.73 0.1 (IF sta) 114.9 428.33 B
+0.73 0.1 (tement) 140.67 428.33 B
+1 F
+0.52 0.1 (The IF statement contr) 72 410.33 B
+0.52 0.1 (ols a single action statement \050R216\051.) 174.93 410.33 B
+0.1 (R807) 72 392.33 S
+3 F
+0.1 (if-) 108 392.33 S
+0.1 (stmt) 117.19 392.33 S
+2 F
+0.1 (is) 234 392.33 S
+1 F
+0.52 0.1 (IF \050) 252 392.33 B
+3 F
+0.52 0.1 (scalar-) 270.8 392.33 B
+0.52 0.1 (logical-) 298.34 392.33 B
+0.52 0.1 (expr) 328.76 392.33 B
+1 F
+0.52 0.1 ( \051) 346.94 392.33 B
+3 F
+0.52 0.1 (action-) 356.61 392.33 B
+0.52 0.1 (stmt) 385.26 392.33 B
+1 F
+0.1 (Constraint:) 72 376.33 S
+7.94 0.1 (The) 135 376.33 B
+3 F
+7.94 0.1 (action-) 162.58 376.33 B
+7.94 0.1 (stmt) 191.23 376.33 B
+1 F
+7.94 0.1 ( in the) 209.96 376.33 B
+3 F
+7.94 0.1 (if-) 264.67 376.33 B
+7.94 0.1 (stmt) 273.86 376.33 B
+1 F
+7.94 0.1 ( shall not be an) 292.59 376.33 B
+3 F
+7.94 0.1 (if-) 403.04 376.33 B
+7.94 0.1 (stmt) 412.23 376.33 B
+1 F
+7.94 0.1 (,) 430.96 376.33 B
+3 F
+7.94 0.1 (end-) 444.1 376.33 B
+7.94 0.1 (pr) 462.28 376.33 B
+7.94 0.1 (ogram-) 471.19 376.33 B
+7.94 0.1 (stmt) 500.67 376.33 B
+1 F
+7.94 0.1 (,) 519.4 376.33 B
+3 F
+0.52 0.1 (end-) 135 365.33 B
+0.52 0.1 (function-) 153.18 365.33 B
+0.52 0.1 (stmt) 191.49 365.33 B
+1 F
+0.52 0.1 (, or) 210.22 365.33 B
+3 F
+0.52 0.1 (end-) 228.67 365.33 B
+0.52 0.1 (subr) 246.85 365.33 B
+0.52 0.1 (outine-) 265.04 365.33 B
+0.52 0.1 (stmt) 294.63 365.33 B
+1 F
+0.52 0.1 (.) 313.36 365.33 B
+0.67 0.1 (Execution of an IF statement causes evaluation of the scalar logical expr) 72 348.33 B
+0.67 0.1 (ession.  If the value of the) 402.62 348.33 B
+0.34 0.1 (expr) 72 336.33 B
+0.34 0.1 (ession is tr) 92.13 336.33 B
+0.34 0.1 (ue, the action statement is executed.  If the value is false, the action statement is not) 140.75 336.33 B
+0.52 0.1 (executed and execution continues as though a CONTINUE statement \0508.3\051 wer) 72 324.33 B
+0.52 0.1 (e executed.) 431.68 324.33 B
+1.99 0.1 (The execution of a function r) 72 306.33 B
+1.99 0.1 (efer) 211.36 306.33 B
+1.99 0.1 (ence in the scalar logical expr) 228.44 306.33 B
+1.99 0.1 (ession may af) 370.87 306.33 B
+1.99 0.1 (fect entities in the) 436.14 306.33 B
+0.52 0.1 (action statement.) 72 294.33 B
+0 11 Q
+0.77 (8.1.3) 72 221.67 P
+0.77 (C) 108.96 221.67 P
+0.77 (ASE constr) 117.1 221.67 P
+0.77 (uct) 173.09 221.67 P
+1 10 Q
+0.52 0.1 (The) 72 203.33 B
+2 F
+0.52 0.1 (CASE construct) 92.16 203.33 B
+1 F
+0.52 0.1 ( selects for execution at most one of its constituent blocks.) 165.45 203.33 B
+0 F
+0.73 0.1 (8.1.3.1) 72 179.33 B
+0.73 0.1 (For) 114.9 179.33 B
+0.73 0.1 (m of the C) 129.75 179.33 B
+0.73 0.1 (ASE constr) 182.72 179.33 B
+0.73 0.1 (uct) 234.65 179.33 B
+1 F
+0.1 (R808) 72 161.33 S
+3 F
+0.1 (case-) 108 161.33 S
+0.1 (construct) 128.12 161.33 S
+2 F
+0.1 (is) 234 161.33 S
+3 F
+0.52 0.1 (select-) 252 161.33 B
+0.52 0.1 (case-) 277.88 161.33 B
+0.52 0.1 (stmt) 298 161.33 B
+1 F
+0.52 0.1 ([) 270 149.33 B
+3 F
+0.52 0.1 (case-) 276.55 149.33 B
+0.52 0.1 (stmt) 296.67 149.33 B
+0.52 0.1 (block) 288 137.33 B
+1 F
+0.52 0.1 ( ] ...) 308.86 137.33 B
+3 F
+0.52 0.1 (end-) 270 125.33 B
+0.52 0.1 (select-) 288.18 125.33 B
+0.52 0.1 (stmt) 314.06 125.33 B
+1 F
+0.1 (R809) 72 107.33 S
+3 F
+0.1 (select-) 108 107.33 S
+0.1 (case-) 133.88 107.33 S
+0.1 (stmt) 154 107.33 S
+2 F
+0.1 (is) 234 107.33 S
+1 F
+0.52 0.1 ([) 252 107.33 B
+3 F
+0.52 0.1 (case-) 258.55 107.33 B
+0.52 0.1 (construct-) 278.67 107.33 B
+0.52 0.1 (name) 321.14 107.33 B
+1 F
+0.52 0.1 ( : ] SELECT CASE \050) 343.21 107.33 B
+3 F
+0.52 0.1 (case-) 435.42 107.33 B
+0.52 0.1 (expr) 455.54 107.33 B
+1 F
+0.52 0.1 ( \051) 473.72 107.33 B
+0.1 (R810) 72 89.33 S
+3 F
+0.1 (case-) 108 89.33 S
+0.1 (stmt) 128.12 89.33 S
+2 F
+0.1 (is) 234 89.33 S
+1 F
+0.52 0.1 (CASE) 252 89.33 B
+3 F
+0.52 0.1 (case-) 281.75 89.33 B
+0.52 0.1 (selector) 301.87 89.33 B
+1 F
+0.52 0.1 ( [) 332.85 89.33 B
+3 F
+0.52 0.1 (case-) 339.4 89.33 B
+0.52 0.1 (construct-) 359.52 89.33 B
+0.52 0.1 (name) 401.99 89.33 B
+1 F
+0.52 0.1 (]) 424.06 89.33 B
+2 F
+(NOTE 8.4) 90 697.33 T
+90.12 449.12 521.88 693.88 R
+6 X
+V
+4 9 Q
+0 X
+0.09 (IF) 92 686 S
+0.09 (\050CVAR) 108.47 686 S
+0.09 (.EQ.) 141.41 686 S
+0.09 ('RESET'\051) 168.86 686 S
+0.09 (THEN) 218.27 686 S
+0.09 (I) 108.47 675 S
+0.09 (=) 119.45 675 S
+0.09 (0;) 130.43 675 S
+0.09 (J) 146.9 675 S
+0.09 (=) 157.88 675 S
+0.09 (0;) 168.86 675 S
+0.09 (K) 185.33 675 S
+0.09 (=) 196.31 675 S
+0.09 (0) 207.29 675 S
+0.09 (END) 92 664 S
+0.09 (IF) 113.96 664 S
+0.09 (PROOF_DONE:) 92 647 S
+0.09 (IF) 157.88 647 S
+0.09 (\050PROP\051) 174.35 647 S
+0.09 (THEN) 212.78 647 S
+0.09 (WRITE) 108.47 636 S
+0.09 (\0503,) 141.41 636 S
+0.09 ('\050"QED"\051'\051) 163.37 636 S
+0.09 (STOP) 108.47 625 S
+0.09 (ELSE) 92 614 S
+0.09 (PROP) 108.47 603 S
+0.09 (=) 135.92 603 S
+0.09 (NEXTPROP) 146.9 603 S
+0.09 (END) 92 592 S
+0.09 (IF) 113.96 592 S
+0.09 (PROOF_DONE) 130.43 592 S
+0.09 (IF) 92 575 S
+0.09 (\050A) 108.47 575 S
+0.09 (.GT.) 124.94 575 S
+0.09 (0\051) 152.39 575 S
+0.09 (THEN) 168.86 575 S
+0.09 (B) 108.47 564 S
+0.09 (=) 119.45 564 S
+0.09 (C/A) 130.43 564 S
+0.09 (IF) 108.47 553 S
+0.09 (\050B) 124.94 553 S
+0.09 (.GT.) 141.41 553 S
+0.09 (0\051) 168.86 553 S
+0.09 (THEN) 185.33 553 S
+0.09 (D) 124.94 542 S
+0.09 (=) 135.92 542 S
+0.09 (1.0) 146.9 542 S
+0.09 (END) 108.47 531 S
+0.09 (IF) 130.43 531 S
+0.09 (ELSE) 92 520 S
+0.09 (IF) 119.45 520 S
+0.09 (\050C) 135.92 520 S
+0.09 (.GT.) 152.39 520 S
+0.09 (0\051) 179.84 520 S
+0.09 (THEN) 196.31 520 S
+0.09 (B) 108.47 509 S
+0.09 (=) 119.45 509 S
+0.09 (A/C) 130.43 509 S
+0.09 (D) 108.47 498 S
+0.09 (=) 119.45 498 S
+0.09 (-1.0) 130.43 498 S
+0.09 (ELSE) 92 487 S
+0.09 (B) 108.47 476 S
+0.09 (=) 119.45 476 S
+0.09 (ABS) 130.43 476 S
+0.09 (\050MAX) 152.39 476 S
+0.09 (\050A,) 179.84 476 S
+0.09 (C\051\051) 201.8 476 S
+0.09 (D) 108.47 465 S
+0.09 (=) 119.45 465 S
+0.09 (0) 130.43 465 S
+0.09 (END) 92 454 S
+0.09 (IF) 113.96 454 S
+2 10 Q
+(NOTE 8.5) 90 278.33 T
+90.12 245.12 521.88 274.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (An example of an IF statement is:) 92 266.33 B
+4 9 Q
+0.09 (IF) 92 250 S
+0.09 (\050A) 108.47 250 S
+0.09 (>) 124.94 250 S
+0.09 (0.0\051) 135.92 250 S
+0.09 (A) 163.37 250 S
+0.09 (=) 174.35 250 S
+0.09 (LOG) 185.33 250 S
+0.09 (\050A\051) 207.29 250 S
+90 693.88 90 449.12 2 L
+V
+0.25 H
+0 Z
+N
+522 693.88 522 449.12 2 L
+V
+N
+89.88 694 522.12 694 2 L
+V
+N
+89.88 449 522.12 449 2 L
+V
+N
+90 274.88 90 245.12 2 L
+V
+N
+522 274.88 522 245.12 2 L
+V
+N
+89.88 275 522.12 275 2 L
+V
+N
+89.88 245 522.12 245 2 L
+V
+N
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 697.33 S
+0.1 (3) 30 686.00 S
+0.1 (4) 30 675.00 S
+0.1 (5) 30 664.00 S
+0.1 (6) 30 647.00 S
+0.1 (7) 30 636.00 S
+0.1 (8) 30 625.00 S
+0.1 (9) 30 614.00 S
+0.1 (10) 30 603.00 S
+0.1 (11) 30 592.00 S
+0.1 (12) 30 575.00 S
+0.1 (13) 30 564.00 S
+0.1 (14) 30 553.00 S
+0.1 (15) 30 542.00 S
+0.1 (16) 30 531.00 S
+0.1 (17) 30 520.00 S
+0.1 (18) 30 509.00 S
+0.1 (19) 30 498.00 S
+0.1 (20) 30 487.00 S
+0.1 (21) 30 476.00 S
+0.1 (22) 30 465.00 S
+0.1 (23) 30 454.00 S
+0.1 (24) 30 428.33 S
+0.1 (25) 30 410.33 S
+0.1 (26) 30 392.33 S
+0.1 (27) 30 376.33 S
+0.1 (28) 30 365.33 S
+0.1 (29) 30 348.33 S
+0.1 (30) 30 336.33 S
+0.1 (31) 30 324.33 S
+0.1 (32) 30 306.33 S
+0.1 (33) 30 294.33 S
+0.1 (34) 30 278.33 S
+0.1 (35) 30 266.33 S
+0.1 (36) 30 250.00 S
+0.1 (37) 30 221.67 S
+0.1 (38) 30 203.33 S
+0.1 (39) 30 179.33 S
+0.1 (40) 30 161.33 S
+0.1 (41) 30 149.33 S
+0.1 (42) 30 137.33 S
+0.1 (43) 30 125.33 S
+0.1 (44) 30 107.33 S
+0.1 (45) 30 89.33 S
+FMENDPAGE
+%%EndPage: "123" 3
+%%Page: "124" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(J3/97-007) 72 748 T
+(WORKING DRAFT) 249 748 T
+(JUN 1997) 469.44 748 T
+0 10 Q
+(124) 72 34.67 T
+0 12 Q
+(WORKING DRAFT) 249 34.67 T
+(JUN 1997) 469.44 34.67 T
+1 10 Q
+0.1 (R81) 72 713.33 S
+0.1 (1) 88.43 713.33 S
+3 F
+0.1 (end-) 108 713.33 S
+0.1 (select-) 126.18 713.33 S
+0.1 (stmt) 152.06 713.33 S
+2 F
+0.1 (is) 234 713.33 S
+1 F
+0.52 0.1 (END SELECT [) 252 713.33 B
+3 F
+0.52 0.1 (case-) 324.65 713.33 B
+0.52 0.1 (construct-) 344.77 713.33 B
+0.52 0.1 (name) 387.24 713.33 B
+1 F
+0.52 0.1 ( ]) 409.31 713.33 B
+0.1 (Constraint:) 72 697.33 S
+2.77 0.1 (If the) 135 697.33 B
+3 F
+2.77 0.1 (select-) 166.8 697.33 B
+2.77 0.1 (case-) 192.68 697.33 B
+2.77 0.1 (stmt) 212.8 697.33 B
+1 F
+2.77 0.1 ( of a) 231.53 697.33 B
+3 F
+2.77 0.1 (case-) 261.72 697.33 B
+2.77 0.1 (construct) 281.84 697.33 B
+1 F
+2.77 0.1 ( is identi\336ed by a) 320.88 697.33 B
+3 F
+2.77 0.1 (case-) 415.11 697.33 B
+2.77 0.1 (construct-) 435.22 697.33 B
+2.77 0.1 (name) 477.69 697.33 B
+1 F
+2.77 0.1 (, the) 499.76 697.33 B
+4.01 0.1 (corr) 135 686.33 B
+4.01 0.1 (esponding) 153.02 686.33 B
+3 F
+4.01 0.1 (end-) 207.24 686.33 B
+4.01 0.1 (select-) 225.43 686.33 B
+4.01 0.1 (stmt) 251.3 686.33 B
+1 F
+4.01 0.1 ( shall specify the same) 270.03 686.33 B
+3 F
+4.01 0.1 (case-) 393.85 686.33 B
+4.01 0.1 (construct-) 413.97 686.33 B
+4.01 0.1 (name) 456.44 686.33 B
+1 F
+4.01 0.1 (.  If the) 478.51 686.33 B
+3 F
+3.93 0.1 (select-) 135 675.33 B
+3.93 0.1 (case-) 160.88 675.33 B
+3.93 0.1 (stmt) 181 675.33 B
+1 F
+3.93 0.1 ( of a) 199.73 675.33 B
+3 F
+3.93 0.1 (case-) 233.4 675.33 B
+3.93 0.1 (construct) 253.52 675.33 B
+1 F
+3.93 0.1 ( is not identi\336ed by a) 292.56 675.33 B
+3 F
+3.93 0.1 (case-) 413.95 675.33 B
+3.93 0.1 (construct-) 434.06 675.33 B
+3.93 0.1 (name) 476.53 675.33 B
+1 F
+3.93 0.1 (, the) 498.6 675.33 B
+1.02 0.1 (corr) 135 664.33 B
+1.02 0.1 (esponding) 153.02 664.33 B
+3 F
+1.02 0.1 (end-) 204.26 664.33 B
+1.02 0.1 (select-) 222.44 664.33 B
+1.02 0.1 (stmt) 248.32 664.33 B
+1 F
+1.02 0.1 ( shall not specify a) 267.05 664.33 B
+3 F
+1.02 0.1 (case-) 358.44 664.33 B
+1.02 0.1 (construct-) 378.56 664.33 B
+1.02 0.1 (name) 421.03 664.33 B
+1 F
+1.02 0.1 (.  If a) 443.1 664.33 B
+3 F
+1.02 0.1 (case-) 472.18 664.33 B
+1.02 0.1 (stmt) 492.3 664.33 B
+1 F
+1.02 0.1 ( is) 511.03 664.33 B
+0.46 0.1 (identi\336ed by a) 135 653.33 B
+3 F
+0.46 0.1 (case-) 204.22 653.33 B
+0.46 0.1 (construct-) 224.34 653.33 B
+0.46 0.1 (name) 266.81 653.33 B
+1 F
+0.46 0.1 (, the corr) 288.88 653.33 B
+0.46 0.1 (esponding) 329.79 653.33 B
+3 F
+0.46 0.1 (select-) 380.46 653.33 B
+0.46 0.1 (case-) 406.34 653.33 B
+0.46 0.1 (stmt) 426.46 653.33 B
+1 F
+0.46 0.1 ( shall specify the) 445.19 653.33 B
+0.52 0.1 (same) 135 642.33 B
+3 F
+0.52 0.1 (case-) 161.38 642.33 B
+0.52 0.1 (construct-) 181.5 642.33 B
+0.52 0.1 (name) 223.97 642.33 B
+1 F
+0.52 0.1 (.) 246.04 642.33 B
+0.1 (R812) 72 625.33 S
+3 F
+0.1 (case-) 108 625.33 S
+0.1 (expr) 128.12 625.33 S
+2 F
+0.1 (is) 234 625.33 S
+3 F
+0.52 0.1 (scalar-) 252 625.33 B
+0.52 0.1 (int-) 279.54 625.33 B
+0.52 0.1 (expr) 294.94 625.33 B
+2 F
+0.1 (or) 234 613.33 S
+3 F
+0.52 0.1 (scalar-) 252 613.33 B
+0.52 0.1 (char-) 279.54 613.33 B
+0.52 0.1 (expr) 300.77 613.33 B
+2 F
+0.1 (or) 234 601.33 S
+3 F
+0.52 0.1 (scalar-) 252 601.33 B
+0.52 0.1 (logical-) 279.54 601.33 B
+0.52 0.1 (expr) 309.96 601.33 B
+1 F
+0.1 (R813) 72 583.33 S
+3 F
+0.1 (case-) 108 583.33 S
+0.1 (selector) 128.12 583.33 S
+2 F
+0.1 (is) 234 583.33 S
+1 F
+0.52 0.1 (\050) 252 583.33 B
+3 F
+0.52 0.1 (case-) 258.55 583.33 B
+0.52 0.1 (value-) 278.67 583.33 B
+0.52 0.1 (range-) 304.27 583.33 B
+0.52 0.1 (list) 330.98 583.33 B
+1 F
+0.52 0.1 ( \051) 344.16 583.33 B
+2 F
+0.1 (or) 234 571.33 S
+1 F
+0.52 0.1 (DEF) 252 571.33 B
+0.52 0.1 (AUL) 270.97 571.33 B
+0.52 0.1 (T) 292.2 571.33 B
+0.1 (Constraint:) 72 555.33 S
+0.17 0.1 (No mor) 135 555.33 B
+0.17 0.1 (e than one of the selectors of one of the CASE statements shall be DEF) 170.1 555.33 B
+0.17 0.1 (AUL) 487.13 555.33 B
+0.17 0.1 (T) 508.36 555.33 B
+0.17 0.1 (.) 513.85 555.33 B
+0.1 (R814) 72 538.33 S
+3 F
+0.1 (case-) 108 538.33 S
+0.1 (value-) 128.12 538.33 S
+0.1 (range) 153.72 538.33 S
+2 F
+0.1 (is) 234 538.33 S
+3 F
+0.52 0.1 (case-) 252 538.33 B
+0.52 0.1 (value) 272.12 538.33 B
+2 F
+0.1 (or) 234 526.33 S
+3 F
+0.52 0.1 (case-) 252 526.33 B
+0.52 0.1 (value) 272.12 526.33 B
+1 F
+0.52 0.1 ( :) 294.29 526.33 B
+2 F
+0.1 (or) 234 514.33 S
+1 F
+0.52 0.1 (:) 252 514.33 B
+3 F
+0.52 0.1 (case-) 257.72 514.33 B
+0.52 0.1 (value) 277.84 514.33 B
+2 F
+0.1 (or) 234 502.33 S
+3 F
+0.52 0.1 (case-) 252 502.33 B
+0.52 0.1 (value) 272.12 502.33 B
+1 F
+0.52 0.1 ( :) 294.29 502.33 B
+3 F
+0.52 0.1 (case-) 303.13 502.33 B
+0.52 0.1 (value) 323.25 502.33 B
+1 F
+0.1 (R815) 72 484.33 S
+3 F
+0.1 (case-) 108 484.33 S
+0.1 (value) 128.12 484.33 S
+2 F
+0.1 (is) 234 484.33 S
+3 F
+0.52 0.1 (scalar-) 252 484.33 B
+0.52 0.1 (int-) 279.54 484.33 B
+0.52 0.1 (initialization-) 294.94 484.33 B
+0.52 0.1 (expr) 351.99 484.33 B
+2 F
+0.1 (or) 234 472.33 S
+3 F
+0.52 0.1 (scalar-) 252 472.33 B
+0.52 0.1 (char-) 279.54 472.33 B
+0.52 0.1 (initialization-) 300.77 472.33 B
+0.52 0.1 (expr) 357.82 472.33 B
+2 F
+0.1 (or) 234 460.33 S
+3 F
+0.52 0.1 (scalar-) 252 460.33 B
+0.52 0.1 (logical-) 279.54 460.33 B
+0.52 0.1 (initialization-) 309.96 460.33 B
+0.52 0.1 (expr) 367.01 460.33 B
+1 F
+0.1 (Constraint:) 72 444.33 S
+0.98 0.1 (For a given) 135 444.33 B
+3 F
+0.98 0.1 (case-) 191.34 444.33 B
+0.98 0.1 (construct) 211.46 444.33 B
+1 F
+0.98 0.1 (, each) 250.5 444.33 B
+3 F
+0.98 0.1 (case-) 280.71 444.33 B
+0.98 0.1 (value) 300.83 444.33 B
+1 F
+0.98 0.1 ( shall be of the same type as) 323 444.33 B
+3 F
+0.98 0.1 (case-) 459.41 444.33 B
+0.98 0.1 (expr) 479.53 444.33 B
+1 F
+0.98 0.1 (.  For) 496.97 444.33 B
+0.68 0.1 (character type, length dif) 135 433.33 B
+0.68 0.1 (fer) 250.23 433.33 B
+0.68 0.1 (ences ar) 262.42 433.33 B
+0.68 0.1 (e allowed, but the kind type parameters shall be) 299.25 433.33 B
+0.52 0.1 (the same.) 135 422.33 B
+0.1 (Constraint:) 72 407.33 S
+0.52 0.1 (A) 135 407.33 B
+3 F
+0.52 0.1 (case-) 146 407.33 B
+0.52 0.1 (value-) 166.12 407.33 B
+0.52 0.1 (range) 191.72 407.33 B
+1 F
+0.52 0.1 ( using a colon shall not be used if) 215 407.33 B
+3 F
+0.52 0.1 (case-) 372.58 407.33 B
+0.52 0.1 (expr) 392.7 407.33 B
+1 F
+0.52 0.1 ( is of type logical.) 410.88 407.33 B
+0.1 (Constraint:) 72 392.33 S
+0.19 0.1 (For a given) 135 392.33 B
+3 F
+0.19 0.1 (case-) 188.98 392.33 B
+0.19 0.1 (construct) 209.1 392.33 B
+1 F
+0.19 0.1 (, the) 248.14 392.33 B
+3 F
+0.19 0.1 (case-) 270.5 392.33 B
+0.19 0.1 (value-) 290.62 392.33 B
+0.19 0.1 (range) 316.22 392.33 B
+1 F
+0.19 0.1 (s shall not overlap; that is, ther) 339.5 392.33 B
+0.19 0.1 (e shall be) 479.62 392.33 B
+0.52 0.1 (no possible value of the) 135 381.33 B
+3 F
+0.52 0.1 (case-) 247.01 381.33 B
+0.52 0.1 (expr) 267.13 381.33 B
+1 F
+0.52 0.1 ( that matches mor) 285.31 381.33 B
+0.52 0.1 (e than one) 367.85 381.33 B
+3 F
+0.52 0.1 (case-) 418.77 381.33 B
+0.52 0.1 (value-) 438.89 381.33 B
+0.52 0.1 (range) 464.48 381.33 B
+1 F
+0.52 0.1 (.) 487.77 381.33 B
+0 F
+0.73 0.1 (8.1.3.2) 72 358.33 B
+0.73 0.1 (Ex) 114.9 358.33 B
+0.73 0.1 (ecution of a C) 125.7 358.33 B
+0.73 0.1 (ASE constr) 197.47 358.33 B
+0.73 0.1 (uct) 249.4 358.33 B
+1 F
+1.66 0.1 (The execution of the SELECT CASE statement causes the case expr) 72 340.33 B
+1.66 0.1 (ession to be evaluated.  The) 389.1 340.33 B
+0.19 0.1 (r) 72 328.33 B
+0.19 0.1 (esulting value is called the) 75.87 328.33 B
+2 F
+0.19 0.1 (case index) 199.29 328.33 B
+1 F
+0.19 0.1 (.  For a case value range list, a match occurs if the case index) 247.41 328.33 B
+1.43 0.1 (matches any of the case value ranges in the list.  For a case index with a value of) 72 316.33 B
+3 F
+1.43 0.1 (c) 462.84 316.33 B
+1 F
+1.43 0.1 (, a match is) 467.01 316.33 B
+0.52 0.1 (determined as follows:) 72 304.33 B
+0.1 (\0501\051) 99 288.33 S
+1.32 0.1 (If the case value range contains a single value) 126 288.33 B
+3 F
+1.32 0.1 (v) 346.26 288.33 B
+1 F
+1.32 0.1 ( without a colon, a match occurs for) 351.36 288.33 B
+1 0.1 (data type logical if the expr) 126 277.33 B
+1 0.1 (ession) 254.44 277.33 B
+3 F
+1 0.1 (c) 286.1 277.33 B
+1 18 Q
+1.81 0.18 (.) 292.87 277.33 B
+1 10 Q
+1 0.1 (EQV) 297.55 277.33 B
+1 18 Q
+1.81 0.18 (.) 316.72 277.33 B
+3 10 Q
+1 0.1 (v) 324 277.33 B
+1 F
+1 0.1 ( is tr) 329.1 277.33 B
+1 0.1 (ue, and a match occurs for data type) 350.98 277.33 B
+0.52 0.1 (integer or character if the expr) 126 266.33 B
+0.52 0.1 (ession) 265.28 266.33 B
+3 F
+0.52 0.1 (c) 296.46 266.33 B
+1 18 Q
+0.94 0.18 (.) 303.23 266.33 B
+1 10 Q
+0.52 0.1 (EQ) 307.91 266.33 B
+1 18 Q
+0.94 0.18 (.) 322.08 266.33 B
+3 10 Q
+0.52 0.1 (v) 329.36 266.33 B
+1 F
+0.52 0.1 ( is tr) 334.46 266.33 B
+0.52 0.1 (ue.) 355.38 266.33 B
+0.1 (\0502\051) 99 251.33 S
+2.66 0.1 (If the case value range is of the form) 126 251.33 B
+3 F
+2.66 0.1 (low) 316.23 251.33 B
+1 F
+2.66 0.1 (:) 333.57 251.33 B
+3 F
+2.66 0.1 (high) 338.77 251.33 B
+1 F
+2.66 0.1 (, a match occurs if the expr) 356.95 251.33 B
+2.66 0.1 (ession) 493.94 251.33 B
+3 F
+0.52 0.1 (low) 126 240.33 B
+1 18 Q
+0.94 0.18 (.) 143.34 240.33 B
+1 10 Q
+0.52 0.1 (LE) 148.02 240.33 B
+1 18 Q
+0.94 0.18 (.) 160.44 240.33 B
+3 10 Q
+0.52 0.1 (c) 167.72 240.33 B
+1 18 Q
+0.94 0.18 (.) 174.49 240.33 B
+1 10 Q
+0.52 0.1 (AND) 179.17 240.33 B
+1 18 Q
+0.94 0.18 (.) 203.3 240.33 B
+3 10 Q
+0.52 0.1 (c) 210.58 240.33 B
+1 18 Q
+0.94 0.18 (.) 217.35 240.33 B
+1 10 Q
+0.52 0.1 (LE) 222.03 240.33 B
+1 18 Q
+0.94 0.18 (.) 234.45 240.33 B
+3 10 Q
+0.52 0.1 (high) 241.73 240.33 B
+1 F
+0.52 0.1 ( is tr) 259.91 240.33 B
+0.52 0.1 (ue.) 280.83 240.33 B
+0.1 (\0503\051) 99 225.33 S
+0.86 0.1 (If the case value range is of the form) 126 225.33 B
+3 F
+0.86 0.1 (low) 300.08 225.33 B
+1 F
+0.86 0.1 (:, a match occurs if the expr) 317.42 225.33 B
+0.86 0.1 (ession) 446.24 225.33 B
+3 F
+0.86 0.1 (low) 477.77 225.33 B
+1 18 Q
+1.55 0.18 (.) 495.11 225.33 B
+1 10 Q
+0.86 0.1 (LE) 499.79 225.33 B
+1 18 Q
+1.55 0.18 (.) 512.21 225.33 B
+3 10 Q
+0.86 0.1 (c) 519.49 225.33 B
+1 F
+0.52 0.1 (is tr) 126 214.33 B
+0.52 0.1 (ue.) 143.8 214.33 B
+0.1 (\0504\051) 99 199.33 S
+0.33 0.1 (If the case value range is of the form :) 126 199.33 B
+3 F
+0.33 0.1 (high) 300.48 199.33 B
+1 F
+0.33 0.1 (, a match occurs if the expr) 318.66 199.33 B
+0.33 0.1 (ession) 441.68 199.33 B
+3 F
+0.33 0.1 (c) 472.67 199.33 B
+1 18 Q
+0.59 0.18 (.) 479.44 199.33 B
+1 10 Q
+0.33 0.1 (LE) 484.12 199.33 B
+1 18 Q
+0.59 0.18 (.) 496.54 199.33 B
+3 10 Q
+0.33 0.1 (high) 503.82 199.33 B
+1 F
+0.52 0.1 (is tr) 126 188.33 B
+0.52 0.1 (ue.) 143.8 188.33 B
+0.1 (\0505\051) 99 173.33 S
+1.61 0.1 (If no other selector matches and a DEF) 126 173.33 B
+1.61 0.1 (AUL) 310.63 173.33 B
+1.61 0.1 (T selector is pr) 331.86 173.33 B
+1.61 0.1 (esent, it matches the case) 402.68 173.33 B
+0.52 0.1 (index.) 126 162.33 B
+0.1 (\0506\051) 99 147.33 S
+0.52 0.1 (If no other selector matches and the DEF) 126 147.33 B
+0.52 0.1 (AUL) 312.09 147.33 B
+0.52 0.1 (T selector is absent, ther) 333.32 147.33 B
+0.52 0.1 (e is no match.) 443.9 147.33 B
+0.38 0.1 (The block following the CASE statement containing the matching selector) 72 130.33 B
+0.38 0.1 (, if any) 407.3 130.33 B
+0.38 0.1 (, is executed.  This) 437.87 130.33 B
+0.52 0.1 (completes execution of the constr) 72 118.33 B
+0.52 0.1 (uct.) 224.52 118.33 B
+0.52 0.1 (At most one of the blocks of a CASE constr) 72 100.33 B
+0.52 0.1 (uct is executed.) 270.19 100.33 B
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 697.33 S
+0.1 (3) 30 686.33 S
+0.1 (4) 30 675.33 S
+0.1 (5) 30 664.33 S
+0.1 (6) 30 653.33 S
+0.1 (7) 30 642.33 S
+0.1 (8) 30 625.33 S
+0.1 (9) 30 613.33 S
+0.1 (10) 30 601.33 S
+0.1 (11) 30 583.33 S
+0.1 (12) 30 571.33 S
+0.1 (13) 30 555.33 S
+0.1 (14) 30 538.33 S
+0.1 (15) 30 526.33 S
+0.1 (16) 30 514.33 S
+0.1 (17) 30 502.33 S
+0.1 (18) 30 484.33 S
+0.1 (19) 30 472.33 S
+0.1 (20) 30 460.33 S
+0.1 (21) 30 444.33 S
+0.1 (22) 30 433.33 S
+0.1 (23) 30 422.33 S
+0.1 (24) 30 407.33 S
+0.1 (25) 30 392.33 S
+0.1 (26) 30 381.33 S
+0.1 (27) 30 358.33 S
+0.1 (28) 30 340.33 S
+0.1 (29) 30 328.33 S
+0.1 (30) 30 316.33 S
+0.1 (31) 30 304.33 S
+0.1 (32) 30 288.33 S
+0.1 (33) 30 277.33 S
+0.1 (34) 30 266.33 S
+0.1 (35) 30 251.33 S
+0.1 (36) 30 240.33 S
+0.1 (37) 30 225.33 S
+0.1 (38) 30 214.33 S
+0.1 (39) 30 199.33 S
+0.1 (40) 30 188.33 S
+0.1 (41) 30 173.33 S
+0.1 (42) 30 162.33 S
+0.1 (43) 30 147.33 S
+0.1 (44) 30 130.33 S
+0.1 (45) 30 118.33 S
+0.1 (46) 30 100.33 S
+FMENDPAGE
+%%EndPage: "124" 4
+%%Page: "125" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(JUN 1997) 72 748 T
+( WORKING DRAFT) 247.32 748 T
+(J3/97-007) 465.36 748 T
+(JUN 1997) 72 34.67 T
+(WORKING DRAFT) 249 34.67 T
+0 10 Q
+(125) 505.2 34.67 T
+1 F
+1.09 0.1 (A CASE statement shall not be a branch tar) 72 713.33 B
+1.09 0.1 (get statement.  It is permissible to branch to an END) 275.54 713.33 B
+0.52 0.1 (SELECT statement only fr) 72 701.33 B
+0.52 0.1 (om within the CASE constr) 190.36 701.33 B
+0.52 0.1 (uct.) 315.48 701.33 B
+0 F
+0.73 0.1 (8.1.3.3) 72 677.33 B
+0.73 0.1 (Examples of C) 114.9 677.33 B
+0.73 0.1 (ASE constr) 186.45 677.33 B
+0.73 0.1 (ucts) 238.37 677.33 B
+2 F
+(NOTE 8.6) 90 653.33 T
+90.12 521.12 521.88 649.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (An integer signum function:) 92 641.33 B
+4 9 Q
+0.09 (INTEGER) 92 625 S
+0.09 (FUNCTION) 135.92 625 S
+0.09 (SIGNUM) 185.33 625 S
+0.09 (\050N\051) 223.76 625 S
+0.09 (SELECT) 92 614 S
+0.09 (CASE) 130.43 614 S
+0.09 (\050N\051) 157.88 614 S
+0.09 (CASE) 92 603 S
+0.09 (\050:-1\051) 119.45 603 S
+0.09 (SIGNUM) 108.47 592 S
+0.09 (=) 146.9 592 S
+0.09 (-1) 157.88 592 S
+0.09 (CASE) 92 581 S
+0.09 (\0500\051) 119.45 581 S
+0.09 (SIGNUM) 108.47 570 S
+0.09 (=) 146.9 570 S
+0.09 (0) 157.88 570 S
+0.09 (CASE) 92 559 S
+0.09 (\0501:\051) 119.45 559 S
+0.09 (SIGNUM) 108.47 548 S
+0.09 (=) 146.9 548 S
+0.09 (1) 157.88 548 S
+0.09 (END) 92 537 S
+0.09 (SELECT) 113.96 537 S
+0.09 (END) 92 526 S
+2 10 Q
+(NOTE 8.7) 90 502.33 T
+90.12 260.12 521.88 498.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (A code fragment to check for balanced par) 92 490.33 B
+0.52 0.1 (entheses:) 287.25 490.33 B
+4 9 Q
+0.09 (CHARACTER) 92 474 S
+0.09 (\05080\051) 146.9 474 S
+0.09 (::) 174.35 474 S
+0.09 (LINE) 190.82 474 S
+0.09 (...) 108.47 463 S
+0.09 (LEVEL=0) 92 452 S
+0.09 (DO) 92 441 S
+0.09 (I) 108.47 441 S
+0.09 (=) 119.45 441 S
+0.09 (1,) 130.43 441 S
+0.09 (80) 146.9 441 S
+0.09 (CHECK_PARENS:) 108.47 430 S
+0.09 (SELECT) 185.33 430 S
+0.09 (CASE) 223.76 430 S
+0.09 (\050LINE) 251.21 430 S
+0.09 (\050I:I\051\051) 284.15 430 S
+0.09 (CASE) 108.47 419 S
+0.09 (\050'\050'\051) 135.92 419 S
+0.09 (LEVEL) 124.94 408 S
+0.09 (=) 157.88 408 S
+0.09 (LEVEL) 168.86 408 S
+0.09 (+) 201.8 408 S
+0.09 (1) 212.78 408 S
+0.09 (CASE) 108.47 397 S
+0.09 (\050'\051'\051) 135.92 397 S
+0.09 (LEVEL) 124.94 386 S
+0.09 (=) 157.88 386 S
+0.09 (LEVEL) 168.86 386 S
+0.09 (-) 201.8 386 S
+0.09 (1) 212.78 386 S
+0.09 (IF) 124.94 375 S
+0.09 (\050LEVEL) 141.41 375 S
+0.09 (.LT.) 179.84 375 S
+0.09 (0\051) 207.29 375 S
+0.09 (THEN) 223.76 375 S
+0.09 (PRINT) 141.41 364 S
+0.09 (*,) 174.35 364 S
+0.09 ('UNEXPECTED) 190.82 364 S
+0.09 (RIGHT) 256.7 364 S
+0.09 (PARENTHESIS') 289.64 364 S
+0.09 (EXIT) 141.41 353 S
+0.09 (END) 124.94 342 S
+0.09 (IF) 146.9 342 S
+0.09 (CASE) 108.47 331 S
+0.09 (DEFAULT) 135.92 331 S
+0.09 (!) 124.94 320 S
+0.09 (Ignore) 135.92 320 S
+0.09 (all) 174.35 320 S
+0.09 (other) 196.31 320 S
+0.09 (characters) 229.25 320 S
+0.09 (END) 108.47 309 S
+0.09 (SELECT) 130.43 309 S
+0.09 (CHECK_PARENS) 168.86 309 S
+0.09 (END) 92 298 S
+0.09 (DO) 113.96 298 S
+0.09 (IF) 92 287 S
+0.09 (\050LEVEL) 108.47 287 S
+0.09 (.GT.) 146.9 287 S
+0.09 (0\051) 174.35 287 S
+0.09 (THEN) 190.82 287 S
+0.09 (PRINT) 108.47 276 S
+0.09 (*,) 141.41 276 S
+0.09 ('MISSING) 157.88 276 S
+0.09 (RIGHT) 207.29 276 S
+0.09 (PARENTHESIS') 240.23 276 S
+0.09 (END) 92 265 S
+0.09 (IF) 113.96 265 S
+2 10 Q
+(NOTE 8.8) 90 241.33 T
+90.12 92 521.88 237.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (The following thr) 92 229.33 B
+0.52 0.1 (ee fragments ar) 172.03 229.33 B
+0.52 0.1 (e equivalent:) 242.7 229.33 B
+4 9 Q
+0.09 (IF) 92 213 S
+0.09 (\050SILLY) 108.47 213 S
+0.09 (.EQ.) 146.9 213 S
+0.09 (1\051) 174.35 213 S
+0.09 (THEN) 190.82 213 S
+0.09 (CALL) 108.47 202 S
+0.09 (THIS) 135.92 202 S
+0.09 (ELSE) 92 191 S
+0.09 (CALL) 108.47 180 S
+0.09 (THAT) 135.92 180 S
+0.09 (END) 92 169 S
+0.09 (IF) 113.96 169 S
+0.09 (SELECT) 92 152 S
+0.09 (CASE) 130.43 152 S
+0.09 (\050SILLY) 157.88 152 S
+0.09 (.EQ.) 196.31 152 S
+0.09 (1\051) 223.76 152 S
+0.09 (CASE) 92 141 S
+0.09 (\050.TRUE.\051) 119.45 141 S
+0.09 (CALL) 108.47 130 S
+0.09 (THIS) 135.92 130 S
+0.09 (CASE) 92 119 S
+0.09 (\050.FALSE.\051) 119.45 119 S
+0.09 (CALL) 108.47 108 S
+0.09 (THAT) 135.92 108 S
+0.09 (END) 92 97 S
+0.09 (SELECT) 113.96 97 S
+90 649.88 90 521.12 2 L
+V
+0.25 H
+0 Z
+N
+522 649.88 522 521.12 2 L
+V
+N
+89.88 650 522.12 650 2 L
+V
+N
+89.88 521 522.12 521 2 L
+V
+N
+90 498.88 90 260.12 2 L
+V
+N
+522 498.88 522 260.12 2 L
+V
+N
+89.88 499 522.12 499 2 L
+V
+N
+89.88 260 522.12 260 2 L
+V
+N
+90 237.88 90 92 2 L
+V
+N
+522 237.88 522 92 2 L
+V
+N
+89.88 238 522.12 238 2 L
+V
+N
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 701.33 S
+0.1 (3) 30 677.33 S
+0.1 (4) 30 653.33 S
+0.1 (5) 30 641.33 S
+0.1 (6) 30 625.00 S
+0.1 (7) 30 614.00 S
+0.1 (8) 30 603.00 S
+0.1 (9) 30 592.00 S
+0.1 (10) 30 581.00 S
+0.1 (11) 30 570.00 S
+0.1 (12) 30 559.00 S
+0.1 (13) 30 548.00 S
+0.1 (14) 30 537.00 S
+0.1 (15) 30 526.00 S
+0.1 (16) 30 502.33 S
+0.1 (17) 30 490.33 S
+0.1 (18) 30 474.00 S
+0.1 (19) 30 463.00 S
+0.1 (20) 30 452.00 S
+0.1 (21) 30 441.00 S
+0.1 (22) 30 430.00 S
+0.1 (23) 30 419.00 S
+0.1 (24) 30 408.00 S
+0.1 (25) 30 397.00 S
+0.1 (26) 30 386.00 S
+0.1 (27) 30 375.00 S
+0.1 (28) 30 364.00 S
+0.1 (29) 30 353.00 S
+0.1 (30) 30 342.00 S
+0.1 (31) 30 331.00 S
+0.1 (32) 30 320.00 S
+0.1 (33) 30 309.00 S
+0.1 (34) 30 298.00 S
+0.1 (35) 30 287.00 S
+0.1 (36) 30 276.00 S
+0.1 (37) 30 265.00 S
+0.1 (38) 30 241.33 S
+0.1 (39) 30 229.33 S
+0.1 (40) 30 213.00 S
+0.1 (41) 30 202.00 S
+0.1 (42) 30 191.00 S
+0.1 (43) 30 180.00 S
+0.1 (44) 30 169.00 S
+0.1 (45) 30 152.00 S
+0.1 (46) 30 141.00 S
+0.1 (47) 30 130.00 S
+0.1 (48) 30 119.00 S
+0.1 (49) 30 108.00 S
+0.1 (50) 30 97.00 S
+FMENDPAGE
+%%EndPage: "125" 5
+%%Page: "126" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(J3/97-007) 72 748 T
+(WORKING DRAFT) 249 748 T
+(JUN 1997) 469.44 748 T
+0 10 Q
+(126) 72 34.67 T
+0 12 Q
+(WORKING DRAFT) 249 34.67 T
+(JUN 1997) 469.44 34.67 T
+0 11 Q
+0.77 (8.1.4) 72 513.67 P
+0.77 (DO constr) 108.96 513.67 P
+0.77 (uct) 162.31 513.67 P
+1 10 Q
+0.88 0.1 (The DO constr) 72 495.33 B
+0.88 0.1 (uct speci\336es the r) 139.49 495.33 B
+0.88 0.1 (epeated execution of a sequence of executable constr) 220.28 495.33 B
+0.88 0.1 (ucts.  Such a) 463.44 495.33 B
+0.93 0.1 (r) 72 483.33 B
+0.93 0.1 (epeated sequence is called a) 75.87 483.33 B
+2 F
+0.93 0.1 (loop) 209.46 483.33 B
+1 F
+0.93 0.1 (.  The EXIT and CYCLE statements may be used to modify the) 230.42 483.33 B
+0.52 0.1 (execution of a loop.) 72 471.33 B
+1.47 0.1 (The number of iterations of a loop may be determined at the beginning of execution of the DO) 72 453.33 B
+0.22 0.1 (constr) 72 441.33 B
+0.22 0.1 (uct, or may be left inde\336nite \050"DO for) 99.69 441.33 B
+0.22 0.1 (ever" or DO) 269.84 441.33 B
+0.22 0.1 (WHILE\051.  In either case, an EXIT statement) 326.88 441.33 B
+1.29 0.1 (\0508.1.4.4.4\051 anywher) 72 429.33 B
+1.29 0.1 (e in the DO constr) 158.45 429.33 B
+1.29 0.1 (uct may be executed to terminate the loop immediately) 245.49 429.33 B
+1.29 0.1 (.  A) 503.74 429.33 B
+0.52 0.1 (particular iteration of the loop may be curtailed by executing a CYCLE statement \0508.1.4.4.3\051.) 72 417.33 B
+0 F
+0.73 0.1 (8.1.4.1) 72 393.33 B
+0.73 0.1 (For) 114.9 393.33 B
+0.73 0.1 (ms of the DO constr) 129.75 393.33 B
+0.73 0.1 (uct) 229.15 393.33 B
+1 F
+0.52 0.1 (The DO constr) 72 375.33 B
+0.52 0.1 (uct may be written in either a block form) 138.77 375.33 B
+1 8 Q
+0.42 0.08 (or a nonblock form.) 330.64 375.33 B
+1 10 Q
+0.1 (R816) 72 357.33 S
+3 F
+0.1 (do-) 108 357.33 S
+0.1 (construct) 121.07 357.33 S
+2 F
+0.1 (is) 234 357.33 S
+3 F
+0.52 0.1 (block-) 252 357.33 B
+0.52 0.1 (do-) 276.29 357.33 B
+0.52 0.1 (construct) 289.36 357.33 B
+2 8 Q
+0.08 (or) 234 346.67 S
+3 F
+0.42 0.08 (nonblock-) 252 346.67 B
+0.42 0.08 (do-) 284.12 346.67 B
+0.42 0.08 (construct) 294.58 346.67 B
+0 10 Q
+0.73 0.1 (8.1.4.1.1) 72 323.33 B
+0.73 0.1 (For) 123.5 323.33 B
+0.73 0.1 (m of the bloc) 138.35 323.33 B
+0.73 0.1 (k DO constr) 205.87 323.33 B
+0.73 0.1 (uct) 264.82 323.33 B
+1 F
+0.1 (R817) 72 305.33 S
+3 F
+0.1 (block-) 108 305.33 S
+0.1 (do-) 132.29 305.33 S
+0.1 (construct) 145.36 305.33 S
+2 F
+0.1 (is) 234 305.33 S
+3 F
+0.52 0.1 (do-) 252 305.33 B
+0.52 0.1 (stmt) 265.07 305.33 B
+0.52 0.1 (do-) 270 293.33 B
+0.52 0.1 (block) 283.07 293.33 B
+0.52 0.1 (end-) 270 281.33 B
+0.52 0.1 (do) 288.18 281.33 B
+1 F
+0.1 (R818) 72 263.33 S
+3 F
+0.1 (do-) 108 263.33 S
+0.1 (stmt) 121.07 263.33 S
+2 F
+0.1 (is) 234 263.33 S
+3 F
+0.52 0.1 (label-) 252 263.33 B
+0.52 0.1 (do-) 274.45 263.33 B
+0.52 0.1 (stmt) 287.52 263.33 B
+2 F
+0.1 (or) 234 251.33 S
+3 F
+0.52 0.1 (nonlabel-) 252 251.33 B
+0.52 0.1 (do-) 290.31 251.33 B
+0.52 0.1 (stmt) 303.38 251.33 B
+1 F
+0.1 (R819) 72 233.33 S
+3 F
+0.1 (label-) 108 233.33 S
+0.1 (do-) 130.45 233.33 S
+0.1 (stmt) 143.52 233.33 S
+2 F
+0.1 (is) 234 233.33 S
+1 F
+0.52 0.1 ([) 252 233.33 B
+3 F
+0.52 0.1 (do-) 258.55 233.33 B
+0.52 0.1 (construct-) 271.62 233.33 B
+0.52 0.1 (name) 314.09 233.33 B
+1 F
+0.52 0.1 ( : ] DO) 336.16 233.33 B
+3 F
+0.52 0.1 (label) 370.47 233.33 B
+1 F
+0.52 0.1 ( [) 389.49 233.33 B
+3 F
+0.52 0.1 (loop-) 399.16 233.33 B
+0.52 0.1 (contr) 419.65 233.33 B
+0.52 0.1 (ol) 441.26 233.33 B
+1 F
+0.52 0.1 ( ]) 448.68 233.33 B
+0.1 (R820) 72 215.33 S
+3 F
+0.1 (nonlabel-) 108 215.33 S
+0.1 (do-) 146.31 215.33 S
+0.1 (stmt) 159.38 215.33 S
+2 F
+0.1 (is) 234 215.33 S
+1 F
+0.52 0.1 ([) 252 215.33 B
+3 F
+0.52 0.1 (do-) 258.55 215.33 B
+0.52 0.1 (construct-) 271.62 215.33 B
+0.52 0.1 (name) 314.09 215.33 B
+1 F
+0.52 0.1 (: ] DO [) 339.28 215.33 B
+3 F
+0.52 0.1 (loop-) 377.02 215.33 B
+0.52 0.1 (contr) 397.51 215.33 B
+0.52 0.1 (ol) 419.12 215.33 B
+1 F
+0.52 0.1 ( ]) 426.54 215.33 B
+0.1 (R821) 72 197.33 S
+3 F
+0.1 (loop-) 108 197.33 S
+0.1 (contr) 128.49 197.33 S
+0.1 (ol) 150.1 197.33 S
+2 F
+0.1 (is) 234 197.33 S
+1 F
+0.52 0.1 ([ , ]) 252 197.33 B
+3 F
+0.52 0.1 (do-) 270.82 197.33 B
+0.52 0.1 (variable) 283.89 197.33 B
+1 F
+0.52 0.1 ( =) 316.54 197.33 B
+3 F
+0.52 0.1 (scalar-) 328.94 197.33 B
+0.52 0.1 (int-) 356.48 197.33 B
+0.52 0.1 (expr) 371.88 197.33 B
+1 F
+0.52 0.1 (,) 389.32 197.33 B
+3 F
+0.52 0.1 (scalar-) 395.04 197.33 B
+0.52 0.1 (int-) 422.58 197.33 B
+0.52 0.1 (expr) 437.98 197.33 B
+5 F
+0.58 0.1 (n) 459.28 197.33 B
+0.58 0.1 (n) 252 185.33 B
+1 F
+0.52 0.1 ([ ,) 263.17 185.33 B
+3 F
+0.52 0.1 (scalar-) 275.44 185.33 B
+0.52 0.1 (int-) 302.98 185.33 B
+0.52 0.1 (expr) 318.38 185.33 B
+1 F
+0.52 0.1 ( ]) 336.55 185.33 B
+2 F
+0.1 (or) 234 173.33 S
+1 F
+0.52 0.1 ([ , ] WHILE \050) 252 173.33 B
+3 F
+0.52 0.1 (scalar-) 314.9 173.33 B
+0.52 0.1 (logical-) 342.44 173.33 B
+0.52 0.1 (expr) 372.86 173.33 B
+1 F
+0.52 0.1 ( \051) 391.04 173.33 B
+0.1 (R822) 72 155.33 S
+3 F
+0.1 (do-) 108 155.33 S
+0.1 (variable) 121.07 155.33 S
+2 F
+0.1 (is) 234 155.33 S
+3 F
+0.52 0.1 (scalar-) 252 155.33 B
+0.52 0.1 (int-) 279.54 155.33 B
+0.52 0.1 (variable) 294.94 155.33 B
+1 F
+0.1 (Constraint:) 72 139.33 S
+0.52 0.1 (The) 135 139.33 B
+3 F
+0.52 0.1 (do-) 155.16 139.33 B
+0.52 0.1 (variable) 168.23 139.33 B
+1 F
+0.52 0.1 ( shall be a named scalar variable of type integer) 200.88 139.33 B
+0.52 0.1 (.) 419.74 139.33 B
+0.1 (R823) 72 122.33 S
+3 F
+0.1 (do-) 108 122.33 S
+0.1 (block) 121.07 122.33 S
+2 F
+0.1 (is) 234 122.33 S
+3 F
+0.52 0.1 (block) 252 122.33 B
+1 F
+0.1 (R824) 72 104.33 S
+3 F
+0.1 (end-) 108 104.33 S
+0.1 (do) 126.18 104.33 S
+2 F
+0.1 (is) 234 104.33 S
+3 F
+0.52 0.1 (end-) 252 104.33 B
+0.52 0.1 (do-) 270.18 104.33 B
+0.52 0.1 (stmt) 283.25 104.33 B
+2 F
+0.1 (or) 234 92.33 S
+3 F
+0.52 0.1 (continue-) 252 92.33 B
+0.52 0.1 (stmt) 291.42 92.33 B
+90.12 642.12 521.88 709.88 R
+6 X
+V
+4 9 Q
+0 X
+0.09 (SELECT) 92 702 S
+0.09 (CASE) 130.43 702 S
+0.09 (\050SILLY\051) 157.88 702 S
+0.09 (CASE) 92 691 S
+0.09 (DEFAULT) 119.45 691 S
+0.09 (CALL) 108.47 680 S
+0.09 (THAT) 135.92 680 S
+0.09 (CASE) 92 669 S
+0.09 (\0501\051) 119.45 669 S
+0.09 (CALL) 108.47 658 S
+0.09 (THIS) 135.92 658 S
+0.09 (END) 92 647 S
+0.09 (SELECT) 113.96 647 S
+2 10 Q
+(NOTE 8.9) 90 623.33 T
+90.12 535.12 521.88 619.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (A code fragment showing several selections of one block:) 92 611.33 B
+4 9 Q
+0.09 (SELECT) 92 595 S
+0.09 (CASE) 130.43 595 S
+0.09 (\050N\051) 157.88 595 S
+0.09 (CASE) 92 584 S
+0.09 (\0501,) 119.45 584 S
+0.09 (3:5,) 141.41 584 S
+0.09 (8\051) 168.86 584 S
+0.09 (!) 190.82 584 S
+0.09 (Selects) 201.8 584 S
+0.09 (1,) 245.72 584 S
+0.09 (3,) 262.19 584 S
+0.09 (4,) 278.66 584 S
+0.09 (5,) 295.13 584 S
+0.09 (8) 311.6 584 S
+0.09 (CALL) 108.47 573 S
+0.09 (SUB) 135.92 573 S
+0.09 (CASE) 92 562 S
+0.09 (DEFAULT) 119.45 562 S
+0.09 (CALL) 108.47 551 S
+0.09 (OTHER) 135.92 551 S
+0.09 (END) 92 540 S
+0.09 (SELECT) 113.96 540 S
+2 10 Q
+(NOTE 8.8) 90 713.33 T
+6 F
+(\050Continued\051) 136.94 713.33 T
+90 709.88 90 642.12 2 L
+V
+0.25 H
+0 Z
+N
+522 709.88 522 642.12 2 L
+V
+N
+89.88 710 522.12 710 2 L
+V
+N
+89.88 642 522.12 642 2 L
+V
+N
+90 619.88 90 535.12 2 L
+V
+N
+522 619.88 522 535.12 2 L
+V
+N
+89.88 620 522.12 620 2 L
+V
+N
+89.88 535 522.12 535 2 L
+V
+N
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 702.00 S
+0.1 (3) 30 691.00 S
+0.1 (4) 30 680.00 S
+0.1 (5) 30 669.00 S
+0.1 (6) 30 658.00 S
+0.1 (7) 30 647.00 S
+0.1 (8) 30 623.33 S
+0.1 (9) 30 611.33 S
+0.1 (10) 30 595.00 S
+0.1 (11) 30 584.00 S
+0.1 (12) 30 573.00 S
+0.1 (13) 30 562.00 S
+0.1 (14) 30 551.00 S
+0.1 (15) 30 540.00 S
+0.1 (16) 30 513.67 S
+0.1 (17) 30 495.33 S
+0.1 (18) 30 483.33 S
+0.1 (19) 30 471.33 S
+0.1 (20) 30 453.33 S
+0.1 (21) 30 441.33 S
+0.1 (22) 30 429.33 S
+0.1 (23) 30 417.33 S
+0.1 (24) 30 393.33 S
+0.1 (25) 30 375.33 S
+0.1 (26) 30 357.33 S
+0.1 (27) 30 346.67 S
+0.1 (28) 30 323.33 S
+0.1 (29) 30 305.33 S
+0.1 (30) 30 293.33 S
+0.1 (31) 30 281.33 S
+0.1 (32) 30 263.33 S
+0.1 (33) 30 251.33 S
+0.1 (34) 30 233.33 S
+0.1 (35) 30 215.33 S
+0.1 (36) 30 197.33 S
+0.1 (37) 30 185.33 S
+0.1 (38) 30 173.33 S
+0.1 (39) 30 155.33 S
+0.1 (40) 30 139.33 S
+0.1 (41) 30 122.33 S
+0.1 (42) 30 104.33 S
+0.1 (43) 30 92.33 S
+FMENDPAGE
+%%EndPage: "126" 6
+%%Page: "127" 7
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(JUN 1997) 72 748 T
+( WORKING DRAFT) 247.32 748 T
+(J3/97-007) 465.36 748 T
+(JUN 1997) 72 34.67 T
+(WORKING DRAFT) 249 34.67 T
+0 10 Q
+(127) 505.2 34.67 T
+1 F
+0.1 (R825) 72 713.33 S
+3 F
+0.1 (end-) 108 713.33 S
+0.1 (do-) 126.18 713.33 S
+0.1 (stmt) 139.25 713.33 S
+2 F
+0.1 (is) 234 713.33 S
+1 F
+0.52 0.1 (END DO [) 252 713.33 B
+3 F
+0.52 0.1 (do-) 303.05 713.33 B
+0.52 0.1 (construct-) 316.12 713.33 B
+0.52 0.1 (name) 358.59 713.33 B
+1 F
+0.52 0.1 ( ]) 380.66 713.33 B
+0.1 (Constraint:) 72 697.33 S
+4.83 0.1 (If the) 135 697.33 B
+3 F
+4.83 0.1 (do-) 170.94 697.33 B
+4.83 0.1 (stmt) 184.01 697.33 B
+1 F
+4.83 0.1 ( of a) 202.74 697.33 B
+3 F
+4.83 0.1 (block-) 239.13 697.33 B
+4.83 0.1 (do-) 263.42 697.33 B
+4.83 0.1 (construct) 276.49 697.33 B
+1 F
+4.83 0.1 ( is identi\336ed by a) 315.53 697.33 B
+3 F
+4.83 0.1 (do-) 420.09 697.33 B
+4.83 0.1 (construct-) 433.16 697.33 B
+4.83 0.1 (name) 475.63 697.33 B
+1 F
+4.83 0.1 (, the) 497.7 697.33 B
+1.45 0.1 (corr) 135 686.33 B
+1.45 0.1 (esponding) 153.02 686.33 B
+3 F
+1.45 0.1 (end-) 204.69 686.33 B
+1.45 0.1 (do) 222.87 686.33 B
+1 F
+1.45 0.1 ( shall be an) 232.51 686.33 B
+3 F
+1.45 0.1 (end-) 291.62 686.33 B
+1.45 0.1 (do-) 309.8 686.33 B
+1.45 0.1 (stmt) 322.87 686.33 B
+1 F
+1.45 0.1 ( specifying the same) 341.6 686.33 B
+3 F
+1.45 0.1 (do-) 441.79 686.33 B
+1.45 0.1 (construct-) 454.86 686.33 B
+1.45 0.1 (name) 497.33 686.33 B
+1 F
+1.45 0.1 (.) 519.4 686.33 B
+2.98 0.1 (If the) 135 675.33 B
+3 F
+2.98 0.1 (do-) 167.23 675.33 B
+2.98 0.1 (stmt) 180.29 675.33 B
+1 F
+2.98 0.1 ( of a) 199.02 675.33 B
+3 F
+2.98 0.1 (block-) 229.85 675.33 B
+2.98 0.1 (do-) 254.14 675.33 B
+2.98 0.1 (construct) 267.21 675.33 B
+1 F
+2.98 0.1 ( is not identi\336ed by a) 306.25 675.33 B
+3 F
+2.98 0.1 (do-) 421.94 675.33 B
+2.98 0.1 (construct-) 435.01 675.33 B
+2.98 0.1 (name) 477.48 675.33 B
+1 F
+2.98 0.1 (, the) 499.55 675.33 B
+0.52 0.1 (corr) 135 664.33 B
+0.52 0.1 (esponding) 153.02 664.33 B
+3 F
+0.52 0.1 (end-) 203.76 664.33 B
+0.52 0.1 (do) 221.94 664.33 B
+1 F
+0.52 0.1 ( shall not specify a) 231.58 664.33 B
+3 F
+0.52 0.1 (do-) 320.48 664.33 B
+0.52 0.1 (construct-) 333.55 664.33 B
+0.52 0.1 (name) 376.02 664.33 B
+1 F
+0.52 0.1 (.) 398.09 664.33 B
+0.1 (Constraint:) 72 649.33 S
+0.52 0.1 (If the) 135 649.33 B
+3 F
+0.52 0.1 (do-) 162.31 649.33 B
+0.52 0.1 (stmt) 175.38 649.33 B
+1 F
+0.52 0.1 ( is a) 194.11 649.33 B
+3 F
+0.52 0.1 (nonlabel-) 215.92 649.33 B
+0.52 0.1 (do-) 254.23 649.33 B
+0.52 0.1 (stmt) 267.3 649.33 B
+1 F
+0.52 0.1 (, the corr) 286.03 649.33 B
+0.52 0.1 (esponding) 327.06 649.33 B
+3 F
+0.52 0.1 (end-) 377.8 649.33 B
+0.52 0.1 (do) 395.98 649.33 B
+1 F
+0.52 0.1 ( shall be an) 405.62 649.33 B
+3 F
+0.52 0.1 (end-) 461.02 649.33 B
+0.52 0.1 (do-) 479.2 649.33 B
+0.52 0.1 (stmt) 492.27 649.33 B
+1 F
+0.52 0.1 (.) 510.99 649.33 B
+0.1 (Constraint:) 72 634.33 S
+0.99 0.1 (If the) 135 634.33 B
+3 F
+0.99 0.1 (do-) 163.25 634.33 B
+0.99 0.1 (stmt) 176.32 634.33 B
+1 F
+0.99 0.1 ( is a) 195.05 634.33 B
+3 F
+0.99 0.1 (label-) 218.26 634.33 B
+0.99 0.1 (do-) 240.71 634.33 B
+0.99 0.1 (stmt) 253.78 634.33 B
+1 F
+0.99 0.1 (, the corr) 272.51 634.33 B
+0.99 0.1 (esponding) 314.48 634.33 B
+3 F
+0.99 0.1 (end-) 365.69 634.33 B
+0.99 0.1 (do) 383.87 634.33 B
+1 F
+0.99 0.1 ( shall be identi\336ed with the) 393.51 634.33 B
+0.52 0.1 (same) 135 623.33 B
+3 F
+0.52 0.1 (label) 161.38 623.33 B
+1 F
+0.52 0.1 (.) 180.4 623.33 B
+0 F
+0.73 0.1 (8.1.4.1.2) 72 600.33 B
+0.73 0.1 (For) 123.5 600.33 B
+0.73 0.1 (m of the nonbloc) 138.35 600.33 B
+0.73 0.1 (k DO constr) 224.57 600.33 B
+0.73 0.1 (uct) 283.52 600.33 B
+1 8 Q
+0.08 (R826) 72 584.67 S
+3 F
+0.08 (nonblock-) 108 584.67 S
+0.08 (do-) 140.12 584.67 S
+0.08 (construct) 150.57 584.67 S
+2 F
+0.08 (is) 234 584.67 S
+3 F
+0.42 0.08 (action-) 252 584.67 B
+0.42 0.08 (term-) 274.92 584.67 B
+0.42 0.08 (do-) 293.1 584.67 B
+0.42 0.08 (construct) 303.55 584.67 B
+2 F
+0.08 (or) 234 574.67 S
+3 F
+0.42 0.08 (outer-) 252 574.67 B
+0.42 0.08 (shar) 272.03 574.67 B
+0.42 0.08 (ed-) 285.98 574.67 B
+0.42 0.08 (do-) 296 574.67 B
+0.42 0.08 (construct) 306.45 574.67 B
+1 F
+0.08 (R827) 72 559.67 S
+3 F
+0.08 (action-) 108 559.67 S
+0.08 (term-) 130.92 559.67 S
+0.08 (do-) 149.1 559.67 S
+0.08 (construct) 159.55 559.67 S
+2 F
+0.08 (is) 234 559.67 S
+3 F
+0.42 0.08 (label-) 252 559.67 B
+0.42 0.08 (do-) 269.96 559.67 B
+0.42 0.08 (stmt) 280.42 559.67 B
+0.42 0.08 (do-) 270 549.67 B
+0.42 0.08 (body) 280.46 549.67 B
+0.42 0.08 (do-) 270 539.67 B
+0.42 0.08 (term-) 280.46 539.67 B
+0.42 0.08 (action-) 298.63 539.67 B
+0.42 0.08 (stmt) 321.55 539.67 B
+1 F
+0.08 (R828) 72 524.67 S
+3 F
+0.08 (do-) 108 524.67 S
+0.08 (body) 118.46 524.67 S
+2 F
+0.08 (is) 234 524.67 S
+1 F
+0.42 0.08 ([) 252 524.67 B
+3 F
+0.42 0.08 (execution-) 257.24 524.67 B
+0.42 0.08 (part-) 291.52 524.67 B
+0.42 0.08 (construct) 307.91 524.67 B
+1 F
+0.42 0.08 ( ] ...) 339.14 524.67 B
+0.08 (R829) 72 509.67 S
+3 F
+0.08 (do-) 108 509.67 S
+0.08 (term-) 118.46 509.67 S
+0.08 (action-) 136.63 509.67 S
+0.08 (stmt) 159.55 509.67 S
+2 F
+0.08 (is) 234 509.67 S
+3 F
+0.42 0.08 (action-) 252 509.67 B
+0.42 0.08 (stmt) 274.92 509.67 B
+1 F
+0.08 (Constraint:) 72 496.67 S
+1.82 0.08 (A) 135 496.67 B
+3 F
+1.82 0.08 (do-) 145.2 496.67 B
+1.82 0.08 (term-) 155.66 496.67 B
+1.82 0.08 (action-) 173.83 496.67 B
+1.82 0.08 (stmt) 196.75 496.67 B
+1 F
+1.82 0.08 ( shall not be a) 211.74 496.67 B
+3 F
+1.82 0.08 (continue-) 272.68 496.67 B
+1.82 0.08 (stmt) 304.22 496.67 B
+1 F
+1.82 0.08 (, a) 319.2 496.67 B
+3 F
+1.82 0.08 (goto-) 333.16 496.67 B
+1.82 0.08 (stmt) 349.99 496.67 B
+1 F
+1.82 0.08 (, a) 364.97 496.67 B
+3 F
+1.82 0.08 (r) 378.92 496.67 B
+1.82 0.08 (eturn-) 381.97 496.67 B
+1.82 0.08 (stmt) 402.9 496.67 B
+1 F
+1.82 0.08 (, a) 417.88 496.67 B
+3 F
+1.82 0.08 (stop-) 431.83 496.67 B
+1.82 0.08 (stmt) 448.23 496.67 B
+1 F
+1.82 0.08 (, an) 463.21 496.67 B
+3 F
+1.82 0.08 (exit-) 481.9 496.67 B
+1.82 0.08 (stmt) 496.96 496.67 B
+1 F
+1.82 0.08 (, a) 511.94 496.67 B
+3 F
+0.42 0.08 (cycle-) 135 487.67 B
+0.42 0.08 (stmt) 153.99 487.67 B
+1 F
+0.42 0.08 (, an) 168.98 487.67 B
+3 F
+0.42 0.08 (end-) 184.86 487.67 B
+0.42 0.08 (function-) 199.41 487.67 B
+0.42 0.08 (stmt) 230.05 487.67 B
+1 F
+0.42 0.08 (, an) 245.04 487.67 B
+3 F
+0.42 0.08 (end-) 260.93 487.67 B
+0.42 0.08 (subr) 275.47 487.67 B
+0.42 0.08 (outine-) 290.02 487.67 B
+0.42 0.08 (stmt) 313.69 487.67 B
+1 F
+0.42 0.08 (, an) 328.68 487.67 B
+3 F
+0.42 0.08 (end-) 344.57 487.67 B
+0.42 0.08 (pr) 359.11 487.67 B
+0.42 0.08 (ogram-) 366.24 487.67 B
+0.42 0.08 (stmt) 389.82 487.67 B
+1 F
+0.42 0.08 (,) 404.8 487.67 B
+0.42 0.08 (or an) 409.38 487.67 B
+3 F
+0.42 0.08 (arithmetic-) 430.88 487.67 B
+0.42 0.08 (if-) 467.45 487.67 B
+0.42 0.08 (stmt) 474.8 487.67 B
+1 F
+0.42 0.08 (.) 489.79 487.67 B
+0.08 (Constraint:) 72 475.67 S
+0.24 0.08 (The) 135 475.67 B
+3 F
+0.24 0.08 (do-) 150.95 475.67 B
+0.24 0.08 (term-) 161.41 475.67 B
+0.24 0.08 (action-) 179.59 475.67 B
+0.24 0.08 (stmt) 202.51 475.67 B
+1 F
+0.24 0.08 ( shall be identi\336ed with a label and the corr) 217.49 475.67 B
+0.24 0.08 (esponding) 376.34 475.67 B
+3 F
+0.24 0.08 (label-) 416.75 475.67 B
+0.24 0.08 (do-) 434.71 475.67 B
+0.24 0.08 (stmt) 445.17 475.67 B
+1 F
+0.24 0.08 ( shall r) 460.15 475.67 B
+0.24 0.08 (efer to the) 485 475.67 B
+0.42 0.08 (same label.) 135 466.67 B
+0.08 (R830) 72 452.67 S
+3 F
+0.08 (outer-) 108 452.67 S
+0.08 (shar) 128.03 452.67 S
+0.08 (ed-) 141.98 452.67 S
+0.08 (do-) 152 452.67 S
+0.08 (construct) 162.46 452.67 S
+2 F
+0.08 (is) 234 452.67 S
+3 F
+0.42 0.08 (label-) 252 452.67 B
+0.42 0.08 (do-) 269.96 452.67 B
+0.42 0.08 (stmt) 280.42 452.67 B
+0.42 0.08 (do-) 270 442.67 B
+0.42 0.08 (body) 280.46 442.67 B
+0.42 0.08 (shar) 270 432.67 B
+0.42 0.08 (ed-) 283.95 432.67 B
+0.42 0.08 (term-) 293.97 432.67 B
+0.42 0.08 (do-) 312.14 432.67 B
+0.42 0.08 (construct) 322.6 432.67 B
+1 F
+0.08 (R831) 72 417.67 S
+3 F
+0.08 (shar) 108 417.67 S
+0.08 (ed-) 121.95 417.67 S
+0.08 (term-) 131.97 417.67 S
+0.08 (do-) 150.14 417.67 S
+0.08 (construct) 160.6 417.67 S
+2 F
+0.08 (is) 234 417.67 S
+3 F
+0.42 0.08 (outer-) 252 417.67 B
+0.42 0.08 (shar) 272.03 417.67 B
+0.42 0.08 (ed-) 285.98 417.67 B
+0.42 0.08 (do-) 296 417.67 B
+0.42 0.08 (construct) 306.45 417.67 B
+2 F
+0.08 (or) 234 407.67 S
+3 F
+0.42 0.08 (inner-) 252 407.67 B
+0.42 0.08 (shar) 272.49 407.67 B
+0.42 0.08 (ed-) 286.44 407.67 B
+0.42 0.08 (do-) 296.45 407.67 B
+0.42 0.08 (construct) 306.91 407.67 B
+1 F
+0.08 (R832) 72 392.67 S
+3 F
+0.08 (inner-) 108 392.67 S
+0.08 (shar) 128.49 392.67 S
+0.08 (ed-) 142.44 392.67 S
+0.08 (do-) 152.46 392.67 S
+0.08 (construct) 162.91 392.67 S
+2 F
+0.08 (is) 234 392.67 S
+3 F
+0.42 0.08 (label-) 252 392.67 B
+0.42 0.08 (do-) 269.96 392.67 B
+0.42 0.08 (stmt) 280.42 392.67 B
+0.42 0.08 (do-) 270 382.67 B
+0.42 0.08 (body) 280.46 382.67 B
+0.42 0.08 (do-) 270 372.67 B
+0.42 0.08 (term-) 280.46 372.67 B
+0.42 0.08 (shar) 298.63 372.67 B
+0.42 0.08 (ed-) 312.58 372.67 B
+0.42 0.08 (stmt) 322.6 372.67 B
+1 F
+0.08 (R833) 72 357.67 S
+3 F
+0.08 (do-) 108 357.67 S
+0.08 (term-) 118.46 357.67 S
+0.08 (shar) 136.63 357.67 S
+0.08 (ed-) 150.58 357.67 S
+0.08 (stmt) 160.6 357.67 S
+2 F
+0.08 (is) 234 357.67 S
+3 F
+0.42 0.08 (action-) 252 357.67 B
+0.42 0.08 (stmt) 274.92 357.67 B
+1 F
+0.08 (Constraint:) 72 344.67 S
+2.27 0.08 (A) 135 344.67 B
+3 F
+2.27 0.08 (do-) 145.65 344.67 B
+2.27 0.08 (term-) 156.11 344.67 B
+2.27 0.08 (shar) 174.28 344.67 B
+2.27 0.08 (ed-) 188.23 344.67 B
+2.27 0.08 (stmt) 198.25 344.67 B
+1 F
+2.27 0.08 ( shall not be a) 213.23 344.67 B
+3 F
+2.27 0.08 (goto-) 276.44 344.67 B
+2.27 0.08 (stmt) 293.27 344.67 B
+1 F
+2.27 0.08 (, a) 308.25 344.67 B
+3 F
+2.27 0.08 (r) 323.11 344.67 B
+2.27 0.08 (eturn-) 326.15 344.67 B
+2.27 0.08 (stmt) 347.08 344.67 B
+1 F
+2.27 0.08 (, a) 362.07 344.67 B
+3 F
+2.27 0.08 (stop-) 376.92 344.67 B
+2.27 0.08 (stmt) 393.31 344.67 B
+1 F
+2.27 0.08 (, an) 408.29 344.67 B
+3 F
+2.27 0.08 (exit-) 427.88 344.67 B
+2.27 0.08 (stmt) 442.95 344.67 B
+1 F
+2.27 0.08 (, a) 457.93 344.67 B
+3 F
+2.27 0.08 (cycle-) 472.78 344.67 B
+2.27 0.08 (stmt) 491.77 344.67 B
+1 F
+2.27 0.08 (, an) 506.76 344.67 B
+3 F
+0.42 0.08 (end-) 135 335.67 B
+0.42 0.08 (function-) 149.54 335.67 B
+0.42 0.08 (stmt) 180.19 335.67 B
+1 F
+0.42 0.08 (, an) 195.18 335.67 B
+3 F
+0.42 0.08 (end-) 211.06 335.67 B
+0.42 0.08 (subr) 225.61 335.67 B
+0.42 0.08 (outine-) 240.16 335.67 B
+0.42 0.08 (stmt) 263.83 335.67 B
+1 F
+0.42 0.08 (, an) 278.81 335.67 B
+3 F
+0.42 0.08 (end-) 294.7 335.67 B
+0.42 0.08 (pr) 309.24 335.67 B
+0.42 0.08 (ogram-) 316.37 335.67 B
+0.42 0.08 (stmt) 339.96 335.67 B
+1 F
+0.42 0.08 (, or an) 354.94 335.67 B
+3 F
+0.42 0.08 (arithmetic-) 381.01 335.67 B
+0.42 0.08 (if-) 417.59 335.67 B
+0.42 0.08 (stmt) 424.94 335.67 B
+1 F
+0.42 0.08 (.) 439.92 335.67 B
+0.08 (Constraint:) 72 323.67 S
+5.11 0.08 (The) 135 323.67 B
+3 F
+5.11 0.08 (do-) 155.82 323.67 B
+5.11 0.08 (term-) 166.28 323.67 B
+5.11 0.08 (shar) 184.46 323.67 B
+5.11 0.08 (ed-) 198.41 323.67 B
+5.11 0.08 (stmt) 208.42 323.67 B
+1 F
+5.11 0.08 ( shall be identi\336ed with a label and all of the) 223.41 323.67 B
+3 F
+5.11 0.08 (label-) 442.14 323.67 B
+5.11 0.08 (do-) 460.1 323.67 B
+5.11 0.08 (stmt) 470.55 323.67 B
+1 F
+5.11 0.08 (s of the) 485.54 323.67 B
+3 F
+0.42 0.08 (shar) 135 314.67 B
+0.42 0.08 (ed-) 148.95 314.67 B
+0.42 0.08 (term-) 158.97 314.67 B
+0.42 0.08 (do-) 177.14 314.67 B
+0.42 0.08 (construct) 187.6 314.67 B
+1 F
+0.42 0.08 ( shall r) 218.83 314.67 B
+0.42 0.08 (efer to the same label.) 244.02 314.67 B
+0.82 0.08 (The) 72 300.67 B
+3 F
+0.82 0.08 (do-) 88.53 300.67 B
+0.82 0.08 (term-) 98.99 300.67 B
+0.82 0.08 (action-) 117.17 300.67 B
+0.82 0.08 (stmt) 140.08 300.67 B
+1 F
+0.82 0.08 (,) 155.07 300.67 B
+3 F
+0.82 0.08 (do-) 160.05 300.67 B
+0.82 0.08 (term-) 170.51 300.67 B
+0.82 0.08 (shar) 188.68 300.67 B
+0.82 0.08 (ed-) 202.63 300.67 B
+0.82 0.08 (stmt) 212.65 300.67 B
+1 F
+0.82 0.08 (, or) 227.63 300.67 B
+3 F
+0.82 0.08 (shar) 243.2 300.67 B
+0.82 0.08 (ed-) 257.15 300.67 B
+0.82 0.08 (term-) 267.17 300.67 B
+0.82 0.08 (do-) 285.35 300.67 B
+0.82 0.08 (construct) 295.8 300.67 B
+1 F
+0.82 0.08 ( following the) 327.03 300.67 B
+3 F
+0.82 0.08 (do-) 381.95 300.67 B
+0.82 0.08 (body) 392.41 300.67 B
+1 F
+0.82 0.08 ( of a nonblock DO constr) 407.98 300.67 B
+0.82 0.08 (uct is) 501.99 300.67 B
+0.42 0.08 (called the) 72 290.67 B
+2 F
+0.42 0.08 (DO termination) 109.74 290.67 B
+1 F
+0.42 0.08 ( of that constr) 169.7 290.67 B
+0.42 0.08 (uct.) 220.73 290.67 B
+0.47 0.08 (W) 72 275.67 B
+0.47 0.08 (ithin a scoping unit, all DO constr) 79.64 275.67 B
+0.47 0.08 (ucts whose DO statements r) 204.6 275.67 B
+0.47 0.08 (efer to the same label ar) 307.34 275.67 B
+0.47 0.08 (e nonblock DO constr) 395.46 275.67 B
+0.47 0.08 (ucts, and ar) 475.25 275.67 B
+0.47 0.08 (e) 518.09 275.67 B
+0.42 0.08 (said to shar) 72 265.67 B
+0.42 0.08 (e the statement identi\336ed by that label.) 114.44 265.67 B
+0 10 Q
+0.73 0.1 (8.1.4.2) 72 242.33 B
+0.73 0.1 (Range of the DO constr) 114.9 242.33 B
+0.73 0.1 (uct) 232.2 242.33 B
+1 F
+0.39 0.1 (The) 72 224.33 B
+2 F
+0.39 0.1 (range) 92.03 224.33 B
+1 F
+0.39 0.1 ( of a block DO constr) 118.09 224.33 B
+0.39 0.1 (uct is the) 215 224.33 B
+3 F
+0.39 0.1 (do-) 259.51 224.33 B
+0.39 0.1 (block) 272.58 224.33 B
+1 F
+0.39 0.1 (, which shall satisfy the r) 293.44 224.33 B
+0.39 0.1 (ules for blocks \0508.1.1\051.  In) 407.57 224.33 B
+0.35 0.1 (particular) 72 212.33 B
+0.35 0.1 (, transfer of contr) 115.72 212.33 B
+0.35 0.1 (ol to the interior of such a block fr) 194.56 212.33 B
+0.35 0.1 (om outside the block is pr) 350.42 212.33 B
+0.35 0.1 (ohibited.  It) 469.07 212.33 B
+0.4 0.1 (is permitted to branch to the) 72 200.33 B
+3 F
+0.4 0.1 (end-) 205.3 200.33 B
+0.4 0.1 (do) 223.48 200.33 B
+1 F
+0.4 0.1 ( of a block DO constr) 233.12 200.33 B
+0.4 0.1 (uct only fr) 330.08 200.33 B
+0.4 0.1 (om within the range of that DO) 377.55 200.33 B
+0.52 0.1 (constr) 72 188.33 B
+0.52 0.1 (uct.) 99.69 188.33 B
+1 8 Q
+0.24 0.08 (The range of a nonblock DO constr) 72 172.67 B
+0.24 0.08 (uct consists of the) 199.56 172.67 B
+3 F
+0.24 0.08 (do-) 266.93 172.67 B
+0.24 0.08 (body) 277.39 172.67 B
+1 F
+0.24 0.08 ( and the following DO termination.  The end of such a range is) 292.96 172.67 B
+0.33 0.08 (not bounded by a particular statement as for the other executable constr) 72 162.67 B
+0.33 0.08 (ucts \050e.g., END IF\051; nevertheless, the range satis\336es) 335.49 162.67 B
+2.02 0.08 (the r) 72 152.67 B
+2.02 0.08 (ules for blocks \0508.1.1\051.  T) 90.62 152.67 B
+2.02 0.08 (ransfer of contr) 187.49 152.67 B
+2.02 0.08 (ol into the) 246.91 152.67 B
+3 F
+2.02 0.08 (do-) 291.7 152.67 B
+2.02 0.08 (body) 302.15 152.67 B
+1 F
+2.02 0.08 ( or to the DO termination fr) 317.73 152.67 B
+2.02 0.08 (om outside the range is) 429.48 152.67 B
+0.58 0.08 (pr) 72 142.67 B
+0.58 0.08 (ohibited; in particular) 79.98 142.67 B
+0.58 0.08 (, it is permitted to branch to a) 159.57 142.67 B
+3 F
+0.58 0.08 (do-) 273.01 142.67 B
+0.58 0.08 (term-) 283.46 142.67 B
+0.58 0.08 (shar) 301.64 142.67 B
+0.58 0.08 (ed-) 315.59 142.67 B
+0.58 0.08 (stmt) 325.61 142.67 B
+1 F
+0.58 0.08 ( only fr) 340.59 142.67 B
+0.58 0.08 (om within the range of the corr) 367.87 142.67 B
+0.58 0.08 (esponding) 483.9 142.67 B
+3 F
+0.42 0.08 (inner-) 72 132.67 B
+0.42 0.08 (shar) 92.49 132.67 B
+0.42 0.08 (ed-) 106.44 132.67 B
+0.42 0.08 (do-) 116.46 132.67 B
+0.42 0.08 (construct) 126.91 132.67 B
+1 F
+0.42 0.08 (.) 158.14 132.67 B
+0 10 Q
+0.73 0.1 (8.1.4.3) 72 109.34 B
+0.73 0.1 (Activ) 114.9 109.34 B
+0.73 0.1 (e and inactiv) 140 109.34 B
+0.73 0.1 (e DO constr) 206.15 109.34 B
+0.73 0.1 (ucts) 265.7 109.34 B
+1 F
+0.7 0.1 (A DO constr) 72 91.34 B
+0.7 0.1 (uct is either) 129.97 91.34 B
+2 F
+0.7 0.1 (active) 187.38 91.34 B
+1 F
+0.7 0.1 ( or) 214.64 91.34 B
+2 F
+0.7 0.1 (inactive) 230.85 91.34 B
+1 F
+0.7 0.1 (.  Initially inactive, a DO constr) 267.75 91.34 B
+0.7 0.1 (uct becomes active only) 412.48 91.34 B
+0.52 0.1 (when its DO statement is executed.) 72 79.34 B
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 697.33 S
+0.1 (3) 30 686.33 S
+0.1 (4) 30 675.33 S
+0.1 (5) 30 664.33 S
+0.1 (6) 30 649.33 S
+0.1 (7) 30 634.33 S
+0.1 (8) 30 623.33 S
+0.1 (9) 30 600.33 S
+0.1 (10) 30 584.67 S
+0.1 (11) 30 574.67 S
+0.1 (12) 30 559.67 S
+0.1 (13) 30 549.67 S
+0.1 (14) 30 539.67 S
+0.1 (15) 30 524.67 S
+0.1 (16) 30 509.67 S
+0.1 (17) 30 496.67 S
+0.1 (18) 30 475.67 S
+0.1 (19) 30 452.67 S
+0.1 (20) 30 442.67 S
+0.1 (21) 30 432.67 S
+0.1 (22) 30 417.67 S
+0.1 (23) 30 407.67 S
+0.1 (24) 30 392.67 S
+0.1 (25) 30 382.67 S
+0.1 (26) 30 372.67 S
+0.1 (27) 30 357.67 S
+0.1 (28) 30 344.67 S
+0.1 (29) 30 323.67 S
+0.1 (30) 30 300.67 S
+0.1 (31) 30 290.67 S
+0.1 (32) 30 275.67 S
+0.1 (33) 30 265.67 S
+0.1 (34) 30 242.33 S
+0.1 (35) 30 224.33 S
+0.1 (36) 30 212.33 S
+0.1 (37) 30 200.33 S
+0.1 (38) 30 188.33 S
+0.1 (39) 30 172.67 S
+0.1 (40) 30 162.67 S
+0.1 (41) 30 152.67 S
+0.1 (42) 30 142.67 S
+0.1 (43) 30 132.67 S
+0.1 (44) 30 109.34 S
+0.1 (45) 30 91.34 S
+0.1 (46) 30 79.34 S
+FMENDPAGE
+%%EndPage: "127" 7
+%%Page: "128" 8
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(J3/97-007) 72 748 T
+(WORKING DRAFT) 249 748 T
+(JUN 1997) 469.44 748 T
+0 10 Q
+(128) 72 34.67 T
+0 12 Q
+(WORKING DRAFT) 249 34.67 T
+(JUN 1997) 469.44 34.67 T
+1 10 Q
+0.86 0.1 (Once active, the DO constr) 72 713.33 B
+0.86 0.1 (uct becomes inactive only when the constr) 196.04 713.33 B
+0.86 0.1 (uct it speci\336es is terminated) 392.34 713.33 B
+1.5 0.1 (\0508.1.4.4.4\051.  When an active DO constr) 72 701.33 B
+1.5 0.1 (uct becomes inactive, the) 249.97 701.33 B
+3 F
+1.5 0.1 (do-) 371.54 701.33 B
+1.5 0.1 (variable) 384.61 701.33 B
+1 F
+1.5 0.1 (, if any) 417.26 701.33 B
+1.5 0.1 (, r) 450.08 701.33 B
+1.5 0.1 (etains its last) 460.65 701.33 B
+0.52 0.1 (de\336ned value.) 72 689.33 B
+0 F
+0.73 0.1 (8.1.4.4) 72 665.33 B
+0.73 0.1 (Ex) 114.9 665.33 B
+0.73 0.1 (ecution of a DO constr) 125.7 665.33 B
+0.73 0.1 (uct) 239.4 665.33 B
+1 F
+2.48 0.1 (A DO constr) 72 647.33 B
+2.48 0.1 (uct speci\336es a loop, that is, a sequence of executable constr) 133.53 647.33 B
+2.48 0.1 (ucts that is executed) 423.03 647.33 B
+2.34 0.1 (r) 72 635.33 B
+2.34 0.1 (epeatedly) 75.87 635.33 B
+2.34 0.1 (.  Ther) 118.88 635.33 B
+2.34 0.1 (e ar) 152.28 635.33 B
+2.34 0.1 (e thr) 171.08 635.33 B
+2.34 0.1 (ee phases in the execution of a DO constr) 194.07 635.33 B
+2.34 0.1 (uct: initiation of the loop,) 398.33 635.33 B
+0.52 0.1 (execution of the loop range, and termination of the loop.) 72 623.33 B
+0 F
+0.73 0.1 (8.1.4.4.1) 72 599.33 B
+0.73 0.1 (Loop initia) 123.5 599.33 B
+0.73 0.1 (tion) 174.77 599.33 B
+1 F
+0.52 0.1 (When the DO statement is executed, the DO constr) 72 581.33 B
+0.52 0.1 (uct becomes active.  If) 305.69 581.33 B
+3 F
+0.52 0.1 (loop-) 410.24 581.33 B
+0.52 0.1 (contr) 430.73 581.33 B
+0.52 0.1 (ol) 452.35 581.33 B
+1 F
+0.52 0.1 ( is) 459.77 581.33 B
+0.52 0.1 ([ , ]) 90 565.33 B
+3 F
+0.52 0.1 (do-) 108.82 565.33 B
+0.52 0.1 (variable) 121.89 565.33 B
+1 F
+0.52 0.1 ( =) 154.54 565.33 B
+3 F
+0.52 0.1 (scalar-) 166.94 565.33 B
+0.52 0.1 (int-) 194.48 565.33 B
+0.52 0.1 (expr) 209.88 565.33 B
+1 8 Q
+0.42 0.08 (1) 228.06 560.33 B
+1 10 Q
+0.52 0.1 ( ,) 232.14 565.33 B
+3 F
+0.52 0.1 (scalar-) 240.98 565.33 B
+0.52 0.1 (int-) 268.52 565.33 B
+0.52 0.1 (expr) 283.92 565.33 B
+1 8 Q
+0.42 0.08 (2) 302.1 560.33 B
+1 10 Q
+0.52 0.1 ([ ,) 308.67 565.33 B
+3 F
+0.52 0.1 (scalar-) 320.94 565.33 B
+0.52 0.1 (int-) 348.48 565.33 B
+0.52 0.1 (expr) 363.88 565.33 B
+1 8 Q
+0.42 0.08 (3) 382.06 560.33 B
+1 10 Q
+0.52 0.1 ( ]) 386.14 565.33 B
+0.52 0.1 (the following steps ar) 72 547.33 B
+0.52 0.1 (e performed in sequence:) 171.14 547.33 B
+0.1 (\0501\051) 99 531.33 S
+0.3 0.1 (The initial parameter) 126 531.33 B
+3 F
+0.3 0.1 (m) 224.63 531.33 B
+1 8 Q
+0.24 0.08 (1) 232.51 526.33 B
+1 10 Q
+0.3 0.1 (, the terminal parameter) 236.59 531.33 B
+3 F
+0.3 0.1 (m) 349.7 531.33 B
+1 8 Q
+0.24 0.08 (2) 357.58 526.33 B
+1 10 Q
+0.3 0.1 (, and the incr) 361.65 531.33 B
+0.3 0.1 (ementation parameter) 421.68 531.33 B
+3 F
+1.93 0.1 (m) 126 520.33 B
+1 8 Q
+1.54 0.08 (3) 133.88 515.33 B
+1 10 Q
+1.93 0.1 ( ar) 137.96 520.33 B
+1.93 0.1 (e of type integer with the same kind type parameter as the) 151.46 520.33 B
+3 F
+1.93 0.1 (do-variable) 440.53 520.33 B
+1 F
+1.93 0.1 (.  Their) 486.25 520.33 B
+0.42 0.1 (values ar) 126 509.33 B
+0.42 0.1 (e established by evaluating) 167.21 509.33 B
+3 F
+0.42 0.1 (scalar-) 294.09 509.33 B
+0.42 0.1 (int-) 321.63 509.33 B
+0.42 0.1 (expr) 337.03 509.33 B
+1 8 Q
+0.34 0.08 (1) 355.21 504.33 B
+1 10 Q
+0.42 0.1 (,) 359.29 509.33 B
+3 F
+0.42 0.1 (scalar-) 364.49 509.33 B
+0.42 0.1 (int-) 392.03 509.33 B
+0.42 0.1 (expr) 407.43 509.33 B
+1 8 Q
+0.34 0.08 (2) 425.61 504.33 B
+1 10 Q
+0.42 0.1 (,) 429.69 509.33 B
+0.42 0.1 (and) 434.89 509.33 B
+3 F
+0.42 0.1 (scalar-) 454.72 509.33 B
+0.42 0.1 (int-) 482.26 509.33 B
+0.42 0.1 (expr) 497.66 509.33 B
+1 8 Q
+0.34 0.08 (3) 515.84 504.33 B
+0.34 0.08 (,) 519.92 509.33 B
+1 10 Q
+2.8 0.1 (r) 126 498.33 B
+2.8 0.1 (espectively) 129.87 498.33 B
+2.8 0.1 (, including, if necessary) 179.21 498.33 B
+2.8 0.1 (, conversion to the kind type parameter of the) 293.09 498.33 B
+3 F
+0.48 0.1 (do-) 126 487.33 B
+0.48 0.1 (variable) 139.07 487.33 B
+1 F
+0.48 0.1 ( accor) 171.72 487.33 B
+0.48 0.1 (ding to the r) 198.41 487.33 B
+0.48 0.1 (ules for numeric conversion \050T) 255.52 487.33 B
+0.48 0.1 (able 7.10\051.  If) 395.01 487.33 B
+3 F
+0.48 0.1 (scalar-) 456.8 487.33 B
+0.48 0.1 (int-) 484.34 487.33 B
+0.48 0.1 (expr) 499.74 487.33 B
+1 8 Q
+0.39 0.08 (3) 517.92 482.33 B
+1 10 Q
+0.52 0.1 (does not appear) 126 476.33 B
+0.52 0.1 (,) 198.7 476.33 B
+3 F
+0.52 0.1 (m) 204.42 476.33 B
+1 8 Q
+0.42 0.08 (3) 212.3 471.33 B
+1 10 Q
+0.52 0.1 ( has the value 1.  The value) 216.38 476.33 B
+3 F
+0.52 0.1 (m) 345.37 476.33 B
+1 8 Q
+0.42 0.08 (3) 353.25 471.33 B
+1 10 Q
+0.52 0.1 ( shall not be zer) 357.33 476.33 B
+0.52 0.1 (o.) 430.41 476.33 B
+0.1 (\0502\051) 99 461.33 S
+0.52 0.1 (The DO variable becomes de\336ned with the value of the initial parameter) 126 461.33 B
+3 F
+0.52 0.1 (m) 461.7 461.33 B
+1 8 Q
+0.42 0.08 (1) 469.58 456.33 B
+1 10 Q
+0.52 0.1 (.) 473.67 461.33 B
+0.1 (\0503\051) 99 446.33 S
+8.32 0.1 (The) 126 446.33 B
+2 F
+8.32 0.1 (iteration count) 153.96 446.33 B
+1 F
+8.32 0.1 ( is established and is the value of the expr) 230.71 446.33 B
+8.32 0.1 (ession) 493.94 446.33 B
+0.27 0.1 (, unless that value is negative, in which case the iteration count is 0.) 210.78 435.33 B
+0.22 0.1 (If) 72 356.33 B
+3 F
+0.22 0.1 (loop-) 81.71 356.33 B
+0.22 0.1 (contr) 102.21 356.33 B
+0.22 0.1 (ol) 123.82 356.33 B
+1 F
+0.22 0.1 ( is omitted, no iteration count is calculated.  The ef) 131.23 356.33 B
+0.22 0.1 (fect is as if a lar) 360.92 356.33 B
+0.22 0.1 (ge positive iteration) 431.53 356.33 B
+10.72 0.1 (count, impossible to decr) 72 344.33 B
+10.72 0.1 (ement to zer) 217.34 344.33 B
+10.72 0.1 (o, wer) 294.75 344.33 B
+10.72 0.1 (e established.  If) 333.43 344.33 B
+3 F
+10.72 0.1 (loop-) 451.81 344.33 B
+10.72 0.1 (contr) 472.3 344.33 B
+10.72 0.1 (ol) 493.91 344.33 B
+1 F
+10.72 0.1 ( is) 501.33 344.33 B
+3.44 0.1 ([) 72 332.33 B
+3.44 0.1 (,) 78.03 332.33 B
+3.44 0.1 (]) 83.23 332.33 B
+3.44 0.1 (WHILE) 89.26 332.33 B
+3.44 0.1 (\050) 126.27 332.33 B
+3 F
+3.44 0.1 (scalar-) 129.7 332.33 B
+3.44 0.1 (logical-) 157.24 332.33 B
+3.44 0.1 (expr) 187.66 332.33 B
+1 F
+3.44 0.1 (\051, the ef) 205.84 332.33 B
+3.44 0.1 (fect is as if) 246.26 332.33 B
+3 F
+3.44 0.1 (loop-) 309.87 332.33 B
+3.44 0.1 (contr) 330.36 332.33 B
+3.44 0.1 (ol) 351.97 332.33 B
+1 F
+3.44 0.1 ( wer) 359.39 332.33 B
+3.44 0.1 (e omitted and the following) 382.63 332.33 B
+0.52 0.1 (statement inserted as the \336rst statement of the) 72 320.33 B
+3 F
+0.52 0.1 (do-) 286.6 320.33 B
+0.52 0.1 (block) 299.67 320.33 B
+1 F
+0.52 0.1 (:) 320.53 320.33 B
+4 9 Q
+0.09 (IF) 72 303 S
+0.09 (\050.NOT.) 88.47 303 S
+0.09 (\050) 126.9 303 S
+3 10 Q
+0.1 (scalar-) 132.39 303 S
+0.1 (logical-) 159.93 303 S
+0.1 (expr) 190.35 303 S
+4 9 Q
+0.09 (\051) 208.53 303 S
+7 F
+0.09 (\051) 214.02 303 S
+4 F
+0.09 (EXIT) 225 303 S
+1 10 Q
+0.52 0.1 (At the completion of the execution of the DO statement, the execution cycle begins.) 72 285.33 B
+0 F
+0.73 0.1 (8.1.4.4.2) 72 261.33 B
+0.73 0.1 (The e) 123.5 261.33 B
+0.73 0.1 (x) 150.32 261.33 B
+0.73 0.1 (ecution c) 155.82 261.33 B
+0.73 0.1 (y) 203.05 261.33 B
+0.73 0.1 (c) 208.6 261.33 B
+0.73 0.1 (le) 214.95 261.33 B
+1 F
+2.38 0.1 (The) 72 243.33 B
+2 F
+2.38 0.1 (execution cycle) 94.02 243.33 B
+1 F
+2.38 0.1 ( of a DO constr) 167.05 243.33 B
+2.38 0.1 (uct consists of the following steps performed in sequence) 244.56 243.33 B
+0.52 0.1 (r) 72 231.33 B
+0.52 0.1 (epeatedly until termination:) 75.87 231.33 B
+0.1 (\0501\051) 99 215.33 S
+2.04 0.1 (The iteration count, if any) 126 215.33 B
+2.04 0.1 (, is tested.  If it is zer) 249.98 215.33 B
+2.04 0.1 (o, the loop terminates and the DO) 356.54 215.33 B
+4.84 0.1 (constr) 126 204.33 B
+4.84 0.1 (uct becomes inactive.  If) 153.69 204.33 B
+3 F
+4.84 0.1 (loop-) 288.77 204.33 B
+4.84 0.1 (contr) 309.27 204.33 B
+4.84 0.1 (ol) 330.87 204.33 B
+1 F
+4.84 0.1 ( is [) 338.29 204.33 B
+4.84 0.1 (,) 366.55 204.33 B
+4.84 0.1 (]) 371.75 204.33 B
+4.84 0.1 (WHILE) 377.78 204.33 B
+4.84 0.1 (\050) 414.79 204.33 B
+3 F
+4.84 0.1 (scalar-) 418.22 204.33 B
+4.84 0.1 (logical-) 445.76 204.33 B
+4.84 0.1 (expr) 476.18 204.33 B
+1 F
+4.84 0.1 (\051, the) 494.36 204.33 B
+3 F
+4.15 0.1 (scalar-) 126 193.33 B
+4.15 0.1 (logical-) 153.54 193.33 B
+4.15 0.1 (expr) 183.96 193.33 B
+1 F
+4.15 0.1 ( is evaluated; if the value of this expr) 202.14 193.33 B
+4.15 0.1 (ession is false, the loop) 401.8 193.33 B
+1.82 0.1 (terminates and the DO constr) 126 182.33 B
+1.82 0.1 (uct becomes inactive.) 266.4 182.33 B
+1 8 Q
+1.45 0.08 (If, as a r) 375.04 182.33 B
+1.45 0.08 (esult, all of the DO constr) 407.97 182.33 B
+1.45 0.08 (ucts) 507.3 182.33 B
+0.54 0.08 (sharing the) 126 171.33 B
+3 F
+0.54 0.08 (do-) 169.78 171.33 B
+0.54 0.08 (term-) 180.24 171.33 B
+0.54 0.08 (shar) 198.42 171.33 B
+0.54 0.08 (ed-) 212.37 171.33 B
+0.54 0.08 (stmt) 222.38 171.33 B
+1 F
+0.54 0.08 ( ar) 237.37 171.33 B
+0.54 0.08 (e inactive, the execution of all of these constr) 247.17 171.33 B
+0.54 0.08 (ucts is complete.  However) 412.95 171.33 B
+0.54 0.08 (, if) 512.14 171.33 B
+0.36 0.08 (some of the DO constr) 126 160.33 B
+0.36 0.08 (ucts sharing the) 208.04 160.33 B
+3 F
+0.36 0.08 (do-) 268.58 160.33 B
+0.36 0.08 (term-) 279.04 160.33 B
+0.36 0.08 (shar) 297.21 160.33 B
+0.36 0.08 (ed-) 311.16 160.33 B
+0.36 0.08 (stmt) 321.18 160.33 B
+1 F
+0.36 0.08 ( ar) 336.16 160.33 B
+0.36 0.08 (e active, execution continues with step \0503\051 of the) 345.78 160.33 B
+0.42 0.08 (execution cycle of the active DO constr) 126 149.33 B
+0.42 0.08 (uct whose DO statement was most r) 268.57 149.33 B
+0.42 0.08 (ecently executed.) 401.2 149.33 B
+1 10 Q
+0.1 (\0502\051) 99 134.33 S
+0.52 0.1 (If the iteration count is nonzer) 126 134.33 B
+0.52 0.1 (o, the range of the loop is executed.) 265.05 134.33 B
+0.1 (\0503\051) 99 119.33 S
+3.26 0.1 (The iteration count, if any) 126 119.33 B
+3.26 0.1 (, is decr) 254.84 119.33 B
+3.26 0.1 (emented by one.  The DO variable, if any) 296.01 119.33 B
+3.26 0.1 (, is) 506.19 119.33 B
+0.52 0.1 (incr) 126 108.33 B
+0.52 0.1 (emented by the value of the incr) 143.34 108.33 B
+0.52 0.1 (ementation parameter) 291.99 108.33 B
+0.52 0.1 (.) 410.25 108.33 B
+1.88 0.1 (Except for the incr) 72 91.33 B
+1.88 0.1 (ementation of the DO variable that occurs in step \0503\051, the DO variable shall) 160.36 91.33 B
+0.52 0.1 (neither be r) 72 79.33 B
+0.52 0.1 (ede\336ned nor become unde\336ned while the DO constr) 124.67 79.33 B
+0.52 0.1 (uct is active.) 364.89 79.33 B
+2 F
+(NOTE 8.10) 90 419.33 T
+90.12 376.12 521.88 415.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (The iteration count is zer) 92 407.33 B
+0.52 0.1 (o whenever:) 206.5 407.33 B
+3 F
+0.52 0.1 (m) 110 392.33 B
+1 8 Q
+0.42 0.08 (1) 117.88 387.33 B
+1 10 Q
+0.52 0.1 ( >) 121.96 392.33 B
+3 F
+0.52 0.1 (m) 134.36 392.33 B
+1 8 Q
+0.42 0.08 (2) 142.24 387.33 B
+1 10 Q
+0.52 0.1 (and) 148.82 392.33 B
+3 F
+0.52 0.1 (m) 169.16 392.33 B
+1 8 Q
+0.42 0.08 (3) 177.04 387.33 B
+1 10 Q
+0.52 0.1 ( > 0, or) 181.12 392.33 B
+3 F
+0.52 0.1 (m) 110 381.33 B
+1 8 Q
+0.42 0.08 (1) 117.88 376.33 B
+1 10 Q
+0.52 0.1 ( <) 121.96 381.33 B
+3 F
+0.52 0.1 (m) 134.36 381.33 B
+1 8 Q
+0.42 0.08 (2) 142.24 376.33 B
+1 10 Q
+0.52 0.1 ( and) 146.32 381.33 B
+3 F
+0.52 0.1 (m) 169.79 381.33 B
+1 8 Q
+0.42 0.08 (3) 177.67 376.33 B
+1 10 Q
+0.52 0.1 ( < 0.) 181.75 381.33 B
+90 415.88 90 376.12 2 L
+V
+0.25 H
+0 Z
+N
+522 415.88 522 376.12 2 L
+V
+N
+89.88 416 522.12 416 2 L
+V
+N
+89.88 376 522.12 376 2 L
+V
+N
+0 0 0 1 0 0 0 K
+126 427.93 210.78 443.83 C
+0 0 0 1 0 0 0 K
+8 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 131.04 435.33 T
+9 8 Q
+(2) 138.64 431.93 T
+8 10 Q
+(m) 152.64 435.33 T
+9 8 Q
+(1) 160.24 431.93 T
+9 10 Q
+(\320) 145.14 435.33 T
+8 F
+(m) 174.87 435.33 T
+9 8 Q
+(3) 182.47 431.93 T
+9 10 Q
+(+) 166.74 435.33 T
+10 F
+(\050) 127 435.33 T
+(\051) 187.18 435.33 T
+8 F
+(m) 197.18 435.33 T
+9 8 Q
+(3) 204.78 431.93 T
+10 10 Q
+(\244) 193.01 435.33 T
+0 0 0 1 0 0 0 K
+0 0 612 792 C
+0 0 0 1 0 0 0 K
+395.65 100.43 410.25 116.83 C
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+8 10 Q
+0 X
+0 0 0 1 0 0 0 K
+(m) 396.65 108.33 T
+9 8 Q
+(3) 404.25 104.93 T
+0 0 612 792 C
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 701.33 S
+0.1 (3) 30 689.33 S
+0.1 (4) 30 665.33 S
+0.1 (5) 30 647.33 S
+0.1 (6) 30 635.33 S
+0.1 (7) 30 623.33 S
+0.1 (8) 30 599.33 S
+0.1 (9) 30 581.33 S
+0.1 (10) 30 565.33 S
+0.1 (11) 30 547.33 S
+0.1 (12) 30 531.33 S
+0.1 (13) 30 520.33 S
+0.1 (14) 30 509.33 S
+0.1 (15) 30 498.33 S
+0.1 (16) 30 487.33 S
+0.1 (17) 30 476.33 S
+0.1 (18) 30 461.33 S
+0.1 (19) 30 446.33 S
+0.1 (20) 30 435.33 S
+0.1 (21) 30 419.33 S
+0.1 (22) 30 407.33 S
+0.1 (23) 30 392.33 S
+0.1 (24) 30 381.33 S
+0.1 (25) 30 356.33 S
+0.1 (26) 30 344.33 S
+0.1 (27) 30 332.33 S
+0.1 (28) 30 320.33 S
+0.1 (29) 30 303.00 S
+0.1 (30) 30 285.33 S
+0.1 (31) 30 261.33 S
+0.1 (32) 30 243.33 S
+0.1 (33) 30 231.33 S
+0.1 (34) 30 215.33 S
+0.1 (35) 30 204.33 S
+0.1 (36) 30 193.33 S
+0.1 (37) 30 182.33 S
+0.1 (38) 30 171.33 S
+0.1 (39) 30 160.33 S
+0.1 (40) 30 149.33 S
+0.1 (41) 30 134.33 S
+0.1 (42) 30 119.33 S
+0.1 (43) 30 108.33 S
+0.1 (44) 30 91.33 S
+0.1 (45) 30 79.33 S
+FMENDPAGE
+%%EndPage: "128" 8
+%%Page: "129" 9
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(JUN 1997) 72 748 T
+( WORKING DRAFT) 247.32 748 T
+(J3/97-007) 465.36 748 T
+(JUN 1997) 72 34.67 T
+(WORKING DRAFT) 249 34.67 T
+0 10 Q
+(129) 505.2 34.67 T
+0.73 0.1 (8.1.4.4.3) 72 713.33 B
+0.73 0.1 (CYCLE sta) 123.5 713.33 B
+0.73 0.1 (tement) 173.37 713.33 B
+1 F
+2.2 0.1 (Step \0502\051 in the above execution cycle may be curtailed by executing a CYCLE statement fr) 72 695.33 B
+2.2 0.1 (om) 507.51 695.33 B
+0.52 0.1 (within the range of the loop.) 72 683.33 B
+0.1 (R834) 72 665.33 S
+3 F
+0.1 (cycle-) 108 665.33 S
+0.1 (stmt) 131.74 665.33 S
+2 F
+0.1 (is) 234 665.33 S
+1 F
+0.52 0.1 (CYCLE [) 252 665.33 B
+3 F
+0.52 0.1 (do-) 295.24 665.33 B
+0.52 0.1 (construct-) 308.31 665.33 B
+0.52 0.1 (name) 350.78 665.33 B
+1 F
+0.52 0.1 ( ]) 372.85 665.33 B
+0.1 (Constraint:) 72 649.33 S
+3 0.1 (If a) 135 649.33 B
+3 F
+3 0.1 (cycle-) 158.2 649.33 B
+3 0.1 (stmt) 181.94 649.33 B
+1 F
+3 0.1 ( r) 200.67 649.33 B
+3 0.1 (efers to a) 210.14 649.33 B
+3 F
+3 0.1 (do-) 262.55 649.33 B
+3 0.1 (construct-) 275.62 649.33 B
+3 0.1 (name) 318.09 649.33 B
+1 F
+3 0.1 (, it shall be within the range of that) 340.16 649.33 B
+3 F
+0.52 0.1 (do-) 135 638.33 B
+0.52 0.1 (construct) 148.07 638.33 B
+1 F
+0.52 0.1 (; otherwise, it shall be within the range of at least one) 187.11 638.33 B
+3 F
+0.52 0.1 (do-) 436.45 638.33 B
+0.52 0.1 (construct) 449.52 638.33 B
+1 F
+0.52 0.1 (.) 488.55 638.33 B
+0.74 0.1 (A CYCLE statement belongs to a particular DO constr) 72 621.33 B
+0.74 0.1 (uct.  If the CYCLE statement r) 321.27 621.33 B
+0.74 0.1 (efers to a DO) 460.57 621.33 B
+3.07 0.1 (constr) 72 609.33 B
+3.07 0.1 (uct name, it belongs to that DO constr) 99.69 609.33 B
+3.07 0.1 (uct; otherwise, it belongs to the innermost DO) 292.38 609.33 B
+0.52 0.1 (constr) 72 597.33 B
+0.52 0.1 (uct in which it appears.) 99.69 597.33 B
+0.5 0.1 (Execution of a CYCLE statement causes immediate pr) 72 579.33 B
+0.5 0.1 (ogr) 318.07 579.33 B
+0.5 0.1 (ession to step \0503\051 of the curr) 333.15 579.33 B
+0.5 0.1 (ent execution) 461.17 579.33 B
+4.16 0.1 (cycle of the DO constr) 72 567.33 B
+4.16 0.1 (uct to which it belongs.) 188.34 567.33 B
+1 8 Q
+3.33 0.08 (If this constr) 323.68 567.33 B
+3.33 0.08 (uct is a nonblock DO constr) 375.48 567.33 B
+3.33 0.08 (uct, the) 491.95 567.33 B
+3 F
+0.42 0.08 (do-) 72 555.33 B
+0.42 0.08 (term-) 82.46 555.33 B
+0.42 0.08 (action-) 100.63 555.33 B
+0.42 0.08 (stmt) 123.55 555.33 B
+1 F
+0.42 0.08 ( or) 138.54 555.33 B
+3 F
+0.42 0.08 (do-) 151.21 555.33 B
+0.42 0.08 (term-) 161.67 555.33 B
+0.42 0.08 (shar) 179.85 555.33 B
+0.42 0.08 (ed-) 193.8 555.33 B
+0.42 0.08 (stmt) 203.81 555.33 B
+1 F
+0.42 0.08 ( is not executed.) 218.8 555.33 B
+1 10 Q
+1.34 0.1 (In a block DO constr) 72 537.33 B
+1.34 0.1 (uct, a transfer of contr) 170.12 537.33 B
+1.34 0.1 (ol to the) 274.98 537.33 B
+3 F
+1.34 0.1 (end-) 318.45 537.33 B
+1.34 0.1 (do) 336.63 537.33 B
+1 F
+1.34 0.1 ( has the same ef) 346.27 537.33 B
+1.34 0.1 (fect as execution of a) 422.94 537.33 B
+3.29 0.1 (CYCLE statement belonging to that constr) 72 525.33 B
+3.29 0.1 (uct.) 278.79 525.33 B
+1 8 Q
+2.63 0.08 (In a nonblock DO constr) 307.21 525.33 B
+2.63 0.08 (uct, transfer of contr) 405.89 525.33 B
+2.63 0.08 (ol to the) 487.24 525.33 B
+3 F
+0.13 0.08 (do-) 72 513.33 B
+0.13 0.08 (term-) 82.46 513.33 B
+0.13 0.08 (action-) 100.63 513.33 B
+0.13 0.08 (stmt) 123.55 513.33 B
+1 F
+0.13 0.08 ( or) 138.54 513.33 B
+3 F
+0.13 0.08 (do-) 150.65 513.33 B
+0.13 0.08 (term-) 161.1 513.33 B
+0.13 0.08 (shar) 179.28 513.33 B
+0.13 0.08 (ed-) 193.23 513.33 B
+0.13 0.08 (stmt) 203.24 513.33 B
+1 F
+0.13 0.08 ( causes that statement or constr) 218.23 513.33 B
+0.13 0.08 (uct itself to be executed.  Unless a further transfer of) 332.11 513.33 B
+0.42 0.08 (contr) 72 501.33 B
+0.42 0.08 (ol r) 90.6 501.33 B
+0.42 0.08 (esults, step \0503\051 of the curr) 103.05 501.33 B
+0.42 0.08 (ent execution cycle of the DO constr) 196.39 501.33 B
+0.42 0.08 (uct is then executed.) 328.98 501.33 B
+0 10 Q
+0.73 0.1 (8.1.4.4.4) 72 477.33 B
+0.73 0.1 (Loop ter) 123.5 477.33 B
+0.73 0.1 (mina) 164.37 477.33 B
+0.73 0.1 (tion) 189.22 477.33 B
+1 F
+0.52 0.1 (The EXIT statement pr) 72 459.33 B
+0.52 0.1 (ovides one way of terminating a loop.) 175.21 459.33 B
+0.1 (R835) 72 441.33 S
+3 F
+0.1 (exit-) 108 441.33 S
+0.1 (stmt) 126.83 441.33 S
+2 F
+0.1 (is) 234 441.33 S
+1 F
+0.52 0.1 (EXIT [) 252 441.33 B
+3 F
+0.52 0.1 (do-) 284.35 441.33 B
+0.52 0.1 (construct-) 297.42 441.33 B
+0.52 0.1 (name) 339.89 441.33 B
+1 F
+0.52 0.1 ( ]) 361.96 441.33 B
+0.1 (Constraint:) 72 425.33 S
+2.93 0.1 (If an) 135 425.33 B
+3 F
+2.93 0.1 (exit-) 163.97 425.33 B
+2.93 0.1 (stmt) 182.8 425.33 B
+1 F
+2.93 0.1 ( r) 201.53 425.33 B
+2.93 0.1 (efers to a) 210.93 425.33 B
+3 F
+2.93 0.1 (do-) 263.13 425.33 B
+2.93 0.1 (construct-) 276.2 425.33 B
+2.93 0.1 (name) 318.67 425.33 B
+1 F
+2.93 0.1 (, it shall be within the range of that) 340.74 425.33 B
+3 F
+0.52 0.1 (do-) 135 414.33 B
+0.52 0.1 (construct) 148.07 414.33 B
+1 F
+0.52 0.1 (; otherwise, it shall be within the range of at least one) 187.11 414.33 B
+3 F
+0.52 0.1 (do-) 436.45 414.33 B
+0.52 0.1 (construct) 449.52 414.33 B
+1 F
+0.52 0.1 (.) 488.55 414.33 B
+1.67 0.1 (An EXIT statement belongs to a particular DO constr) 72 397.33 B
+1.67 0.1 (uct.  If the EXIT statement r) 323.76 397.33 B
+1.67 0.1 (efers to a DO) 457.77 397.33 B
+3.07 0.1 (constr) 72 385.33 B
+3.07 0.1 (uct name, it belongs to that DO constr) 99.69 385.33 B
+3.07 0.1 (uct; otherwise, it belongs to the innermost DO) 292.38 385.33 B
+0.52 0.1 (constr) 72 373.33 B
+0.52 0.1 (uct in which it appears.) 99.69 373.33 B
+0.52 0.1 (The loop terminates, and the DO constr) 72 355.33 B
+0.52 0.1 (uct becomes inactive, when any of the following occurs:) 253.34 355.33 B
+0.1 (\0501\051) 99 339.33 S
+1.73 0.1 (Determination that the iteration count is zer) 126 339.33 B
+1.73 0.1 (o or the) 334.68 339.33 B
+3 F
+1.73 0.1 (scalar-) 376.99 339.33 B
+1.73 0.1 (logical-) 404.54 339.33 B
+1.73 0.1 (expr) 434.95 339.33 B
+1 F
+1.73 0.1 ( is false, when) 453.13 339.33 B
+0.52 0.1 (tested during step \0501\051 of the above execution cycle) 126 328.33 B
+0.1 (\0502\051) 99 313.33 S
+0.52 0.1 (Execution of an EXIT statement belonging to the DO constr) 126 313.33 B
+0.52 0.1 (uct) 397.64 313.33 B
+0.1 (\0503\051) 99 298.33 S
+1.01 0.1 (Execution of an EXIT statement or a CYCLE statement that is within the range of the) 126 298.33 B
+0.52 0.1 (DO constr) 126 287.33 B
+0.52 0.1 (uct, but that belongs to an outer DO constr) 172.61 287.33 B
+0.52 0.1 (uct) 369.49 287.33 B
+0.1 (\0504\051) 99 272.33 S
+0.59 0.1 (T) 126 272.33 B
+0.59 0.1 (ransfer of contr) 131.33 272.33 B
+0.59 0.1 (ol fr) 201.72 272.33 B
+0.59 0.1 (om a statement within the range of a DO constr) 220.78 272.33 B
+0.59 0.1 (uct to a statement) 440.24 272.33 B
+0.52 0.1 (that is neither the) 126 261.33 B
+3 F
+0.52 0.1 (end-) 209.78 261.33 B
+0.52 0.1 (do) 227.96 261.33 B
+1 F
+0.52 0.1 ( nor within the range of the same DO constr) 237.6 261.33 B
+0.52 0.1 (uct) 440.57 261.33 B
+0.1 (\0505\051) 99 246.33 S
+0.52 0.1 (Execution of a RETURN statement within the range of the DO constr) 126 246.33 B
+0.52 0.1 (uct) 441.83 246.33 B
+0.1 (\0506\051) 99 231.33 S
+3.39 0.1 (Execution of a ST) 126 231.33 B
+3.39 0.1 (OP statement anywher) 214.33 231.33 B
+3.39 0.1 (e in the pr) 324.35 231.33 B
+3.39 0.1 (ogram; or termination of the) 380.28 231.33 B
+0.52 0.1 (pr) 126 220.33 B
+0.52 0.1 (ogram for any other r) 135.98 220.33 B
+0.52 0.1 (eason.) 235.13 220.33 B
+0.47 0.1 (When a DO constr) 72 203.33 B
+0.47 0.1 (uct becomes inactive, the DO variable, if any) 156.63 203.33 B
+0.47 0.1 (, of the DO constr) 360.22 203.33 B
+0.47 0.1 (uct r) 441.75 203.33 B
+0.47 0.1 (etains its last) 462.72 203.33 B
+0.52 0.1 (de\336ned value.) 72 191.33 B
+0 F
+0.73 0.1 (8.1.4.5) 72 167.33 B
+0.73 0.1 (Examples of DO constr) 114.9 167.33 B
+0.73 0.1 (ucts) 228.37 167.33 B
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+2 F
+(NOTE 8.11) 90 151.33 T
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+90.12 74.13 521.88 147.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (The following pr) 92 139.33 B
+0.52 0.1 (ogram fragment computes a tensor pr) 168.86 139.33 B
+0.52 0.1 (oduct of two arrays:) 342.16 139.33 B
+4 9 Q
+0.09 (DO) 92 123 S
+0.09 (I) 108.47 123 S
+0.09 (=) 119.45 123 S
+0.09 (1,) 130.43 123 S
+0.09 (M) 146.9 123 S
+0.09 (DO) 108.47 112 S
+0.09 (J) 124.94 112 S
+0.09 (=) 135.92 112 S
+0.09 (1,) 146.9 112 S
+0.09 (N) 163.37 112 S
+0.09 (C) 124.94 101 S
+0.09 (\050I,) 135.92 101 S
+0.09 (J\051) 157.88 101 S
+0.09 (=) 174.35 101 S
+0.09 (SUM) 185.33 101 S
+0.09 (\050A) 207.29 101 S
+0.09 (\050I,) 223.76 101 S
+0.09 (J,) 245.72 101 S
+0.09 (:\051) 262.19 101 S
+0.09 (*) 278.66 101 S
+0.09 (B) 289.64 101 S
+0.09 (\050:,) 300.62 101 S
+0.09 (I,) 322.58 101 S
+0.09 (J\051\051) 339.05 101 S
+0.09 (END) 108.47 90 S
+0.09 (DO) 130.43 90 S
+0.09 (END) 92 79 S
+0.09 (DO) 113.96 79 S
+90 147.88 90 74.13 2 L
+V
+0.25 H
+0 Z
+N
+522 147.88 522 74.13 2 L
+V
+N
+89.88 148 522.12 148 2 L
+V
+N
+89.88 74 522.12 74 2 L
+V
+N
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 695.33 S
+0.1 (3) 30 683.33 S
+0.1 (4) 30 665.33 S
+0.1 (5) 30 649.33 S
+0.1 (6) 30 638.33 S
+0.1 (7) 30 621.33 S
+0.1 (8) 30 609.33 S
+0.1 (9) 30 597.33 S
+0.1 (10) 30 579.33 S
+0.1 (11) 30 567.33 S
+0.1 (12) 30 555.33 S
+0.1 (13) 30 537.33 S
+0.1 (14) 30 525.33 S
+0.1 (15) 30 513.33 S
+0.1 (16) 30 501.33 S
+0.1 (17) 30 477.33 S
+0.1 (18) 30 459.33 S
+0.1 (19) 30 441.33 S
+0.1 (20) 30 425.33 S
+0.1 (21) 30 414.33 S
+0.1 (22) 30 397.33 S
+0.1 (23) 30 385.33 S
+0.1 (24) 30 373.33 S
+0.1 (25) 30 355.33 S
+0.1 (26) 30 339.33 S
+0.1 (27) 30 328.33 S
+0.1 (28) 30 313.33 S
+0.1 (29) 30 298.33 S
+0.1 (30) 30 287.33 S
+0.1 (31) 30 272.33 S
+0.1 (32) 30 261.33 S
+0.1 (33) 30 246.33 S
+0.1 (34) 30 231.33 S
+0.1 (35) 30 220.33 S
+0.1 (36) 30 203.33 S
+0.1 (37) 30 191.33 S
+0.1 (38) 30 167.33 S
+0.1 (39) 30 151.33 S
+0.1 (40) 30 139.33 S
+0.1 (41) 30 123.00 S
+0.1 (42) 30 112.00 S
+0.1 (43) 30 101.00 S
+0.1 (44) 30 90.00 S
+0.1 (45) 30 79.00 S
+FMENDPAGE
+%%EndPage: "129" 9
+%%Page: "130" 10
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(J3/97-007) 72 748 T
+(WORKING DRAFT) 249 748 T
+(JUN 1997) 469.44 748 T
+0 10 Q
+(130) 72 34.67 T
+0 12 Q
+(WORKING DRAFT) 249 34.67 T
+(JUN 1997) 469.44 34.67 T
+0.84 (8.2) 72 313 P
+0.84 (Branching) 102.24 313 P
+2 10 Q
+1.15 0.1 (Branching) 72 294.33 B
+1 F
+1.15 0.1 ( is used to alter the normal execution sequence.  A branch causes a transfer of contr) 120.12 294.33 B
+1.15 0.1 (ol) 513.43 294.33 B
+0.3 0.1 (fr) 72 282.33 B
+0.3 0.1 (om one statement in a scoping unit to a labeled branch tar) 79.3 282.33 B
+0.3 0.1 (get statement in the same scoping unit.) 344.03 282.33 B
+2.26 0.1 (A) 72 270.33 B
+2 F
+2.26 0.1 (branch target statement) 84.74 270.33 B
+1 F
+2.26 0.1 ( is an) 198.75 270.33 B
+3 F
+2.26 0.1 (action-) 231.7 270.33 B
+2.26 0.1 (stmt) 260.35 270.33 B
+1 F
+2.26 0.1 (, an) 279.08 270.33 B
+3 F
+2.26 0.1 (if-) 302.41 270.33 B
+2.26 0.1 (then-) 311.6 270.33 B
+2.26 0.1 (stmt) 333.21 270.33 B
+1 F
+2.26 0.1 (, an) 351.94 270.33 B
+3 F
+2.26 0.1 (end-) 375.28 270.33 B
+2.26 0.1 (if-) 393.46 270.33 B
+2.26 0.1 (stmt) 402.65 270.33 B
+1 F
+2.26 0.1 (, a) 421.38 270.33 B
+3 F
+2.26 0.1 (select-) 438.79 270.33 B
+2.26 0.1 (case-) 464.67 270.33 B
+2.26 0.1 (stmt) 484.79 270.33 B
+1 F
+2.26 0.1 (, an) 503.52 270.33 B
+3 F
+0.74 0.1 (end-) 72 258.33 B
+0.74 0.1 (select-) 90.18 258.33 B
+0.74 0.1 (stmt) 116.06 258.33 B
+1 F
+0.74 0.1 (, a) 134.79 258.33 B
+3 F
+0.74 0.1 (do-) 149.16 258.33 B
+0.74 0.1 (stmt) 162.23 258.33 B
+1 F
+0.74 0.1 (, an) 180.96 258.33 B
+3 F
+0.74 0.1 (end-) 201.25 258.33 B
+0.74 0.1 (do-) 219.43 258.33 B
+0.74 0.1 (stmt) 232.5 258.33 B
+1 F
+0.74 0.1 (, a) 251.23 258.33 B
+3 F
+0.74 0.1 (forall-) 265.6 258.33 B
+0.74 0.1 (construct-) 290.74 258.33 B
+0.74 0.1 (stmt) 333.2 258.33 B
+1 F
+0.74 0.1 (,) 351.93 258.33 B
+1 8 Q
+0.59 0.08 ( a) 354.54 258.33 B
+3 F
+0.59 0.08 (do-) 363.95 258.33 B
+0.59 0.08 (term-) 374.41 258.33 B
+0.59 0.08 (action-) 392.58 258.33 B
+0.59 0.08 (stmt) 415.5 258.33 B
+1 F
+0.59 0.08 (, a) 430.49 258.33 B
+3 F
+0.59 0.08 (do-) 441.98 258.33 B
+0.59 0.08 (term-) 452.44 258.33 B
+0.59 0.08 (shar) 470.61 258.33 B
+0.59 0.08 (ed-) 484.57 258.33 B
+0.59 0.08 (stmt) 494.58 258.33 B
+1 F
+0.59 0.08 (, or) 509.56 258.33 B
+1 10 Q
+0.52 0.1 (a) 72 246.33 B
+3 F
+0.52 0.1 (wher) 80.22 246.33 B
+0.52 0.1 (e-) 100.44 246.33 B
+0.52 0.1 (construct-) 107.86 246.33 B
+0.52 0.1 (stmt) 150.33 246.33 B
+1 F
+0.52 0.1 (.) 169.06 246.33 B
+0.52 0.1 (It is permissible to branch to an END SELECT statement only fr) 72 228.33 B
+0.52 0.1 (om within its CASE constr) 364.19 228.33 B
+0.52 0.1 (uct.) 485.84 228.33 B
+0.52 0.1 (It is permissible to branch to an END IF statement only fr) 72 210.33 B
+0.52 0.1 (om within its IF constr) 335.92 210.33 B
+0.52 0.1 (uct.) 440.08 210.33 B
+0.83 0.1 (It is permissible to branch to an) 72 192.33 B
+3 F
+0.83 0.1 (end-) 222.45 192.33 B
+0.83 0.1 (do-) 240.62 192.33 B
+0.83 0.1 (stmt) 253.7 192.33 B
+1 8 Q
+0.67 0.08 (or a) 275.86 192.33 B
+3 F
+0.67 0.08 (do-) 293.12 192.33 B
+0.67 0.08 (term-) 303.58 192.33 B
+0.67 0.08 (action-) 321.75 192.33 B
+0.67 0.08 (stmt) 344.67 192.33 B
+1 10 Q
+0.83 0.1 (only fr) 362.4 192.33 B
+0.83 0.1 (om within its DO constr) 393.29 192.33 B
+0.83 0.1 (uct.) 505.37 192.33 B
+1 8 Q
+0.42 0.08 (It is permissible to branch to a) 72 180.33 B
+3 F
+0.42 0.08 (do-) 185.86 180.33 B
+0.42 0.08 (term-) 196.32 180.33 B
+0.42 0.08 (shar) 214.49 180.33 B
+0.42 0.08 (ed-) 228.45 180.33 B
+0.42 0.08 (stmt) 238.46 180.33 B
+1 F
+0.42 0.08 ( only fr) 253.45 180.33 B
+0.42 0.08 (om within its) 280.4 180.33 B
+3 F
+0.42 0.08 (inner-) 331.77 180.33 B
+0.42 0.08 (shar) 352.26 180.33 B
+0.42 0.08 (ed-) 366.21 180.33 B
+0.42 0.08 (do-) 376.23 180.33 B
+0.42 0.08 (construct) 386.68 180.33 B
+1 F
+0.42 0.08 (.) 417.92 180.33 B
+0 11 Q
+0.77 (8.2.1) 72 153.67 P
+0.77 (Sta) 108.96 153.67 P
+0.77 (tement la) 125.29 153.67 P
+0.77 (bels) 176.72 153.67 P
+1 10 Q
+1.18 0.1 (A) 72 135.33 B
+2 F
+1.18 0.1 (statement label) 83.66 135.33 B
+1 F
+1.18 0.1 ( pr) 156.04 135.33 B
+1.18 0.1 (ovides a means of r) 169.81 135.33 B
+1.18 0.1 (eferring to an individual statement.  Only branch tar) 261.84 135.33 B
+1.18 0.1 (get) 508.09 135.33 B
+2.23 0.1 (statements \0508.2\051, FORMA) 72 123.33 B
+2.23 0.1 (T statements, and DO terminations shall be r) 189.51 123.33 B
+2.23 0.1 (eferr) 406.89 123.33 B
+2.23 0.1 (ed to by the use of) 428.02 123.33 B
+0.52 0.1 (statement labels \0503.2.4\051.) 72 111.33 B
+2 F
+(NOTE 8.12) 90 713.33 T
+90.12 537.12 521.88 709.88 R
+6 X
+V
+1 F
+0 X
+2.74 0.1 (The following pr) 92 701.33 B
+2.74 0.1 (ogram fragment contains a DO constr) 173.29 701.33 B
+2.74 0.1 (uct that uses the WHILE form of) 356.96 701.33 B
+3 F
+1.6 0.1 (loop-) 92 690.33 B
+1.6 0.1 (contr) 112.49 690.33 B
+1.6 0.1 (ol) 134.1 690.33 B
+1 F
+1.6 0.1 (.  The loop will continue to execute until an end-of-\336le or input/output err) 141.52 690.33 B
+1.6 0.1 (or is) 498.74 690.33 B
+0.44 0.1 (encounter) 92 679.33 B
+0.44 0.1 (ed, at which point the DO statement terminates the loop.  When a negative value of) 137.08 679.33 B
+0.61 0.1 (X is r) 92 668.33 B
+0.61 0.1 (ead, the pr) 116.42 668.33 B
+0.61 0.1 (ogram skips immediately to the next READ statement, bypassing most of the) 165.79 668.33 B
+0.52 0.1 (range of the loop.) 92 657.33 B
+4 9 Q
+0.09 (READ) 92 641 S
+0.09 (\050IUN,) 119.45 641 S
+0.09 ('\0501X,) 152.39 641 S
+0.09 (G14.7\051',) 185.33 641 S
+0.09 (IOSTAT) 234.74 641 S
+0.09 (=) 273.17 641 S
+0.09 (IOS\051) 284.15 641 S
+0.09 (X) 311.6 641 S
+0.09 (DO) 92 630 S
+0.09 (WHILE) 108.47 630 S
+0.09 (\050IOS) 141.41 630 S
+0.09 (.EQ.) 168.86 630 S
+0.09 (0\051) 196.31 630 S
+0.09 (IF) 108.47 619 S
+0.09 (\050X) 124.94 619 S
+0.09 (.GE.) 141.41 619 S
+0.09 (0.\051) 168.86 619 S
+0.09 (THEN) 190.82 619 S
+0.09 (CALL) 124.94 608 S
+0.09 (SUBA) 152.39 608 S
+0.09 (\050X\051) 179.84 608 S
+0.09 (CALL) 124.94 597 S
+0.09 (SUBB) 152.39 597 S
+0.09 (\050X\051) 179.84 597 S
+0.09 (...) 152.39 586 S
+0.09 (CALL) 124.94 575 S
+0.09 (SUBZ) 152.39 575 S
+0.09 (\050X\051) 179.84 575 S
+0.09 (ENDIF) 108.47 564 S
+0.09 (READ) 108.47 553 S
+0.09 (\050IUN,) 135.92 553 S
+0.09 ('\0501X,) 168.86 553 S
+0.09 (G14.7\051',) 201.8 553 S
+0.09 (IOSTAT) 251.21 553 S
+0.09 (=) 289.64 553 S
+0.09 (IOS\051) 300.62 553 S
+0.09 (X) 328.07 553 S
+0.09 (END) 92 542 S
+0.09 (DO) 113.96 542 S
+2 10 Q
+(NOTE 8.13) 90 518.33 T
+90.12 375.12 521.88 514.88 R
+6 X
+V
+1 F
+0 X
+0.22 0.1 (The following example behaves exactly the same as the one in Note 8.12.  However) 92 506.33 B
+0.22 0.1 (, the READ) 468.89 506.33 B
+1.35 0.1 (statement has been moved to the interior of the range, so that only one READ statement is) 92 495.33 B
+0.52 0.1 (needed.  Also, a CYCLE statement has been used to avoid an extra level of IF nesting.) 92 484.33 B
+4 9 Q
+0.09 (DO     ! A "DO WHILE + 1/2" loop) 92 468 S
+0.09 (   READ \050IUN, \325\0501X, G14.7\051\325, IOSTAT = IOS\051 X) 92 457 S
+0.09 (   IF \050IOS .NE. 0\051 EXIT) 92 446 S
+0.09 (   IF \050X < 0.\051 CYCLE) 92 435 S
+0.09 (   CALL SUBA \050X\051) 92 424 S
+0.09 (   CALL SUBB \050X\051) 92 413 S
+0.09 (      . . .) 92 402 S
+0.09 (   CALL SUBZ \050X\051) 92 391 S
+0.09 (END DO) 92 380 S
+2 10 Q
+(NOTE 8.14) 90 356.33 T
+90.12 339.12 521.88 352.88 R
+6 X
+V
+1 F
+0 X
+0.52 0.1 (Additional examples of DO constr) 92 344.33 B
+0.52 0.1 (ucts ar) 248.76 344.33 B
+0.52 0.1 (e in C.5.3.) 279.22 344.33 B
+90 709.88 90 537.12 2 L
+V
+0.25 H
+0 Z
+N
+522 709.88 522 537.12 2 L
+V
+N
+89.88 710 522.12 710 2 L
+V
+N
+89.88 537 522.12 537 2 L
+V
+N
+90 514.88 90 375.12 2 L
+V
+N
+522 514.88 522 375.12 2 L
+V
+N
+89.88 515 522.12 515 2 L
+V
+N
+89.88 375 522.12 375 2 L
+V
+N
+90 352.88 90 339.12 2 L
+V
+N
+522 352.88 522 339.12 2 L
+V
+N
+89.88 353 522.12 353 2 L
+V
+N
+89.88 339 522.12 339 2 L
+V
+N
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 701.33 S
+0.1 (3) 30 690.33 S
+0.1 (4) 30 679.33 S
+0.1 (5) 30 668.33 S
+0.1 (6) 30 657.33 S
+0.1 (7) 30 641.00 S
+0.1 (8) 30 630.00 S
+0.1 (9) 30 619.00 S
+0.1 (10) 30 608.00 S
+0.1 (11) 30 597.00 S
+0.1 (12) 30 586.00 S
+0.1 (13) 30 575.00 S
+0.1 (14) 30 564.00 S
+0.1 (15) 30 553.00 S
+0.1 (16) 30 542.00 S
+0.1 (17) 30 518.33 S
+0.1 (18) 30 506.33 S
+0.1 (19) 30 495.33 S
+0.1 (20) 30 484.33 S
+0.1 (21) 30 468.00 S
+0.1 (22) 30 457.00 S
+0.1 (23) 30 446.00 S
+0.1 (24) 30 435.00 S
+0.1 (25) 30 424.00 S
+0.1 (26) 30 413.00 S
+0.1 (27) 30 402.00 S
+0.1 (28) 30 391.00 S
+0.1 (29) 30 380.00 S
+0.1 (30) 30 356.33 S
+0.1 (31) 30 344.33 S
+0.1 (32) 30 313.00 S
+0.1 (33) 30 294.33 S
+0.1 (34) 30 282.33 S
+0.1 (35) 30 270.33 S
+0.1 (36) 30 258.33 S
+0.1 (37) 30 246.33 S
+0.1 (38) 30 228.33 S
+0.1 (39) 30 210.33 S
+0.1 (40) 30 192.33 S
+0.1 (41) 30 180.33 S
+0.1 (42) 30 153.67 S
+0.1 (43) 30 135.33 S
+0.1 (44) 30 123.33 S
+0.1 (45) 30 111.33 S
+FMENDPAGE
+%%EndPage: "130" 10
+%%Page: "131" 11
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(JUN 1997) 72 748 T
+( WORKING DRAFT) 247.32 748 T
+(J3/97-007) 465.36 748 T
+(JUN 1997) 72 34.67 T
+(WORKING DRAFT) 249 34.67 T
+0 10 Q
+(131) 505.2 34.67 T
+0 11 Q
+0.77 (8.2.2) 72 712.67 P
+0.77 (GO T) 108.96 712.67 P
+0.77 (O sta) 135.74 712.67 P
+0.77 (tement) 164.29 712.67 P
+1 10 Q
+0.1 (R836) 72 694.33 S
+3 F
+0.1 (goto-) 108 694.33 S
+0.1 (stmt) 129.04 694.33 S
+2 F
+0.1 (is) 234 694.33 S
+1 F
+0.52 0.1 (GO T) 252 694.33 B
+0.52 0.1 (O) 276.86 694.33 B
+3 F
+0.52 0.1 (label) 287.94 694.33 B
+1 F
+0.1 (Constraint:) 72 678.33 S
+0.53 0.1 (The) 135 678.33 B
+3 F
+0.53 0.1 (label) 155.17 678.33 B
+1 F
+0.53 0.1 ( shall be the statement label of a branch tar) 174.19 678.33 B
+0.53 0.1 (get statement that appears in the) 371.77 678.33 B
+0.52 0.1 (same scoping unit as the) 135 667.33 B
+3 F
+0.52 0.1 (goto-) 251.03 667.33 B
+0.52 0.1 (stmt) 272.07 667.33 B
+1 F
+0.52 0.1 (.) 290.8 667.33 B
+1.37 0.1 (Execution of a GO T) 72 650.33 B
+1.37 0.1 (O statement causes a transfer of contr) 168.57 650.33 B
+1.37 0.1 (ol so that the branch tar) 346.28 650.33 B
+1.37 0.1 (get statement) 459.98 650.33 B
+0.52 0.1 (identi\336ed by the label is executed next.) 72 638.33 B
+0 11 Q
+0.77 (8.2.3) 72 611.67 P
+0.77 (Computed GO T) 108.96 611.67 P
+0.77 (O sta) 197.01 611.67 P
+0.77 (tement) 225.56 611.67 P
+1 8 Q
+0.08 (R837) 72 595.67 S
+3 F
+0.08 (computed-) 108 595.67 S
+0.08 (goto-) 142.64 595.67 S
+0.08 (stmt) 159.47 595.67 S
+2 F
+0.08 (is) 234 595.67 S
+1 F
+0.42 0.08 (GO T) 252 595.67 B
+0.42 0.08 (O \050) 271.89 595.67 B
+3 F
+0.42 0.08 (label-) 285.99 595.67 B
+0.42 0.08 (list) 303.95 595.67 B
+1 F
+0.42 0.08 ( \051 [ , ]) 314.49 595.67 B
+3 F
+0.42 0.08 (scalar-) 337.29 595.67 B
+0.42 0.08 (int-) 359.32 595.67 B
+0.42 0.08 (expr) 371.64 595.67 B
+1 F
+0.08 (Constraint:) 72 582.67 S
+1.08 0.08 (Each) 135 582.67 B
+3 F
+1.08 0.08 (label) 155.58 582.67 B
+1 F
+1.08 0.08 ( in) 170.79 582.67 B
+3 F
+1.08 0.08 (label-) 184.26 582.67 B
+1.08 0.08 (list) 202.22 582.67 B
+1 F
+1.08 0.08 ( shall be the statement label of a branch tar) 212.76 582.67 B
+1.08 0.08 (get statement that appears in the same) 376.75 582.67 B
+0.42 0.08 (scoping unit as the) 135 573.67 B
+3 F
+0.42 0.08 (computed-) 206.72 573.67 B
+0.42 0.08 (goto-) 241.36 573.67 B
+0.42 0.08 (stmt) 258.19 573.67 B
+1 F
+0.42 0.08 (.) 273.17 573.67 B
+0.42 0.08 (The same statement label may appear mor) 72 559.67 B
+0.42 0.08 (e than once in a label list.) 227.37 559.67 B
+0.88 0.08 (Execution of a computed GO T) 72 544.67 B
+0.88 0.08 (O statement causes evaluation of the scalar integer expr) 187.93 544.67 B
+0.88 0.08 (ession.  If this value is) 395.97 544.67 B
+3 F
+0.88 0.08 (i) 482.85 544.67 B
+1 F
+0.88 0.08 ( such that) 485.15 544.67 B
+0.61 0.08 (1<=) 72 534.67 B
+3 F
+0.61 0.08 (i) 85.94 534.67 B
+1 F
+0.61 0.08 (<=) 88.24 534.67 B
+3 F
+0.61 0.08 (n) 98.1 534.67 B
+1 F
+0.61 0.08 ( wher) 102.62 534.67 B
+0.61 0.08 (e) 123.81 534.67 B
+3 F
+0.61 0.08 (n) 130.42 534.67 B
+1 F
+0.61 0.08 ( is the number of labels in) 134.95 534.67 B
+3 F
+0.61 0.08 (label-) 234.57 534.67 B
+0.61 0.08 (list) 252.53 534.67 B
+1 F
+0.61 0.08 (, a transfer of contr) 263.08 534.67 B
+0.61 0.08 (ol occurs so that the next statement executed is the) 333.91 534.67 B
+0.61 0.08 (one identi\336ed by the) 72 524.67 B
+3 F
+0.61 0.08 (i) 151.15 524.67 B
+1 F
+0.61 0.08 (th label in the list of labels.  If) 153.46 524.67 B
+3 F
+0.61 0.08 (i) 267.45 524.67 B
+1 F
+0.61 0.08 ( is less than 1 or gr) 269.76 524.67 B
+0.61 0.08 (eater than) 340.68 524.67 B
+3 F
+0.61 0.08 (n) 380.14 524.67 B
+1 F
+0.61 0.08 (, the execution sequence continues as) 384.67 524.67 B
+0.42 0.08 (though a CONTINUE statement wer) 72 514.67 B
+0.42 0.08 (e executed.) 205.79 514.67 B
+0 11 Q
+0.77 (8.2.4) 72 488.67 P
+0.77 (Ar) 108.96 488.67 P
+0.77 (ithmetic IF sta) 120.84 488.67 P
+0.77 (tement) 195.26 488.67 P
+1 8 Q
+0.08 (R838) 72 472.67 S
+3 F
+0.08 (arithmetic-) 108 472.67 S
+0.08 (if-) 144.57 472.67 S
+0.08 (stmt) 151.93 472.67 S
+2 F
+0.08 (is) 234 472.67 S
+1 F
+0.42 0.08 (IF \050) 252 472.67 B
+3 F
+0.42 0.08 (scalar-) 267.04 472.67 B
+0.42 0.08 (numeric-) 289.07 472.67 B
+0.42 0.08 (expr) 319.2 472.67 B
+1 F
+0.42 0.08 ( \051) 333.74 472.67 B
+3 F
+0.42 0.08 (label , label , label) 341.48 472.67 B
+1 F
+0.08 (Constraint:) 72 459.67 S
+1.4 0.08 (Each) 135 459.67 B
+3 F
+1.4 0.08 (label) 155.9 459.67 B
+1 F
+1.4 0.08 ( shall be the label of a branch tar) 171.11 459.67 B
+1.4 0.08 (get statement that appears in the same scoping unit as the) 299.18 459.67 B
+3 F
+0.42 0.08 (arithmetic-) 135 450.67 B
+0.42 0.08 (if-) 171.57 450.67 B
+0.42 0.08 (stmt) 178.93 450.67 B
+1 F
+0.42 0.08 (.) 193.91 450.67 B
+0.08 (Constraint:) 72 438.67 S
+0.42 0.08 (The) 135 438.67 B
+3 F
+0.42 0.08 (scalar-) 151.13 438.67 B
+0.42 0.08 (numeric-) 173.16 438.67 B
+0.42 0.08 (expr) 203.29 438.67 B
+1 F
+0.42 0.08 ( shall not be of type complex.) 217.83 438.67 B
+0.42 0.08 (The same label may appear mor) 72 424.67 B
+0.42 0.08 (e than once in one arithmetic IF statement.) 189.56 424.67 B
+0.45 0.08 (Execution of an arithmetic IF statement causes evaluation of the numeric expr) 72 409.67 B
+0.45 0.08 (ession followed by a transfer of contr) 357.64 409.67 B
+0.45 0.08 (ol.  The) 494.37 409.67 B
+0.58 0.08 (branch tar) 72 399.67 B
+0.58 0.08 (get statement identi\336ed by the \336rst label, the second label, or the thir) 109.46 399.67 B
+0.58 0.08 (d label is executed next as the value of the) 364.71 399.67 B
+0.42 0.08 (numeric expr) 72 389.67 B
+0.42 0.08 (ession is less than zer) 120.57 389.67 B
+0.42 0.08 (o, equal to zer) 199.48 389.67 B
+0.42 0.08 (o, or gr) 251.58 389.67 B
+0.42 0.08 (eater than zer) 278.41 389.67 B
+0.42 0.08 (o, r) 328.56 389.67 B
+0.42 0.08 (espectively) 340.68 389.67 B
+0.42 0.08 (.) 380.15 389.67 B
+0 12 Q
+0.84 (8.3) 72 359 P
+0.84 (CONTINUE sta) 102.24 359 P
+0.84 (tement) 182.82 359 P
+1 10 Q
+0.52 0.1 (Execution of a CONTINUE statement has no ef) 72 340.33 B
+0.52 0.1 (fect.) 287.7 340.33 B
+0.1 (R839) 72 322.33 S
+3 F
+0.1 (continue-) 108 322.33 S
+0.1 (stmt) 147.42 322.33 S
+2 F
+0.1 (is) 234 322.33 S
+1 F
+0.52 0.1 (CONTINUE) 252 322.33 B
+0 12 Q
+0.84 (8.4) 72 291 P
+0.84 (ST) 102.24 291 P
+0.84 (OP sta) 113.34 291 P
+0.84 (tement) 151.2 291 P
+1 10 Q
+0.1 (R840) 72 272.33 S
+3 F
+0.1 (stop-) 108 272.33 S
+0.1 (stmt) 128.49 272.33 S
+2 F
+0.1 (is) 234 272.33 S
+1 F
+0.52 0.1 (ST) 252 272.33 B
+0.52 0.1 (OP [) 263.4 272.33 B
+3 F
+0.52 0.1 (stop-) 287.17 272.33 B
+0.52 0.1 (code) 307.66 272.33 B
+1 F
+0.52 0.1 ( ]) 325.46 272.33 B
+0.1 (R841) 72 254.33 S
+3 F
+0.1 (stop-) 108 254.33 S
+0.1 (code) 128.49 254.33 S
+2 F
+0.1 (is) 234 254.33 S
+3 F
+0.52 0.1 (scalar-) 252 254.33 B
+0.52 0.1 (char-) 279.54 254.33 B
+0.52 0.1 (constant) 300.77 254.33 B
+2 F
+0.1 (or) 234 242.33 S
+3 F
+0.52 0.1 (digit) 252 242.33 B
+1 F
+0.52 0.1 ( [) 271.39 242.33 B
+3 F
+0.52 0.1 (digit) 281.06 242.33 B
+1 F
+0.52 0.1 ( [) 300.45 242.33 B
+3 F
+0.52 0.1 (digit) 310.12 242.33 B
+1 F
+0.52 0.1 ( [) 329.51 242.33 B
+3 F
+0.52 0.1 (digit) 339.18 242.33 B
+1 F
+0.52 0.1 ( [) 358.57 242.33 B
+3 F
+0.52 0.1 (digit) 368.24 242.33 B
+1 F
+0.52 0.1 ( ] ] ] ]) 387.63 242.33 B
+0.1 (Constraint:) 72 226.33 S
+3 F
+0.52 0.1 (scalar-) 135 226.33 B
+0.52 0.1 (char-) 162.54 226.33 B
+0.52 0.1 (constant) 183.77 226.33 B
+1 F
+0.52 0.1 ( shall be of type default character) 219.19 226.33 B
+0.52 0.1 (.) 371.76 226.33 B
+1.57 0.1 (Execution of a ST) 72 209.33 B
+1.57 0.1 (OP statement causes termination of execution of the pr) 154.89 209.33 B
+1.57 0.1 (ogram.  At the time of) 414.65 209.33 B
+1.86 0.1 (termination, the stop code, if any) 72 197.33 B
+1.86 0.1 (, is available in a pr) 229.33 197.33 B
+1.86 0.1 (ocessor) 326.16 197.33 B
+1.86 0.1 (-dependent manner) 359.26 197.33 B
+1.86 0.1 (.  Leading zer) 449.62 197.33 B
+1.86 0.1 (o) 516.44 197.33 B
+0.52 0.1 (digits in the stop code ar) 72 185.33 B
+0.52 0.1 (e not signi\336cant.) 185.83 185.33 B
+0 X
+0 8 Q
+0.1 (1) 30 712.67 S
+0.1 (2) 30 694.33 S
+0.1 (3) 30 678.33 S
+0.1 (4) 30 667.33 S
+0.1 (5) 30 650.33 S
+0.1 (6) 30 638.33 S
+0.1 (7) 30 611.67 S
+0.1 (8) 30 595.67 S
+0.1 (9) 30 582.67 S
+0.1 (10) 30 559.67 S
+0.1 (11) 30 544.67 S
+0.1 (12) 30 534.67 S
+0.1 (13) 30 524.67 S
+0.1 (14) 30 514.67 S
+0.1 (15) 30 488.67 S
+0.1 (16) 30 472.67 S
+0.1 (17) 30 459.67 S
+0.1 (18) 30 438.67 S
+0.1 (19) 30 424.67 S
+0.1 (20) 30 409.67 S
+0.1 (21) 30 399.67 S
+0.1 (22) 30 389.67 S
+0.1 (23) 30 359.00 S
+0.1 (24) 30 340.33 S
+0.1 (25) 30 322.33 S
+0.1 (26) 30 291.00 S
+0.1 (27) 30 272.33 S
+0.1 (28) 30 254.33 S
+0.1 (29) 30 242.33 S
+0.1 (30) 30 226.33 S
+0.1 (31) 30 209.33 S
+0.1 (32) 30 197.33 S
+0.1 (33) 30 185.33 S
+FMENDPAGE
+%%EndPage: "131" 11
+%%Page: "132" 12
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(J3/97-007) 72 748 T
+(WORKING DRAFT) 249 748 T
+(JUN 1997) 469.44 748 T
+0 10 Q
+(132) 72 34.67 T
+0 12 Q
+(WORKING DRAFT) 249 34.67 T
+(JUN 1997) 469.44 34.67 T
+0 X
+0 8 Q
+FMENDPAGE
+%%EndPage: "132" 12
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 12
+%%DocumentFonts: AvantGarde-Demi
+%%+ Palatino-Roman
+%%+ Palatino-Bold
+%%+ Palatino-Italic
+%%+ Courier-Bold
+%%+ ZapfDingbats
+%%+ Palatino-BoldItalic
+%%+ Courier
+%%+ Times-Italic
+%%+ Times-Roman
+%%+ Symbol
+%%EOF

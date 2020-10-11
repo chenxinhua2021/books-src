@@ -1,0 +1,95 @@
+GCC-2.95 for Mingw -- Installation instructions
+===============================================
+
+1. Choose what packages to download:
+
+  a. gcc-2.95-mingw32.zip ..........  [MANDATORY] C/C++/F77/ObjC compilers 
+  b. gcc-2.95-html-docs.zip ........  [OPTIONAL] Docs in HTML format 
+  c. gcc-2.95-msvcrt40-runtime.zip .. [OPTIONAL] MSVCRT instead of CRTDLL.
+
+1. Get the mandatory package first.
+
+  (1) If you're on a fast link, just get the following files:
+
+      - gcc-2.95-mingw32.zip
+
+  (2) For slower links, get the split files from "split" directory.
+
+      - gcc-2.95-mingw32.zip.*
+  
+  once you have all the gcc-2.95.* files, you can combine them
+  using the combine.bat file provided in the "split" directory,
+  which will create a gcc-2.95-mingw32.zip file.
+
+  I recommend you get the HTML documentation package as well.
+  
+2. Pre-installation:
+
+  a. Decide where to install it. I usually install in "C:\GCC-2.95", but
+     you can install *anywhere* you want, including on a ZIP/JAZ drive.
+     All you have to do is to set PATH and optionally GCC_EXEC_PREFIX 
+     accordingly (see later). From here on, I'll use "C:\GCC-2.95" as 
+     the installation root directory. Please replace with whatever you've 
+     chosen. You can use the sample "MINGW32.BAT" I've provided in the 
+     distribution to setup the variables. DO NOT install in a directory
+     with spaces in it (eg., C:\Program Files\Mingw).
+  
+  b. Make sure you DO NOT install on top of an existing installation.
+     Either install elsewhere, or delete the old directory structure first.
+  
+3. INSTALL:
+   
+   You must use an "unzip" program that understands both long file names
+   and also maintains directory structure. Pkunzip and WinZIP work just
+   fine, and I'm sure a host of others do as well. You might have to
+   supply "-d" option when unzipping to maintain directory structure.
+
+   First create the installation directory. 
+
+     C:\> mkdir C:\GCC-2.95
+     C:\> cd C:\GCC-2.95
+
+     C:\> unzip -d C:\tmp\gcc-2.95-mingw32.zip
+
+   Note that if you retrieved the "split" files, then you will have to
+   recombine them before you try to unzip. You can use the DOS COPY trick
+   to recombine, or use the COMBINE.BAT in this directory.
+
+4. Setting up environment variables and such:
+   
+   Starting from EGCS-1.1.2 release, GCC does not require *any* environment
+   variable to run properly. You can still set GCC_EXEC_PREFIX if you
+   wish (useful for example to switch between multiple GCC distributions), 
+   but it's completely optional. EGCS now looks for the system includes, 
+   libraries, programs, etc relative to its installation directory. 
+
+   You'll still need to add the GCC-2.95 bin directory,
+   C:\GCC-2.95\bin, to your PATH for GCC to be able to find various 
+   other tools such the linker, assembler, etc.
+
+   The following is all you need for this release:
+     
+     C:\> PATH=C:\GCC-2.95\BIN;%PATH%
+    
+   Again, see the supplied MINGW32.BAT file. Those of you who use a Unix
+   like SHELL such as bash, use "mingw32.sh" instead. 
+
+   Make sure you do not have any other variables set from previous version
+   or else GCC will search incorrect places for libraries and headers. The
+   ones that you DO NOT need anymore are: LIBRARY_PATH, C_INCLUDE_PATH,
+   CPLUS_INCLUDE_PATH, and OBJC_INCLUDE_PATH. If you *DO* have the variable
+   GCC_EXEC_PREFIX in your environment, just make sure it's set correctly.
+
+5. INSTALL GCC-2.95 OPTIONAL packages following exactly the same steps.
+
+Good luck.
+
+Links:
+
+GNU Compilers    : http://gcc.gnu.org/
+Cygwin site      : http://sourceware.cygnus.com/cygwin/
+My stuff         : http://www.xraylith.wisc.edu/~khan/software/gnu-win32/
+
+Mumit Khan -- khan@xraylith.wisc.edu
+http://www.xraylith.wisc.edu/~khan/
+

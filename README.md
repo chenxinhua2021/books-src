@@ -65,3 +65,5 @@
 * [30天自制操作系统-src](./30天自制操作系统)
 * [多核和 GPU 编程课程资料（源码、课后答案、勘误） ](./multi_cores_gpu_programming)
 * [VC++ 数字图像处理第二版（何斌）](./hebin_digital_image_processing_vc)
+* [程序设计语言-实践之路-src）](./code_original)
+* [Fortran95 程序设计随书资料](./fortran95)

@@ -1,0 +1,3171 @@
+%!PS-Adobe-3.0
+%%BoundingBox: (atend)
+%%Pages: (atend)
+%%PageOrder: (atend)
+%%DocumentFonts: (atend)
+%%Creator: Frame 4.0
+%%DocumentData: Clean7Bit
+%%EndComments
+%%BeginProlog
+%
+% Frame ps_prolog 5.0, for use with Frame 5.0 products
+% This ps_prolog file is Copyright (c) 1986-1995 Frame Technology
+% Corporation.  All rights reserved.  This ps_prolog file may be
+% freely copied and distributed in conjunction with documents created
+% using FrameMaker, FrameMaker/SGML and FrameViewer as long as this 
+% copyright notice is preserved.
+%
+% FrameMaker users specify the proper paper size for each print job in the
+% "Print" dialog's "Printer Paper Size" "Width" and "Height~ fields.  If the
+% printer that the PS file is sent to does not support the requested paper
+% size, or if there is no paper tray of the proper size currently installed, 
+% then the job will not be printed.  The following flag, if set to true, will
+% cause the job to print on the default paper in such cases.
+/FMAllowPaperSizeMismatch            true def
+%
+% Frame products normally print colors as their true color on a color printer
+% or as shades of gray, based on luminance, on a black-and white printer. The
+% following flag, if set to true, forces all non-white colors to print as pure
+% black. This has no effect on bitmap images.
+/FMPrintAllColorsAsBlack             false def
+%
+% Frame products can either set their own line screens or use a printer's 
+% default settings. Three flags below control this separately for no 
+% separations, spot separations and process separations. If a flag
+% is true, then the default printer settings will not be changed. If it is
+% false, Frame products will use their own settings from a table based on
+% the printer's resolution.
+/FMUseDefaultNoSeparationScreen      true  def
+/FMUseDefaultSpotSeparationScreen    true  def
+/FMUseDefaultProcessSeparationScreen false def
+%
+% For any given PostScript printer resolution, Frame products have two sets of 
+% screen angles and frequencies for printing process separations, which are 
+% recomended by Adobe. The following variable chooses the higher frequencies
+% when set to true or the lower frequencies when set to false. This is only
+% effective if the appropriate FMUseDefault...SeparationScreen flag is false.
+/FMUseHighFrequencyScreens true def
+%
+% The following is a set of predefined optimal frequencies and angles for various
+% common dpi settings. This is taken from "Advances in Color Separation Using
+% PostScript Software Technology," from Adobe Systems (3/13/89 P.N. LPS 0043)
+% and corrolated with information which is in various PPD (4.0) files.
+%
+% The "dpiranges" figure is the minimum dots per inch device resolution which
+% can support this setting. The "low" and "high" values are controlled by the
+% setting of the FMUseHighFrequencyScreens flag above. The "TDot" flags control
+% the use of the "Yellow Triple Dot" feature whereby the frequency id divided by
+% three, but the dot function is "trippled" giving a block of 3x3 dots per cell.
+%
+% PatFreq is a compromise pattern frequency for ps Level 2 printers which is close
+% to the ideal WYSIWYG pattern frequency of 9 repetitions/inch but does not beat
+% (too badly) against the screen frequencies of any separations for that DPI.
+/dpiranges   [  2540    2400    1693     1270    1200     635      600      0      ] def
+/CMLowFreqs  [ 100.402  94.8683 89.2289 100.402  94.8683  66.9349  63.2456 47.4342 ] def
+/YLowFreqs   [  95.25   90.0    84.65    95.25   90.0     70.5556  66.6667 50.0    ] def
+/KLowFreqs   [  89.8026 84.8528 79.8088  89.8026 84.8528  74.8355  70.7107 53.033  ] def
+/CLowAngles  [  71.5651 71.5651 71.5651 71.5651  71.5651  71.5651  71.5651 71.5651 ] def
+/MLowAngles  [  18.4349 18.4349 18.4349 18.4349  18.4349  18.4349  18.4349 18.4349 ] def
+/YLowTDot    [  true    true    false    true    true     false    false   false   ] def
+/CMHighFreqs [ 133.87  126.491 133.843  108.503 102.523  100.402   94.8683 63.2456 ] def
+/YHighFreqs  [ 127.0   120.0   126.975  115.455 109.091   95.25    90.0    60.0    ] def
+/KHighFreqs  [ 119.737 113.137 119.713  128.289 121.218   89.8026  84.8528 63.6395 ] def
+/CHighAngles [  71.5651 71.5651 71.5651  70.0169 70.0169  71.5651  71.5651 71.5651 ] def
+/MHighAngles [  18.4349 18.4349 18.4349  19.9831 19.9831  18.4349  18.4349 18.4349 ] def
+/YHighTDot   [  false   false   true     false   false    true     true    false   ] def
+/PatFreq     [	10.5833 10.0     9.4055  10.5833 10.0	  10.5833  10.0	   9.375   ] def
+%
+% PostScript Level 2 printers contain an "Accurate Screens" feature which can
+% improve process separation rendering at the expense of compute time. This 
+% flag is ignored by PostScript Level 1 printers.
+/FMUseAcccurateScreens true def
+%
+% The following PostScript procedure defines the spot function that Frame
+% products will use for process separations. You may un-comment-out one of
+% the alternative functions below, or use your own.
+%
+% Dot function
+/FMSpotFunction {abs exch abs 2 copy add 1 gt 
+		{1 sub dup mul exch 1 sub dup mul add 1 sub }
+		{dup mul exch dup mul add 1 exch sub }ifelse } def
+%
+% Line function
+% /FMSpotFunction { pop } def
+%
+% Elipse function
+% /FMSpotFunction { dup 5 mul 8 div mul exch dup mul exch add 
+%		sqrt 1 exch sub } def
+%
+%
+/FMversion (5.0) def 
+/fMLevel1 /languagelevel where {pop languagelevel} {1} ifelse 2 lt def
+/FMPColor
+	fMLevel1 {
+		false
+		/colorimage where {pop pop true} if
+	} {
+		true
+	} ifelse
+def
+/FrameDict 400 dict def 
+systemdict /errordict known not {/errordict 10 dict def
+		errordict /rangecheck {stop} put} if
+% The readline in PS 23.0 doesn't recognize cr's as nl's on AppleTalk
+FrameDict /tmprangecheck errordict /rangecheck get put 
+errordict /rangecheck {FrameDict /bug true put} put 
+FrameDict /bug false put 
+mark 
+% Some PS machines read past the CR, so keep the following 3 lines together!
+currentfile 5 string readline
+00
+0000000000
+cleartomark 
+errordict /rangecheck FrameDict /tmprangecheck get put 
+FrameDict /bug get { 
+	/readline {
+		/gstring exch def
+		/gfile exch def
+		/gindex 0 def
+		{
+			gfile read pop 
+			dup 10 eq {exit} if 
+			dup 13 eq {exit} if 
+			gstring exch gindex exch put 
+			/gindex gindex 1 add def 
+		} loop
+		pop 
+		gstring 0 gindex getinterval true 
+		} bind def
+	} if
+/FMshowpage /showpage load def
+/FMquit /quit load def
+/FMFAILURE { 
+	dup = flush 
+	FMshowpage 
+	/Helvetica findfont 12 scalefont setfont
+	72 200 moveto show
+	72 220 moveto show
+	FMshowpage 
+	FMquit 
+	} def 
+/FMVERSION {
+	FMversion ne {
+		(Frame product version does not match ps_prolog!  Check installation;)
+		(also check ~/fminit and ./fminit for old versions) FMFAILURE
+		} if
+	} def 
+/FMBADEPSF { 
+	(Adobe's PostScript Language Reference Manual, 2nd Edition, section H.2.4)
+	(says your EPS file is not valid, as it calls X              )
+	dup dup (X) search pop exch pop exch pop length 
+	5 -1 roll 
+	putinterval 
+	FMFAILURE
+	} def
+/fmConcatProcs
+	{
+	/proc2 exch cvlit def/proc1 exch cvlit def/newproc proc1 length proc2 length add array def
+	newproc 0 proc1 putinterval newproc proc1 length proc2 putinterval newproc cvx
+}def
+FrameDict begin [
+	/ALDsave
+	/FMdicttop
+	/FMoptop
+	/FMpointsize
+	/FMsaveobject
+	/b
+	/bitmapsave
+	/blut
+	/bpside
+	/bs
+	/bstring
+	/bwidth
+	/c
+	/cf
+	/cs
+	/cynu
+	/depth
+	/edown
+	/fh
+	/fillvals
+	/fw
+	/fx
+	/fy
+	/g
+	/gfile
+	/gindex
+	/grnt
+	/gryt
+	/gstring
+	/height
+	/hh
+	/i
+	/im
+	/indx
+	/is
+	/k
+	/kk
+	/landscape
+	/lb
+	/len
+	/llx
+	/lly
+	/m
+	/magu
+	/manualfeed
+	/n
+	/offbits
+	/onbits
+	/organgle
+	/orgbangle
+	/orgbfreq
+	/orgbproc
+	/orgbxfer
+	/orgfreq
+	/orggangle
+	/orggfreq
+	/orggproc
+	/orggxfer
+	/orgmatrix
+	/orgproc
+	/orgrangle
+	/orgrfreq
+	/orgrproc
+	/orgrxfer
+	/orgxfer
+	/pagesave
+	/paperheight
+	/papersizedict
+	/paperwidth
+	/pos
+	/pwid
+	/r
+	/rad
+	/redt
+	/sl
+	/str
+	/tran
+	/u
+	/urx
+	/ury
+	/val
+	/width
+	/width
+	/ws
+	/ww
+	/x
+	/x1
+	/x2
+	/xindex
+	/xpoint
+	/xscale
+	/xx
+	/y
+	/y1
+	/y2
+	/yelu
+	/yindex
+	/ypoint
+	/yscale
+	/yy
+] { 0 def } forall
+/FmBD {bind def} bind def
+systemdict /pdfmark known {
+	/fMAcrobat true def
+	
+	/FmPD /pdfmark load def
+	
+	
+	/FmPT /show load def
+	
+	
+	currentdistillerparams /CoreDistVersion get 2000 ge {
+	
+		
+		/FmPD2 /pdfmark load def
+		
+		
+		
+		
+		
+		/FmPA { mark exch /Dest exch 5 3 roll 
+				/View [ /XYZ null 6 -2 roll FmDC exch pop null] /DEST FmPD 
+		}FmBD
+	} {
+		
+		/FmPD2 /cleartomark load def
+		/FmPA {pop pop pop}FmBD
+	} ifelse
+} {
+	
+	/fMAcrobat false def
+	/FmPD /cleartomark load def
+	/FmPD2 /cleartomark load def
+	/FmPT /pop load def
+	/FmPA {pop pop pop}FmBD
+} ifelse
+/FmDC {
+	transform fMDefaultMatrix itransform cvi exch cvi exch
+}FmBD
+/FmBx {
+	dup 3 index lt {3 1 roll exch} if 
+	1 index 4 index lt {4 -1 roll 3 1 roll exch 4 1 roll} if
+}FmBD
+/FMnone 0 def
+/FMcyan 1 def
+/FMmagenta 2 def
+/FMyellow 3 def
+/FMblack 4 def
+/FMcustom 5 def
+/fMNegative false def 
+/FrameSepIs FMnone def 
+/FrameSepBlack 0 def
+/FrameSepYellow 0 def
+/FrameSepMagenta 0 def
+/FrameSepCyan 0 def
+/FrameSepRed 1 def
+/FrameSepGreen 1 def
+/FrameSepBlue 1 def
+/FrameCurGray 1 def
+/FrameCurPat null def
+/FrameCurColors [ 0 0 0 1 0 0 0 ] def 
+/FrameColorEpsilon .001 def	
+/eqepsilon {		
+	sub dup 0 lt {neg} if
+	FrameColorEpsilon le
+} bind def
+/FrameCmpColorsCMYK { 
+	2 copy 0 get exch 0 get eqepsilon {
+		2 copy 1 get exch 1 get eqepsilon {
+			2 copy 2 get exch 2 get eqepsilon {
+				3 get exch 3 get eqepsilon
+			} {pop pop false} ifelse
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/FrameCmpColorsRGB { 
+	2 copy 4 get exch 0 get eqepsilon {
+		2 copy 5 get exch 1 get eqepsilon {
+			6 get exch 2 get eqepsilon
+		}{pop pop false} ifelse
+	} {pop pop false} ifelse
+} bind def
+/RGBtoCMYK { 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	1 exch sub 
+	3 1 roll 
+	3 copy 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	2 copy 
+	le { pop } { exch pop } ifelse 
+	dup dup dup 
+	6 1 roll 
+	4 1 roll 
+	7 1 roll 
+	sub 
+	6 1 roll 
+	sub 
+	5 1 roll 
+	sub 
+	4 1 roll 
+} bind def
+/CMYKtoRGB { 
+	dup dup 4 -1 roll add 						  
+	5 1 roll 3 -1 roll add 						  
+	4 1 roll add 								  
+	1 exch sub dup 0 lt {pop 0} if 3 1 roll 	  
+	1 exch sub dup 0 lt {pop 0} if exch 	      
+	1 exch sub dup 0 lt {pop 0} if exch	  		  
+} bind def
+/FrameSepInit {
+	1.0 RealSetgray
+} bind def
+/FrameSetSepColor { 
+	/FrameSepBlue exch def
+	/FrameSepGreen exch def
+	/FrameSepRed exch def
+	/FrameSepBlack exch def
+	/FrameSepYellow exch def
+	/FrameSepMagenta exch def
+	/FrameSepCyan exch def
+	/FrameSepIs FMcustom def
+	setCurrentScreen	
+} bind def
+/FrameSetCyan {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 1.0 def
+	/FrameSepIs FMcyan def
+	setCurrentScreen	
+} bind def
+ 
+/FrameSetMagenta {
+	/FrameSepBlue 1.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 1.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMmagenta def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetYellow {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 1.0 def
+	/FrameSepRed 1.0 def
+	/FrameSepBlack 0.0 def
+	/FrameSepYellow 1.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMyellow def
+	setCurrentScreen
+} bind def
+ 
+/FrameSetBlack {
+	/FrameSepBlue 0.0 def
+	/FrameSepGreen 0.0 def
+	/FrameSepRed 0.0 def
+	/FrameSepBlack 1.0 def
+	/FrameSepYellow 0.0 def
+	/FrameSepMagenta 0.0 def
+	/FrameSepCyan 0.0 def
+	/FrameSepIs FMblack def
+	setCurrentScreen
+} bind def
+ 
+/FrameNoSep { 
+	/FrameSepIs FMnone def
+	setCurrentScreen
+} bind def
+/FrameSetSepColors { 
+	FrameDict begin
+	[ exch 1 add 1 roll ]
+	/FrameSepColors  
+	exch def end
+	} bind def
+/FrameColorInSepListCMYK { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsCMYK 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/FrameColorInSepListRGB { 
+	FrameSepColors {  
+       		exch dup 3 -1 roll 
+       		FrameCmpColorsRGB 
+       		{ pop true exit } if
+    	} forall 
+	dup true ne {pop false} if
+	} bind def
+/RealSetgray /setgray load def
+/RealSetrgbcolor /setrgbcolor load def
+/RealSethsbcolor /sethsbcolor load def
+end 
+/setgray { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+		{ RealSetgray } 
+		{ 
+		FrameSepIs FMblack eq 
+			{ RealSetgray } 
+			{ FrameSepIs FMcustom eq 
+			  FrameSepRed 0 eq and
+			  FrameSepGreen 0 eq and
+			  FrameSepBlue 0 eq and {
+			  	RealSetgray
+			  } {
+				1 RealSetgray pop 
+			  } ifelse
+			} ifelse
+		} ifelse
+	end
+} bind def
+/setrgbcolor { 
+	FrameDict begin
+	FrameSepIs FMnone eq
+	{  RealSetrgbcolor }
+	{
+		3 copy [ 4 1 roll ] 
+		FrameColorInSepListRGB
+		{
+				FrameSepBlue eq exch 
+			 	FrameSepGreen eq and exch 
+			 	FrameSepRed eq and
+			 	{ 0 } { 1 } ifelse
+		}
+		{
+			FMPColor {
+				RealSetrgbcolor
+				currentcmykcolor
+			} {
+				RGBtoCMYK
+			} ifelse
+			FrameSepIs FMblack eq
+			{1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		RealSetgray
+	} 
+	ifelse
+	end
+} bind def
+/sethsbcolor {
+	FrameDict begin
+	FrameSepIs FMnone eq 
+	{ RealSethsbcolor } 
+	{
+		RealSethsbcolor 
+		currentrgbcolor  
+		setrgbcolor 
+	} 
+	ifelse
+	end
+} bind def
+FrameDict begin
+/setcmykcolor where {
+	pop /RealSetcmykcolor /setcmykcolor load def
+} {
+	/RealSetcmykcolor {
+		4 1 roll
+		3 { 3 index add 0 max 1 min 1 exch sub 3 1 roll} repeat 
+		RealSetrgbcolor pop
+	} bind def
+} ifelse
+userdict /setcmykcolor { 
+		FrameDict begin
+		FrameSepIs FMnone eq
+		{ RealSetcmykcolor } 
+		{
+			4 copy [ 5 1 roll ]
+			FrameColorInSepListCMYK
+			{
+				FrameSepBlack eq exch 
+				FrameSepYellow eq and exch 
+				FrameSepMagenta eq and exch 
+				FrameSepCyan eq and 
+				{ 0 } { 1 } ifelse
+			}
+			{
+				FrameSepIs FMblack eq
+				{1.0 exch sub 4 1 roll pop pop pop} {
+				FrameSepIs FMyellow eq
+				{pop 1.0 exch sub 3 1 roll pop pop} {
+				FrameSepIs FMmagenta eq
+				{pop pop 1.0 exch sub exch pop } {
+				FrameSepIs FMcyan eq
+				{pop pop pop 1.0 exch sub } 
+				{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+			} ifelse
+			RealSetgray
+		}
+		ifelse
+		end
+	} bind put
+fMLevel1 { 
+	
+	
+	
+	/patScreenDict 7 dict dup begin
+		<0f1e3c78f0e1c387> [ 45  { pop } {exch pop} 		.5   2 sqrt] FmBD
+		<0f87c3e1f0783c1e> [ 135 { pop } {exch pop}			.5   2 sqrt] FmBD
+		<cccccccccccccccc> [ 0   { pop } dup				.5   2	   ] FmBD
+		<ffff0000ffff0000> [ 90  { pop } dup				.5   2	   ] FmBD
+		<8142241818244281> [ 45  { 2 copy lt {exch} if pop}	dup .75  2 sqrt] FmBD
+		<03060c183060c081> [ 45  { pop } {exch pop}			.875 2 sqrt] FmBD
+		<8040201008040201> [ 135 { pop } {exch pop}			.875 2 sqrt] FmBD
+	end def
+} { 
+	
+	/patProcDict 5 dict dup begin
+		<0f1e3c78f0e1c387> { 3 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<0f87c3e1f0783c1e> { 3 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+		<8142241818244281> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke
+											-1 -1 moveto 9 9 lineto stroke } bind def
+		<03060c183060c081> { 1 setlinewidth -1 -1 moveto 9 9 lineto stroke 
+											4 -4 moveto 12 4 lineto stroke
+											-4 4 moveto 4 12 lineto stroke} bind def
+		<8040201008040201> { 1 setlinewidth -1 9 moveto 9 -1 lineto stroke 
+											-4 4 moveto 4 -4 lineto stroke
+											4 12 moveto 12 4 lineto stroke} bind def
+	end def
+	/patDict 15 dict dup begin
+		/PatternType 1 def		
+		/PaintType 2 def		
+		/TilingType 3 def		
+		/BBox [ 0 0 8 8 ] def 	
+		/XStep 8 def			
+		/YStep 8 def			
+		/PaintProc {
+			begin
+			patProcDict bstring known {
+				patProcDict bstring get exec
+			} {
+				8 8 true [1 0 0 -1 0 8] bstring imagemask
+			} ifelse
+			end
+		} bind def
+	end def
+} ifelse
+/combineColor {
+    FrameSepIs FMnone eq
+	{
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceCMYK]] setcolorspace
+			FrameCurColors 0 4 getinterval aload pop FrameCurPat setcolor
+		} {
+			FrameCurColors 3 get 1.0 ge {
+				FrameCurGray RealSetgray
+			} {
+				fMAcrobat not FMPColor graymode and and {
+					0 1 3 { 
+						FrameCurColors exch get
+						1 FrameCurGray sub mul
+					} for
+					RealSetcmykcolor
+				} {
+					4 1 6 {
+						FrameCurColors exch get
+						graymode {
+							1 exch sub 1 FrameCurGray sub mul 1 exch sub
+						} {
+							1.0 lt {FrameCurGray} {1} ifelse
+						} ifelse
+					} for
+					RealSetrgbcolor
+				} ifelse
+			} ifelse
+		} ifelse
+	} { 
+		FrameCurColors 0 4 getinterval aload
+		FrameColorInSepListCMYK {
+			FrameSepBlack eq exch 
+			FrameSepYellow eq and exch 
+			FrameSepMagenta eq and exch 
+			FrameSepCyan eq and
+			FrameSepIs FMcustom eq and
+			{ FrameCurGray } { 1 } ifelse
+		} {
+			FrameSepIs FMblack eq
+			{FrameCurGray 1.0 exch sub mul 1.0 exch sub 4 1 roll pop pop pop} {
+			FrameSepIs FMyellow eq
+			{pop FrameCurGray 1.0 exch sub mul 1.0 exch sub 3 1 roll pop pop} {
+			FrameSepIs FMmagenta eq
+			{pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub exch pop } {
+			FrameSepIs FMcyan eq
+			{pop pop pop FrameCurGray 1.0 exch sub mul 1.0 exch sub } 
+			{pop pop pop pop 1} ifelse } ifelse } ifelse } ifelse 
+		} ifelse
+		graymode fMLevel1 or not {
+			
+			[/Pattern [/DeviceGray]] setcolorspace
+			FrameCurPat setcolor
+		} { 
+			graymode not fMLevel1 and {
+				
+				dup 1 lt {pop FrameCurGray} if
+			} if
+			RealSetgray
+		} ifelse
+	} ifelse
+} bind def
+/savematrix {
+	orgmatrix currentmatrix pop
+	} bind def
+/restorematrix {
+	orgmatrix setmatrix
+	} bind def
+/fMDefaultMatrix matrix defaultmatrix def
+/fMatrix2 matrix def
+/dpi    72 0 fMDefaultMatrix dtransform
+    dup mul exch   dup mul add   sqrt def
+	
+/freq dpi dup 72 div round dup 0 eq {pop 1} if 8 mul div def
+/sangle 1 0 fMDefaultMatrix dtransform exch atan def
+	sangle fMatrix2 rotate 
+	fMDefaultMatrix fMatrix2 concatmatrix 
+	dup 0 get /sflipx exch def
+	    3 get /sflipy exch def
+/screenIndex {
+	0 1 dpiranges length 1 sub { dup dpiranges exch get 1 sub dpi le {exit} {pop} ifelse } for
+} bind def
+/getCyanScreen {
+	FMUseHighFrequencyScreens { CHighAngles CMHighFreqs} {CLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getMagentaScreen {
+	FMUseHighFrequencyScreens { MHighAngles CMHighFreqs } {MLowAngles CMLowFreqs} ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get /FMSpotFunction load
+} bind def
+/getYellowScreen {
+	FMUseHighFrequencyScreens { YHighTDot YHighFreqs} { YLowTDot YLowFreqs } ifelse
+		screenIndex dup 3 1 roll get 3 1 roll get { 3 div
+			{2 { 1 add 2 div 3 mul dup floor sub 2 mul 1 sub exch} repeat
+			FMSpotFunction } } {/FMSpotFunction load } ifelse
+			0.0 exch
+} bind def
+/getBlackScreen  {
+	FMUseHighFrequencyScreens { KHighFreqs } { KLowFreqs } ifelse
+		screenIndex get 45.0 /FMSpotFunction load 
+} bind def
+/getSpotScreen {
+	getBlackScreen
+} bind def
+/getCompositeScreen {
+	getBlackScreen
+} bind def
+/FMSetScreen 
+	fMLevel1 { /setscreen load 
+	}{ {
+		8 dict begin
+		/HalftoneType 1 def
+		/SpotFunction exch def
+		/Angle exch def
+		/Frequency exch def
+		/AccurateScreens FMUseAcccurateScreens def
+		currentdict end sethalftone
+	} bind } ifelse
+def
+/setDefaultScreen {
+	FMPColor {
+		orgrxfer cvx orggxfer cvx orgbxfer cvx orgxfer cvx setcolortransfer
+	}
+	{
+		orgxfer cvx settransfer
+	} ifelse
+	orgfreq organgle orgproc cvx setscreen
+} bind def
+/setCurrentScreen {
+	FrameSepIs FMnone eq {
+		FMUseDefaultNoSeparationScreen {
+			setDefaultScreen
+		} {
+			getCompositeScreen FMSetScreen
+		} ifelse
+	} {
+		FrameSepIs FMcustom eq {
+			FMUseDefaultSpotSeparationScreen {
+				setDefaultScreen
+			} {
+				getSpotScreen FMSetScreen
+			} ifelse
+		} {
+			FMUseDefaultProcessSeparationScreen {
+				setDefaultScreen
+			} {
+				FrameSepIs FMcyan eq {
+					getCyanScreen FMSetScreen
+				} {
+					FrameSepIs FMmagenta eq {
+						getMagentaScreen FMSetScreen
+					} {
+						FrameSepIs FMyellow eq {
+							getYellowScreen FMSetScreen
+						} {
+							getBlackScreen FMSetScreen
+						} ifelse
+					} ifelse
+				} ifelse
+			} ifelse
+		} ifelse
+	} ifelse 
+} bind def
+end
+	
+/FMDOCUMENT { 
+	array /FMfonts exch def 
+	/#copies exch def
+	FrameDict begin
+	0 ne /manualfeed exch def
+	/paperheight exch def
+	/paperwidth exch def
+	0 ne /fMNegative exch def 
+	0 ne /edown exch def 
+	/yscale exch def
+	/xscale exch def
+	fMLevel1 {
+		manualfeed {setmanualfeed} if
+		/FMdicttop countdictstack 1 add def 
+		/FMoptop count def 
+		setpapername 
+		manualfeed {true} {papersize} ifelse 
+		{manualpapersize} {false} ifelse 
+		{desperatepapersize} {false} ifelse 
+		{papersizefailure} if
+		count -1 FMoptop {pop pop} for
+		countdictstack -1 FMdicttop {pop end} for 
+		}
+		{2 dict
+		 dup /PageSize [paperwidth paperheight] put
+		 manualfeed {dup /ManualFeed manualfeed put} if
+		 {setpagedevice} stopped {papersizefailure} if
+		}
+	ifelse 
+	
+	FMPColor {
+		currentcolorscreen
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+			cvlit /orgbproc exch def
+				  /orgbangle exch def 
+				  /orgbfreq exch def
+			cvlit /orggproc exch def
+				  /orggangle exch def 
+				  /orggfreq exch def
+			cvlit /orgrproc exch def
+				  /orgrangle exch def 
+				  /orgrfreq exch def
+			currentcolortransfer 
+			fMNegative {
+				1 1 4 { 
+					pop { 1 exch sub } fmConcatProcs 4 1 roll
+				} for
+				4 copy
+				setcolortransfer
+			} if
+			cvlit /orgxfer exch def
+			cvlit /orgbxfer exch def
+			cvlit /orggxfer exch def
+			cvlit /orgrxfer exch def
+	} {
+		currentscreen 
+			cvlit /orgproc exch def
+				  /organgle exch def 
+				  /orgfreq exch def
+				  
+		currenttransfer 
+		fMNegative {
+			{ 1 exch sub } fmConcatProcs
+			dup settransfer
+		} if 
+		cvlit /orgxfer exch def
+	} ifelse
+	end 
+} def 
+/FMBEGINPAGE { 
+	FrameDict begin 
+	/pagesave save def
+	3.86 setmiterlimit
+	/landscape exch 0 ne def
+	landscape { 
+		90 rotate 0 exch dup /pwid exch def neg translate pop 
+	}{
+		pop /pwid exch def
+	} ifelse
+	edown { [-1 0 0 1 pwid 0] concat } if
+	0 0 moveto paperwidth 0 lineto paperwidth paperheight lineto 
+	0 paperheight lineto 0 0 lineto 1 setgray fill
+	xscale yscale scale
+	/orgmatrix matrix def
+	gsave 
+} def 
+/FMENDPAGE {
+	grestore 
+	pagesave restore
+	end 
+	showpage
+	} def 
+/FMFONTDEFINE { 
+	FrameDict begin
+	findfont 
+	ReEncode 
+	1 index exch 
+	definefont 
+	FMfonts 3 1 roll 
+	put
+	end 
+	} def 
+/FMFILLS {
+	FrameDict begin dup
+	array /fillvals exch def
+	dict /patCache exch def
+	end 
+	} def 
+/FMFILL {
+	FrameDict begin
+	 fillvals 3 1 roll put
+	end 
+	} def 
+/FMNORMALIZEGRAPHICS { 
+	newpath
+	1 setlinewidth
+	0 setlinecap
+	0 0 0 sethsbcolor
+	0 setgray 
+	} bind def
+/FMBEGINEPSF { 
+	end 
+	/FMEPSF save def 
+	/showpage {} def 
+% See Adobe's "PostScript Language Reference Manual, 2nd Edition", page 714.
+% "...the following operators MUST NOT be used in an EPS file:" (emphasis ours)
+	/banddevice {(banddevice) FMBADEPSF} def
+	/clear {(clear) FMBADEPSF} def
+	/cleardictstack {(cleardictstack) FMBADEPSF} def 
+	/copypage {(copypage) FMBADEPSF} def
+	/erasepage {(erasepage) FMBADEPSF} def
+	/exitserver {(exitserver) FMBADEPSF} def
+	/framedevice {(framedevice) FMBADEPSF} def
+	/grestoreall {(grestoreall) FMBADEPSF} def
+	/initclip {(initclip) FMBADEPSF} def
+	/initgraphics {(initgraphics) FMBADEPSF} def
+	/quit {(quit) FMBADEPSF} def
+	/renderbands {(renderbands) FMBADEPSF} def
+	/setglobal {(setglobal) FMBADEPSF} def
+	/setpagedevice {(setpagedevice) FMBADEPSF} def
+	/setshared {(setshared) FMBADEPSF} def
+	/startjob {(startjob) FMBADEPSF} def
+	/lettertray {(lettertray) FMBADEPSF} def
+	/letter {(letter) FMBADEPSF} def
+	/lettersmall {(lettersmall) FMBADEPSF} def
+	/11x17tray {(11x17tray) FMBADEPSF} def
+	/11x17 {(11x17) FMBADEPSF} def
+	/ledgertray {(ledgertray) FMBADEPSF} def
+	/ledger {(ledger) FMBADEPSF} def
+	/legaltray {(legaltray) FMBADEPSF} def
+	/legal {(legal) FMBADEPSF} def
+	/statementtray {(statementtray) FMBADEPSF} def
+	/statement {(statement) FMBADEPSF} def
+	/executivetray {(executivetray) FMBADEPSF} def
+	/executive {(executive) FMBADEPSF} def
+	/a3tray {(a3tray) FMBADEPSF} def
+	/a3 {(a3) FMBADEPSF} def
+	/a4tray {(a4tray) FMBADEPSF} def
+	/a4 {(a4) FMBADEPSF} def
+	/a4small {(a4small) FMBADEPSF} def
+	/b4tray {(b4tray) FMBADEPSF} def
+	/b4 {(b4) FMBADEPSF} def
+	/b5tray {(b5tray) FMBADEPSF} def
+	/b5 {(b5) FMBADEPSF} def
+	FMNORMALIZEGRAPHICS 
+	[/fy /fx /fh /fw /ury /urx /lly /llx] {exch def} forall 
+	fx fw 2 div add fy fh 2 div add  translate
+	rotate
+	fw 2 div neg fh 2 div neg translate
+	fw urx llx sub div fh ury lly sub div scale 
+	llx neg lly neg translate 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count def 
+	} bind def
+/FMENDEPSF {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMEPSF restore
+	FrameDict begin 
+	} bind def
+FrameDict begin 
+/setmanualfeed {
+%%BeginFeature *ManualFeed True
+	 statusdict /manualfeed true put
+%%EndFeature
+	} bind def
+/max {2 copy lt {exch} if pop} bind def
+/min {2 copy gt {exch} if pop} bind def
+/inch {72 mul} def
+/pagedimen { 
+	paperheight sub abs 16 lt exch 
+	paperwidth sub abs 16 lt and
+	{/papername exch def} {pop} ifelse
+	} bind def
+/setpapername { 
+	/papersizedict 14 dict def 
+	papersizedict begin
+	/papername /unknown def 
+		/Letter 8.5 inch 11.0 inch pagedimen
+		/LetterSmall 7.68 inch 10.16 inch pagedimen
+		/Tabloid 11.0 inch 17.0 inch pagedimen
+		/Ledger 17.0 inch 11.0 inch pagedimen
+		/Legal 8.5 inch 14.0 inch pagedimen
+		/Statement 5.5 inch 8.5 inch pagedimen
+		/Executive 7.5 inch 10.0 inch pagedimen
+		/A3 11.69 inch 16.5 inch pagedimen
+		/A4 8.26 inch 11.69 inch pagedimen
+		/A4Small 7.47 inch 10.85 inch pagedimen
+		/B4 10.125 inch 14.33 inch pagedimen
+		/B5 7.16 inch 10.125 inch pagedimen
+	end
+	} bind def
+/papersize {
+	papersizedict begin
+		/Letter {lettertray letter} def
+		/LetterSmall {lettertray lettersmall} def
+		/Tabloid {11x17tray 11x17} def
+		/Ledger {ledgertray ledger} def
+		/Legal {legaltray legal} def
+		/Statement {statementtray statement} def
+		/Executive {executivetray executive} def
+		/A3 {a3tray a3} def
+		/A4 {a4tray a4} def
+		/A4Small {a4tray a4small} def
+		/B4 {b4tray b4} def
+		/B5 {b5tray b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	statusdict begin stopped end 
+	} bind def
+/manualpapersize {
+	papersizedict begin
+		/Letter {letter} def
+		/LetterSmall {lettersmall} def
+		/Tabloid {11x17} def
+		/Ledger {ledger} def
+		/Legal {legal} def
+		/Statement {statement} def
+		/Executive {executive} def
+		/A3 {a3} def
+		/A4 {a4} def
+		/A4Small {a4small} def
+		/B4 {b4} def
+		/B5 {b5} def
+		/unknown {unknown} def
+	papersizedict dup papername known {papername} {/unknown} ifelse get
+	end
+	stopped 
+	} bind def
+/desperatepapersize {
+	statusdict /setpageparams known
+		{
+		paperwidth paperheight 0 1 
+		statusdict begin
+		{setpageparams} stopped 
+		end
+		} {true} ifelse 
+	} bind def
+/papersizefailure {
+	FMAllowPaperSizeMismatch not
+		{
+(The requested paper size is not available in any currently-installed tray)
+(Edit the PS file to "FMAllowPaperSizeMismatch true" to use default tray)
+		 FMFAILURE } if
+	} def
+/DiacriticEncoding [
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /space /exclam /quotedbl
+/numbersign /dollar /percent /ampersand /quotesingle /parenleft
+/parenright /asterisk /plus /comma /hyphen /period /slash /zero /one
+/two /three /four /five /six /seven /eight /nine /colon /semicolon
+/less /equal /greater /question /at /A /B /C /D /E /F /G /H /I /J /K
+/L /M /N /O /P /Q /R /S /T /U /V /W /X /Y /Z /bracketleft /backslash
+/bracketright /asciicircum /underscore /grave /a /b /c /d /e /f /g /h
+/i /j /k /l /m /n /o /p /q /r /s /t /u /v /w /x /y /z /braceleft /bar
+/braceright /asciitilde /.notdef /Adieresis /Aring /Ccedilla /Eacute
+/Ntilde /Odieresis /Udieresis /aacute /agrave /acircumflex /adieresis
+/atilde /aring /ccedilla /eacute /egrave /ecircumflex /edieresis
+/iacute /igrave /icircumflex /idieresis /ntilde /oacute /ograve
+/ocircumflex /odieresis /otilde /uacute /ugrave /ucircumflex
+/udieresis /dagger /.notdef /cent /sterling /section /bullet
+/paragraph /germandbls /registered /copyright /trademark /acute
+/dieresis /.notdef /AE /Oslash /.notdef /.notdef /.notdef /.notdef
+/yen /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/ordfeminine /ordmasculine /.notdef /ae /oslash /questiondown
+/exclamdown /logicalnot /.notdef /florin /.notdef /.notdef
+/guillemotleft /guillemotright /ellipsis /.notdef /Agrave /Atilde
+/Otilde /OE /oe /endash /emdash /quotedblleft /quotedblright
+/quoteleft /quoteright /.notdef /.notdef /ydieresis /Ydieresis
+/fraction /currency /guilsinglleft /guilsinglright /fi /fl /daggerdbl
+/periodcentered /quotesinglbase /quotedblbase /perthousand
+/Acircumflex /Ecircumflex /Aacute /Edieresis /Egrave /Iacute
+/Icircumflex /Idieresis /Igrave /Oacute /Ocircumflex /.notdef /Ograve
+/Uacute /Ucircumflex /Ugrave /dotlessi /circumflex /tilde /macron
+/breve /dotaccent /ring /cedilla /hungarumlaut /ogonek /caron
+] def
+/ReEncode { 
+	dup 
+	length 
+	dict begin 
+	{
+	1 index /FID ne 
+		{def} 
+		{pop pop} ifelse 
+	} forall 
+	0 eq {/Encoding DiacriticEncoding def} if 
+	currentdict 
+	end 
+	} bind def
+FMPColor 
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPCOLOR} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPCOLORc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUECOLOR } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUECOLORc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYK } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKc } def
+	}
+	
+	{
+	/BEGINBITMAPCOLOR { 
+		BITMAPGRAY} def
+	/BEGINBITMAPCOLORc { 
+		BITMAPGRAYc} def
+	/BEGINBITMAPTRUECOLOR { 
+		BITMAPTRUEGRAY } def
+	/BEGINBITMAPTRUECOLORc { 
+		BITMAPTRUEGRAYc } def
+	/BEGINBITMAPCMYK { 
+		BITMAPCMYKGRAY } def
+	/BEGINBITMAPCMYKc { 
+		BITMAPCMYKGRAYc } def
+	}
+ifelse
+/K { 
+	FMPrintAllColorsAsBlack {
+		dup 1 eq 2 index 1 eq and 3 index 1 eq and not
+			{7 {pop} repeat 0 0 0 1 0 0 0} if
+	} if 
+	FrameCurColors astore 
+	pop combineColor
+} bind def
+/graymode true def
+fMLevel1 {
+	/fmGetFlip {
+		fMatrix2 exch get mul 0 lt { -1 } { 1 } ifelse
+	} FmBD
+} if
+/setPatternMode {
+	fMLevel1 {
+		2 index patScreenDict exch known {
+			pop pop
+			patScreenDict exch get aload pop 
+			freq 								
+			mul									
+			5 2 roll							
+			fMatrix2 currentmatrix 1 get 0 ne {
+				3 -1 roll 90 add 3 1 roll 		
+				sflipx 1 fmGetFlip sflipy 2 fmGetFlip neg mul
+			} {  								
+				sflipx 0 fmGetFlip sflipy 3 fmGetFlip mul 
+			} ifelse
+			0 lt {exch pop} {pop} ifelse 		
+			fMNegative { 
+				{neg} fmConcatProcs 			
+			} if
+			bind
+			
+			
+			
+			systemdict /setscreen get exec		
+			/FrameCurGray exch def
+		} {
+			/bwidth  exch def
+			/bpside  exch def
+			/bstring exch def
+			/onbits 0 def  /offbits 0 def
+			freq sangle landscape {90 add} if 
+				{/ypoint exch def
+				 /xpoint exch def
+				 /xindex xpoint 1 add 2 div bpside mul cvi def
+				 /yindex ypoint 1 add 2 div bpside mul cvi def
+				 bstring yindex bwidth mul xindex 8 idiv add get
+				 1 7 xindex 8 mod sub bitshift and 0 ne fMNegative {not} if
+				 {/onbits  onbits  1 add def 1}
+				 {/offbits offbits 1 add def 0}
+				 ifelse
+				}
+				setscreen
+			offbits offbits onbits add div fMNegative {1.0 exch sub} if
+			/FrameCurGray exch def
+		} ifelse
+	} { 
+		pop pop
+		dup patCache exch known {
+			patCache exch get
+		} { 
+			dup
+			patDict /bstring 3 -1 roll put
+			patDict 
+			9 PatFreq screenIndex get div dup matrix scale
+			makepattern
+			dup 
+			patCache 4 -1 roll 3 -1 roll put
+		} ifelse
+		/FrameCurGray 0 def
+		/FrameCurPat exch def
+	} ifelse
+	/graymode false def
+	combineColor
+} bind def
+/setGrayScaleMode {
+	graymode not {
+		/graymode true def
+		fMLevel1 {
+			setCurrentScreen
+		} if
+	} if
+	/FrameCurGray exch def
+	combineColor
+} bind def
+/normalize {
+	transform round exch round exch itransform
+	} bind def
+/dnormalize {
+	dtransform round exch round exch idtransform
+	} bind def
+/lnormalize { 
+	0 dtransform exch cvi 2 idiv 2 mul 1 add exch idtransform pop
+	} bind def
+/H { 
+	lnormalize setlinewidth
+	} bind def
+/Z {
+	setlinecap
+	} bind def
+	
+/PFill {
+	graymode fMLevel1 or not {
+		gsave 1 setgray eofill grestore
+	} if
+} bind def
+/PStroke {
+	graymode fMLevel1 or not {
+		gsave 1 setgray stroke grestore
+	} if
+	stroke
+} bind def
+/X { 
+	fillvals exch get
+	dup type /stringtype eq
+	{8 1 setPatternMode} 
+	{setGrayScaleMode}
+	ifelse
+	} bind def
+/V { 
+	PFill gsave eofill grestore
+	} bind def
+/Vclip {
+	clip
+	} bind def
+/Vstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/N { 
+	PStroke
+	} bind def
+/Nclip {
+	strokepath clip newpath
+	} bind def
+/Nstrk {
+	currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/M {newpath moveto} bind def
+/E {lineto} bind def
+/D {curveto} bind def
+/O {closepath} bind def
+/L { 
+ 	/n exch def
+	newpath
+	normalize
+	moveto 
+	2 1 n {pop normalize lineto} for
+	} bind def
+/Y { 
+	L 
+	closepath
+	} bind def
+/R { 
+	/y2 exch def
+	/x2 exch def
+	/y1 exch def
+	/x1 exch def
+	x1 y1
+	x2 y1
+	x2 y2
+	x1 y2
+	4 Y 
+	} bind def
+/rarc 
+	{rad 
+	 arcto
+	} bind def
+/RR { 
+	/rad exch def
+	normalize
+	/y2 exch def
+	/x2 exch def
+	normalize
+	/y1 exch def
+	/x1 exch def
+	mark
+	newpath
+	{
+	x1 y1 rad add moveto
+	x1 y2 x2 y2 rarc
+	x2 y2 x2 y1 rarc
+	x2 y1 x1 y1 rarc
+	x1 y1 x1 y2 rarc
+	closepath
+	} stopped {x1 y1 x2 y2 R} if 
+	cleartomark
+	} bind def
+/RRR { 
+	/rad exch def
+	normalize /y4 exch def /x4 exch def
+	normalize /y3 exch def /x3 exch def
+	normalize /y2 exch def /x2 exch def
+	normalize /y1 exch def /x1 exch def
+	newpath
+	normalize moveto 
+	mark
+	{
+	x2 y2 x3 y3 rarc
+	x3 y3 x4 y4 rarc
+	x4 y4 x1 y1 rarc
+	x1 y1 x2 y2 rarc
+	closepath
+	} stopped
+	 {x1 y1 x2 y2 x3 y3 x4 y4 newpath moveto lineto lineto lineto closepath} if
+	cleartomark
+	} bind def
+/C { 
+	grestore
+	gsave
+	R 
+	clip
+	setCurrentScreen
+} bind def
+/CP { 
+	grestore
+	gsave
+	Y 
+	clip
+	setCurrentScreen
+} bind def
+/F { 
+	FMfonts exch get
+	FMpointsize scalefont
+	setfont
+	} bind def
+/Q { 
+	/FMpointsize exch def
+	F 
+	} bind def
+/T { 
+	moveto show
+	} bind def
+/RF { 
+	rotate
+	0 ne {-1 1 scale} if
+	} bind def
+/TF { 
+	gsave
+	moveto 
+	RF
+	show
+	grestore
+	} bind def
+/P { 
+	moveto
+	0 32 3 2 roll widthshow
+	} bind def
+/PF { 
+	gsave
+	moveto 
+	RF
+	0 32 3 2 roll widthshow
+	grestore
+	} bind def
+/S { 
+	moveto
+	0 exch ashow
+	} bind def
+/SF { 
+	gsave
+	moveto
+	RF
+	0 exch ashow
+	grestore
+	} bind def
+/B { 
+	moveto
+	0 32 4 2 roll 0 exch awidthshow
+	} bind def
+/BF { 
+	gsave
+	moveto
+	RF
+	0 32 4 2 roll 0 exch awidthshow
+	grestore
+	} bind def
+/G { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	PFill fill
+	grestore
+	} bind def
+/Gstrk {
+	savematrix
+    newpath
+    2 index 2 div add exch 3 index 2 div sub exch 
+    normalize 2 index 2 div sub exch 3 index 2 div add exch 
+    translate
+    scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+    } bind def
+/Gclip { 
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	clip newpath
+	restorematrix
+	} bind def
+/GG { 
+	gsave
+	newpath
+	normalize translate 0.0 0.0 moveto 
+	rotate 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath
+	PFill
+	fill
+	grestore
+	} bind def
+/GGclip { 
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	clip newpath
+	restorematrix
+	} bind def
+/GGstrk { 
+	savematrix
+    newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath 
+	restorematrix
+    currentlinewidth exch setlinewidth PStroke setlinewidth
+	} bind def
+/A { 
+	gsave
+	savematrix
+	newpath
+	2 index 2 div add exch 3 index 2 div sub exch 
+	normalize 2 index 2 div sub exch 3 index 2 div add exch 
+	translate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/Aclip {
+	newpath
+	savematrix
+	normalize translate 0.0 0.0 moveto 
+	dnormalize scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	closepath 
+	strokepath clip newpath
+	restorematrix
+} bind def
+/Astrk {
+	Gstrk
+} bind def
+/AA { 
+	gsave
+	savematrix
+	newpath
+	
+	3 index 2 div add exch 4 index 2 div sub exch 
+	
+	normalize 3 index 2 div sub exch 4 index 2 div add exch
+	translate 
+	rotate 
+	scale 
+	0.0 0.0 1.0 5 3 roll arc 
+	restorematrix
+	PStroke
+	grestore
+	} bind def
+/AAclip {
+	savematrix
+	newpath
+    normalize translate 0.0 0.0 moveto 
+    rotate 
+    dnormalize scale 
+    0.0 0.0 1.0 5 3 roll arc 
+    closepath
+	strokepath clip newpath
+	restorematrix
+} bind def
+/AAstrk {
+	GGstrk
+} bind def
+/BEGINPRINTCODE { 
+	/FMdicttop countdictstack 1 add def 
+	/FMoptop count 7 sub def 
+	/FMsaveobject save def
+	userdict begin 
+	/showpage {} def 
+	FMNORMALIZEGRAPHICS 
+	3 index neg 3 index neg translate
+	} bind def
+/ENDPRINTCODE {
+	count -1 FMoptop {pop pop} for 
+	countdictstack -1 FMdicttop {pop end} for 
+	FMsaveobject restore 
+	} bind def
+/gn { 
+	0 
+	{	46 mul 
+		cf read pop 
+		32 sub 
+		dup 46 lt {exit} if 
+		46 sub add 
+		} loop
+	add 
+	} bind def
+/cfs { 
+	/str sl string def 
+	0 1 sl 1 sub {str exch val put} for 
+	str def 
+	} bind def
+/ic [ 
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0223
+	0
+	{0 hx} {1 hx} {2 hx} {3 hx} {4 hx} {5 hx} {6 hx} {7 hx} {8 hx} {9 hx}
+	{10 hx} {11 hx} {12 hx} {13 hx} {14 hx} {15 hx} {16 hx} {17 hx} {18 hx}
+	{19 hx} {gn hx} {0} {1} {2} {3} {4} {5} {6} {7} {8} {9} {10} {11} {12}
+	{13} {14} {15} {16} {17} {18} {19} {gn} {0 wh} {1 wh} {2 wh} {3 wh}
+	{4 wh} {5 wh} {6 wh} {7 wh} {8 wh} {9 wh} {10 wh} {11 wh} {12 wh}
+	{13 wh} {14 wh} {gn wh} {0 bl} {1 bl} {2 bl} {3 bl} {4 bl} {5 bl} {6 bl}
+	{7 bl} {8 bl} {9 bl} {10 bl} {11 bl} {12 bl} {13 bl} {14 bl} {gn bl}
+	{0 fl} {1 fl} {2 fl} {3 fl} {4 fl} {5 fl} {6 fl} {7 fl} {8 fl} {9 fl}
+	{10 fl} {11 fl} {12 fl} {13 fl} {14 fl} {gn fl}
+	] def
+/ms { 
+	/sl exch def 
+	/val 255 def 
+	/ws cfs 
+	/im cfs 
+	/val 0 def 
+	/bs cfs 
+	/cs cfs 
+	} bind def
+400 ms 
+/ip { 
+	is 
+	0 
+	cf cs readline pop 
+	{	ic exch get exec 
+		add 
+		} forall 
+	pop 
+	
+	} bind def
+/rip { 
+	   
+	  
+	  bis ris copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  ris gis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  gis bis copy pop 
+	  dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/rip4 { 
+	   
+	  
+	  kis cis copy pop 
+      is
+      0
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop 
+	  cis mis copy pop 
+	  dup is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  mis yis copy pop 
+	  dup dup add is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+	  pop pop
+	  yis kis copy pop 
+	  3 mul is exch 
+	  
+      cf cs readline pop 
+      {       ic exch get exec 
+              add 
+              } forall 
+      pop 
+      
+      } bind def
+/wh { 
+	/len exch def 
+	/pos exch def 
+	ws 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/bl { 
+	/len exch def 
+	/pos exch def 
+	bs 0 len getinterval im pos len getinterval copy pop
+	pos len 
+	} bind def
+/s1 1 string def
+/fl { 
+	/len exch def 
+	/pos exch def 
+	/val cf s1 readhexstring pop 0 get def
+	pos 1 pos len add 1 sub {im exch val put} for
+	pos len 
+	} bind def
+/hx { 
+	3 copy getinterval 
+	cf exch readhexstring pop pop 
+	} bind def
+/wbytes { 
+      dup dup
+      8 gt { pop 8 idiv mul }
+      { 8 eq {pop} {1 eq {7 add 8 idiv} {3 add 4 idiv} ifelse} ifelse } ifelse
+	} bind def
+/BEGINBITMAPBWc { 
+	1 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAPGRAYc { 
+	8 {} COMMONBITMAPc
+	} bind def
+/BEGINBITMAP2BITc { 
+	2 {} COMMONBITMAPc
+	} bind def
+/COMMONBITMAPc { 
+		 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	cvtProc                
+	/is im 0 lb getinterval def 
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{ip} image 
+	bitmapsave restore 
+	grestore
+	} bind def
+/BEGINBITMAPBW { 
+	1 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAPGRAY { 
+	8 {} COMMONBITMAP
+	} bind def
+/BEGINBITMAP2BIT { 
+	2 {} COMMONBITMAP
+	} bind def
+/COMMONBITMAP { 
+	/cvtProc exch def
+	/depth exch def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def 
+	cvtProc              
+	/is width depth wbytes string def
+	/cf currentfile def 
+	width height depth [width 0 0 height neg 0 height] 
+	{cf is readhexstring pop} image
+	bitmapsave restore 
+	grestore
+	} bind def
+/ngrayt 256 array def
+/nredt 256 array def
+/nbluet 256 array def
+/ngreent 256 array def
+fMLevel1 {
+/colorsetup {
+	currentcolortransfer
+	/gryt exch def
+	/blut exch def
+	/grnt exch def
+	/redt exch def
+	0 1 255 {
+		/indx exch def
+		/cynu 1 red indx get 255 div sub def
+		/magu 1 green indx get 255 div sub def
+		/yelu 1 blue indx get 255 div sub def
+		/kk cynu magu min yelu min def
+		/u kk currentundercolorremoval exec def
+%		/u 0 def
+		nredt indx 1 0 cynu u sub max sub redt exec put
+		ngreent indx 1 0 magu u sub max sub grnt exec put
+		nbluet indx 1 0 yelu u sub max sub blut exec put
+		ngrayt indx 1 kk currentblackgeneration exec sub gryt exec put
+	} for
+	{255 mul cvi nredt exch get}
+	{255 mul cvi ngreent exch get}
+	{255 mul cvi nbluet exch get}
+	{255 mul cvi ngrayt exch get}
+	setcolortransfer
+	{pop 0} setundercolorremoval
+	{} setblackgeneration
+	} bind def
+}
+{
+/colorSetup2 {
+	[ /Indexed /DeviceRGB 255 
+		{dup red exch get 255 div 
+		 exch dup green exch get 255 div 
+		 exch blue exch get 255 div}
+	] setcolorspace
+} bind def
+} ifelse
+/fakecolorsetup {
+	/tran 256 string def
+	0 1 255 {/indx exch def 
+		tran indx
+		red indx get 77 mul
+		green indx get 151 mul
+		blue indx get 28 mul
+		add add 256 idiv put} for
+	currenttransfer
+	{255 mul cvi tran exch get 255.0 div}
+	exch fmConcatProcs settransfer
+} bind def
+/BITMAPCOLOR { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/bitmapsave save def
+	fMLevel1 {	
+		colorsetup
+		/is width depth wbytes string def
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{cf is readhexstring pop} {is} {is} true 3 colorimage 
+	} {
+		colorSetup2
+		/is width depth wbytes string def
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {cf is readhexstring pop} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCOLORc { 
+	/depth 8 def
+	gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+	fMLevel1 {	
+		colorsetup
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		width height depth [width 0 0 height neg 0 height] 
+		{ip} {is} {is} true 3 colorimage
+	} {
+		colorSetup2
+		/is im 0 lb getinterval def 
+		ws 0 lb getinterval is copy pop 
+		/cf currentfile def 
+		7 dict dup begin
+			/ImageType 1 def
+			/Width width def
+			/Height height def
+			/ImageMatrix [width 0 0 height neg 0 height] def
+			/DataSource {ip} bind def
+			/BitsPerComponent depth def
+			/Decode [0 255] def
+		end image	
+	} ifelse
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLORc { 
+	/depth 24 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip pop ris} {gis} {bis} true 3 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPCMYKc { 
+	/depth 32 def
+        gsave
+ 	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+	/bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        
+	ws 0 lb getinterval is copy pop 
+	/cf currentfile def 
+	width height 8 [width 0 0 height neg 0 height] 
+	{width rip4 pop cis} {mis} {yis} {kis} true 4 colorimage
+	bitmapsave restore 
+	grestore
+	} bind def
+/BITMAPTRUECOLOR { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf gis readhexstring pop } 
+        { cf bis readhexstring pop } 
+        true 3 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYK { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /mis width string def
+        /yis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop } 
+        { cf mis readhexstring pop } 
+        { cf yis readhexstring pop } 
+        { cf kis readhexstring pop } 
+        true 4 colorimage 
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPTRUEGRAYc { 
+	/depth 24 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/ris im 0 width getinterval def	
+	/gis im width width getinterval def	
+	/bis im width 2 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop ris gis bis width gray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAYc { 
+	/depth 32 def
+        gsave
+	
+	3 index 2 div add exch	
+	4 index 2 div add exch	
+	translate		
+	rotate			
+	1 index 2 div neg	
+	1 index 2 div neg	
+	translate		
+	scale			
+	/height exch def /width exch def
+	/lb width depth wbytes def 
+	sl lb lt {lb ms} if 
+        /bitmapsave save def 
+        
+	/is im 0 lb getinterval def	
+	/cis im 0 width getinterval def	
+	/mis im width width getinterval def	
+	/yis im width 2 mul width getinterval def 
+	/kis im width 3 mul width getinterval def 
+        ws 0 lb getinterval is copy pop 
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        {width rip pop cis mis yis kis width cgray} image
+        bitmapsave restore 
+        grestore
+        } bind def
+/cgray { 
+        /ww exch def
+        /k exch def
+        /y exch def
+        /m exch def
+        /c exch def
+        0 1 ww 1 sub { /i exch def c i get m i get y i get k i get CMYKtoRGB
+				.144 mul 3 1 roll .587 mul 3 1 roll .299 mul add add
+				c i 3 -1 roll floor cvi put } for
+        c
+ 		} bind def
+/gray { 
+        /ww exch def
+        /b exch def
+        /g exch def
+        /r exch def
+        0 1 ww 1 sub { /i exch def r i get .299 mul g i get .587 mul
+			b i get .114 mul add add r i 3 -1 roll floor cvi put } for
+        r
+        } bind def
+/BITMAPTRUEGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /gis width string def
+        /bis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf gis readhexstring pop 
+          cf bis readhexstring pop width gray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPCMYKGRAY { 
+        gsave
+		
+		3 index 2 div add exch	
+		4 index 2 div add exch	
+		translate		
+		rotate			
+		1 index 2 div neg	
+		1 index 2 div neg	
+		translate		
+		scale			
+		/height exch def /width exch def
+        /bitmapsave save def 
+        /is width string def
+        /yis width string def
+        /mis width string def
+        /kis width string def
+        /cf currentfile def 
+        width height 8 [width 0 0 height neg 0 height] 
+        { cf is readhexstring pop 
+          cf mis readhexstring pop 
+          cf yis readhexstring pop 
+          cf kis readhexstring pop width cgray}  image
+        bitmapsave restore 
+        grestore
+        } bind def
+/BITMAPGRAY { 
+	8 {fakecolorsetup} COMMONBITMAP
+	} bind def
+/BITMAPGRAYc { 
+	8 {fakecolorsetup} COMMONBITMAPc
+	} bind def
+/ENDBITMAP {
+	} bind def
+end 
+	/ALDmatrix matrix def ALDmatrix currentmatrix pop
+/StartALD {
+	/ALDsave save def
+	 savematrix
+	 ALDmatrix setmatrix
+	} bind def
+/InALD {
+	 restorematrix
+	} bind def
+/DoneALD {
+	 ALDsave restore
+	} bind def
+/I { setdash } bind def
+/J { [] 0 setdash } bind def
+%%EndProlog
+%%BeginSetup
+(5.0) FMVERSION
+1 1 0 0 612 792 0 1 7 FMDOCUMENT
+0 0 /AvantGarde-Demi FMFONTDEFINE
+1 0 /Palatino-Roman FMFONTDEFINE
+2 0 /Palatino-Italic FMFONTDEFINE
+3 1 /Symbol FMFONTDEFINE
+32 FMFILLS
+0 0 FMFILL
+1 0.1 FMFILL
+2 0.3 FMFILL
+3 0.5 FMFILL
+4 0.7 FMFILL
+5 0.9 FMFILL
+6 0.97 FMFILL
+7 1 FMFILL
+8 <0f1e3c78f0e1c387> FMFILL
+9 <0f87c3e1f0783c1e> FMFILL
+10 <cccccccccccccccc> FMFILL
+11 <ffff0000ffff0000> FMFILL
+12 <8142241818244281> FMFILL
+13 <03060c183060c081> FMFILL
+14 <8040201008040201> FMFILL
+16 1 FMFILL
+17 0.9 FMFILL
+18 0.7 FMFILL
+19 0.5 FMFILL
+20 0.3 FMFILL
+21 0.1 FMFILL
+22 0.03 FMFILL
+23 0 FMFILL
+24 <f0e1c3870f1e3c78> FMFILL
+25 <f0783c1e0f87c3e1> FMFILL
+26 <3333333333333333> FMFILL
+27 <0000ffff0000ffff> FMFILL
+28 <7ebddbe7e7dbbd7e> FMFILL
+29 <fcf9f3e7cf9f3f7e> FMFILL
+30 <7fbfdfeff7fbfdfe> FMFILL
+%%EndSetup
+%%Page: "xiii" 1
+%%BeginPaperSize: Letter
+%%EndPaperSize
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+J
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(JUN 1997) 72 748 T
+( WORKING DRAFT) 247.32 748 T
+(J3/97-007) 465.36 748 T
+(JUN 1997) 72 34.67 T
+(WORKING DRAFT) 249 34.67 T
+0 10 Q
+(xiii) 509.2 34.67 T
+0 13 Q
+-0.91 (For) 72 711.33 P
+-0.91 (e) 90.67 711.33 P
+-0.91 (w) 98.73 711.33 P
+-0.91 (or) 108.74 711.33 P
+-0.91 (d) 121.14 711.33 P
+1 10 Q
+0.9 0.1 (ISO/IEC 1539 is a multi-part International Standar) 72 692.33 B
+0.9 0.1 (d de\336ning the Fortran pr) 305.71 692.33 B
+0.9 0.1 (ogramming language.) 421.51 692.33 B
+0.23 0.1 (This document is Part 1 - Base Language, ISO/IEC 1539-1:1997.  Part 2 is V) 72 680.33 B
+0.23 0.1 (arying Length Character) 410.79 680.33 B
+1.69 0.1 (Strings in Fortran, ISO/IEC 1539-2:1994, a functional speci\336cation of a varying length character) 72 668.33 B
+2.46 0.1 (data type, with an informative implementation using the module, derived type, and operator) 72 656.33 B
+0.52 0.1 (overloading featur) 72 644.33 B
+0.52 0.1 (es of Fortran.) 156.62 644.33 B
+5.11 0.1 (This document, informally known as Fortran 95, speci\336es the form and establishes the) 72 626.33 B
+1.5 0.1 (interpr) 72 614.33 B
+1.5 0.1 (etation of pr) 103.21 614.33 B
+1.5 0.1 (ograms expr) 161.57 614.33 B
+1.5 0.1 (essed in the Fortran language.  The major bene\336ts ar) 219.43 614.33 B
+1.5 0.1 (e to corr) 469.09 614.33 B
+1.5 0.1 (ect) 509.11 614.33 B
+0.26 0.1 (defects in Fortran 90 \050ISO/IEC 1539:1991\051, add a few of the most critically needed facilities missing) 72 602.33 B
+0.52 0.1 (fr) 72 590.33 B
+0.52 0.1 (om Fortran 90, and to impr) 79.3 590.33 B
+0.52 0.1 (ove the portability of pr) 203.96 590.33 B
+0.52 0.1 (ograms.) 313.64 590.33 B
+1.16 0.1 (The r) 72 572.33 B
+1.16 0.1 (equir) 96.67 572.33 B
+1.16 0.1 (ements for Fortran 95 wer) 120.27 572.33 B
+1.16 0.1 (e established by ISO/IEC JTC1/SC22/WG5.  The Fortran 95) 241.77 572.33 B
+0.52 0.1 (draft was pr) 72 560.33 B
+0.52 0.1 (epar) 128.25 560.33 B
+0.52 0.1 (ed fr) 148.22 560.33 B
+0.52 0.1 (om these r) 169.74 560.33 B
+0.52 0.1 (equir) 217.74 560.33 B
+0.52 0.1 (ements by ANSI Accr) 241.34 560.33 B
+0.52 0.1 (edited T) 340.26 560.33 B
+0.52 0.1 (echnical Subcommittee X3J3.) 377.26 560.33 B
+0.52 0.1 (Ther) 72 542.33 B
+0.52 0.1 (e ar) 92.91 542.33 B
+0.52 0.1 (e four annexes to this document. No annex is normative; all ar) 109.89 542.33 B
+0.52 0.1 (e informative.) 395.95 542.33 B
+0 13 Q
+-0.91 (Intr) 72 510.33 P
+-0.91 (oduction) 91.31 510.33 P
+2 11 Q
+0.55 (Standard pr) 72 482.67 P
+0.55 (ogramming language Fortran) 125.82 482.67 P
+1 10 Q
+1.47 0.1 (This part of the international standar) 72 464.33 B
+1.47 0.1 (d comprises the speci\336cation of the base Fortran language.) 245.75 464.33 B
+2.89 0.1 (W) 72 452.33 B
+2.89 0.1 (ith the limitations noted in 1.5.1, and the deletions described in Annex B, the syntax and) 81.55 452.33 B
+3.34 0.1 (semantics of Fortran 90 ar) 72 440.33 B
+3.34 0.1 (e contained entir) 202.04 440.33 B
+3.34 0.1 (ely within Fortran 95.  Ther) 284.36 440.33 B
+3.34 0.1 (efor) 424.67 440.33 B
+3.34 0.1 (e, any standar) 442.42 440.33 B
+3.34 0.1 (d-) 512.36 440.33 B
+0.5 0.1 (conforming Fortran 90 pr) 72 428.33 B
+0.5 0.1 (ogram not containing deleted featur) 187.75 428.33 B
+0.5 0.1 (es or af) 352.52 428.33 B
+0.5 0.1 (fected by such limitations is a) 385.91 428.33 B
+3.85 0.1 (standar) 72 416.33 B
+3.85 0.1 (d conforming Fortran 95 pr) 105.9 416.33 B
+3.85 0.1 (ogram.  New featur) 244.38 416.33 B
+3.85 0.1 (es of Fortran 95 can be compatibly) 344.17 416.33 B
+0.8 0.1 (incorporated into such Fortran 90 pr) 72 404.33 B
+0.8 0.1 (ograms, with any exceptions indicated in the text of this part) 240.02 404.33 B
+0.52 0.1 (of the standar) 72 392.33 B
+0.52 0.1 (d.) 135.3 392.33 B
+1.38 0.1 (Fortran 95 continues the evolutionary model intr) 72 374.33 B
+1.38 0.1 (oduced in Fortran 90 by deleting several of the) 300.37 374.33 B
+2.09 0.1 (featur) 72 362.33 B
+2.09 0.1 (es marked as obsolescent in Fortran 90 and identifying a few newly-obsolescent featur) 98.78 362.33 B
+2.09 0.1 (es) 512.77 362.33 B
+0.52 0.1 (\050Annex B\051.) 72 350.33 B
+1.11 0.1 (Fortran 95 is a r) 72 332.33 B
+1.11 0.1 (elatively minor evolution of standar) 147.04 332.33 B
+1.11 0.1 (d Fortran, with the emphasis in this r) 314.1 332.33 B
+1.11 0.1 (evision) 489.52 332.33 B
+1.21 0.1 (being upon corr) 72 320.33 B
+1.21 0.1 (ecting defects in the Fortran 90 standar) 146.46 320.33 B
+1.21 0.1 (d, including pr) 329.23 320.33 B
+1.21 0.1 (oviding interpr) 399.04 320.33 B
+1.21 0.1 (etation to a) 469.17 320.33 B
+1.33 0.1 (number of questions that have arisen concerning Fortran 90 semantics and syntax \050e.g., whether) 72 308.33 B
+0.97 0.1 (blanks ar) 72 296.33 B
+0.97 0.1 (e permitted within edit descriptors in fr) 114.19 296.33 B
+0.97 0.1 (ee sour) 299.11 296.33 B
+0.97 0.1 (ce form\051.  In addition to such corr) 332.35 296.33 B
+0.97 0.1 (ections) 490.38 296.33 B
+2.78 0.1 (and clari\336cations, Fortran 95 contains several extensions to Fortran 90; ther) 72 284.33 B
+2.78 0.1 (e ar) 437.99 284.33 B
+2.78 0.1 (e thr) 457.23 284.33 B
+2.78 0.1 (ee major) 480.66 284.33 B
+0.52 0.1 (extensions:) 72 272.33 B
+0.1 (\0501\051) 99 256.33 S
+0.52 0.1 (The FORALL statement and constr) 126 256.33 B
+0.52 0.1 (uct) 285.29 256.33 B
+0.1 (\0502\051) 99 241.33 S
+0.52 0.1 (PURE and ELEMENT) 126 241.33 B
+0.52 0.1 (AL pr) 224.78 241.33 B
+0.52 0.1 (ocedur) 251.97 241.33 B
+0.52 0.1 (es) 283.17 241.33 B
+0.1 (\0503\051) 99 226.33 S
+0.52 0.1 (Pointer initialization and str) 126 226.33 B
+0.52 0.1 (uctur) 254.67 226.33 B
+0.52 0.1 (e default initialization) 278.7 226.33 B
+2 11 Q
+0.55 (FORALL) 72 200.67 P
+1 10 Q
+2.17 0.1 (The Fortran 90 array constr) 72 182.33 B
+2.17 0.1 (uctor and SPREAD and RESHAPE intrinsic functions ar) 203.68 182.33 B
+2.17 0.1 (e powerful) 470.72 182.33 B
+1.32 0.1 (tools for element-by-element constr) 72 170.33 B
+1.32 0.1 (uction of an array value.  Their use in combination, which is) 236.24 170.33 B
+1.97 0.1 (r) 72 158.33 B
+1.97 0.1 (equir) 75.87 158.33 B
+1.97 0.1 (ed for many array values, can be awkwar) 99.47 158.33 B
+1.97 0.1 (d.  Fortran 95 ther) 299.68 158.33 B
+1.97 0.1 (efor) 388.72 158.33 B
+1.97 0.1 (e pr) 406.47 158.33 B
+1.97 0.1 (ovides a simple and) 425.91 158.33 B
+3.17 0.1 (ef) 72 146.33 B
+3.17 0.1 (\336cient alternative:  the FORALL statement allows array elements, array sections, character) 80.14 146.33 B
+0.47 0.1 (substrings, or pointer tar) 72 134.33 B
+0.47 0.1 (gets to be explicitly speci\336ed as a function of the element subscripts.  The) 185.41 134.33 B
+0.6 0.1 (form of the FORALL statement is very much like a functionally equivalent set of nested DO loops) 72 122.33 B
+1.53 0.1 (for computing and assigning the elements of an array) 72 110.33 B
+1.53 0.1 (, except that conceptually all elements ar) 324.77 110.33 B
+1.53 0.1 (e) 517.11 110.33 B
+0.41 0.1 (computed simultaneously and then assigned simultaneously) 72 98.33 B
+0.41 0.1 (.  An added bene\336t of FORALL is that) 347.22 98.33 B
+3.2 0.1 (it simpli\336es conversion fr) 72 86.33 B
+3.2 0.1 (om sequential DO loops to parallel array operations.  A FORALL) 196.41 86.33 B
+0 X
+0 8 Q
+0.1 (1) 30 711.33 S
+0.1 (2) 30 692.33 S
+0.1 (3) 30 680.33 S
+0.1 (4) 30 668.33 S
+0.1 (5) 30 656.33 S
+0.1 (6) 30 644.33 S
+0.1 (7) 30 626.33 S
+0.1 (8) 30 614.33 S
+0.1 (9) 30 602.33 S
+0.1 (10) 30 590.33 S
+0.1 (11) 30 572.33 S
+0.1 (12) 30 560.33 S
+0.1 (13) 30 542.33 S
+0.1 (14) 30 510.33 S
+0.1 (15) 30 482.67 S
+0.1 (16) 30 464.33 S
+0.1 (17) 30 452.33 S
+0.1 (18) 30 440.33 S
+0.1 (19) 30 428.33 S
+0.1 (20) 30 416.33 S
+0.1 (21) 30 404.33 S
+0.1 (22) 30 392.33 S
+0.1 (23) 30 374.33 S
+0.1 (24) 30 362.33 S
+0.1 (25) 30 350.33 S
+0.1 (26) 30 332.33 S
+0.1 (27) 30 320.33 S
+0.1 (28) 30 308.33 S
+0.1 (29) 30 296.33 S
+0.1 (30) 30 284.33 S
+0.1 (31) 30 272.33 S
+0.1 (32) 30 256.33 S
+0.1 (33) 30 241.33 S
+0.1 (34) 30 226.33 S
+0.1 (35) 30 200.67 S
+0.1 (36) 30 182.33 S
+0.1 (37) 30 170.33 S
+0.1 (38) 30 158.33 S
+0.1 (39) 30 146.33 S
+0.1 (40) 30 134.33 S
+0.1 (41) 30 122.33 S
+0.1 (42) 30 110.33 S
+0.1 (43) 30 98.33 S
+0.1 (44) 30 86.33 S
+FMENDPAGE
+%%EndPage: "xiii" 1
+%%Page: "xiv" 2
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(J3/97-007) 72 748 T
+(WORKING DRAFT) 249 748 T
+(JUN 1997) 469.44 748 T
+0 10 Q
+(xiv) 72 34.67 T
+0 12 Q
+(WORKING DRAFT) 249 34.67 T
+(JUN 1997) 469.44 34.67 T
+1 10 Q
+0.56 0.1 (constr) 72 713.33 B
+0.56 0.1 (uct allows several such array assignments to shar) 99.69 713.33 B
+0.56 0.1 (e the same element subscript contr) 326.21 713.33 B
+0.56 0.1 (ol.  This) 485 713.33 B
+2.78 0.1 (contr) 72 701.33 B
+2.78 0.1 (ol includes masking in a manner similar to the masking facilities of WHERE, the main) 95.25 701.33 B
+1.81 0.1 (dif) 72 689.33 B
+1.81 0.1 (fer) 84.47 689.33 B
+1.81 0.1 (ence between WHERE and FORALL being that FORALL makes use of element subscripts) 96.66 689.33 B
+0.52 0.1 (wher) 72 677.33 B
+0.52 0.1 (eas WHERE is whole array oriented.) 95.12 677.33 B
+2 11 Q
+0.55 (PURE) 72 650.67 P
+1 10 Q
+0.26 0.1 (As has always been the case in Fortran, Fortran 95 functions may have side ef) 72 632.33 B
+0.26 0.1 (fects \050e.g., change the) 424.89 632.33 B
+1.83 0.1 (value of an ar) 72 620.33 B
+1.83 0.1 (gument or a global variable\051.  Side ef) 139.15 620.33 B
+1.83 0.1 (fects cause pr) 317.9 620.33 B
+1.83 0.1 (oblems in parallel pr) 382.3 620.33 B
+1.83 0.1 (ocessing,) 481.14 620.33 B
+0.82 0.1 (however) 72 608.33 B
+0.82 0.1 (, and because parallel pr) 110.76 608.33 B
+0.82 0.1 (ocessing has become an important high performance technology) 224.04 608.33 B
+0.82 0.1 (,) 519.4 608.33 B
+1.04 0.1 (Fortran 95 makes it possible to specify a function to be side ef) 72 596.33 B
+1.04 0.1 (fect fr) 361.62 596.33 B
+1.04 0.1 (ee.  Such a function is called) 388.78 596.33 B
+1.58 0.1 ("pur) 72 584.33 B
+1.58 0.1 (e" and is declar) 91.92 584.33 B
+1.58 0.1 (ed with the keywor) 165.35 584.33 B
+1.58 0.1 (d PURE in the function statement.  A r) 257.95 584.33 B
+1.58 0.1 (estricted form of) 444.04 584.33 B
+0.96 0.1 (PURE functions may be called elementally; such ELEMENT) 72 572.33 B
+0.96 0.1 (AL functions ar) 347.63 572.33 B
+0.96 0.1 (e especially important) 420.02 572.33 B
+2.56 0.1 (to high performance parallel pr) 72 560.33 B
+2.56 0.1 (ocessing.  An added advantage of pur) 223.82 560.33 B
+2.56 0.1 (e functions is that it is) 410.27 560.33 B
+3.34 0.1 (r) 72 548.33 B
+3.34 0.1 (easonable to allow them in speci\336cation expr) 75.87 548.33 B
+3.34 0.1 (essions; this pr) 298.68 548.33 B
+3.34 0.1 (ovides a signi\336cant amount of) 372.18 548.33 B
+1.12 0.1 (functionality) 72 536.33 B
+1.12 0.1 (, with very little cost, and ther) 128.9 536.33 B
+1.12 0.1 (efor) 271.2 536.33 B
+1.12 0.1 (e this capability has also been included in Fortran) 288.95 536.33 B
+0.52 0.1 (95.) 72 524.33 B
+2 11 Q
+0.55 (Initialization) 72 497.67 P
+1 10 Q
+0.31 0.1 (In Fortran 90 ther) 72 479.33 B
+0.31 0.1 (e was no way to de\336ne the initial pointer association status \321 a pointer has to be) 152.06 479.33 B
+0.2 0.1 (explicitly nulli\336ed, allocated, or associated with a tar) 72 467.33 B
+0.2 0.1 (get during execution befor) 311.99 467.33 B
+0.2 0.1 (e it can be tested by) 432.22 467.33 B
+1.32 0.1 (the ASSOCIA) 72 455.33 B
+1.32 0.1 (TED intrinsic function.  This limits the usefulness of pointers, especially the use of) 134.43 455.33 B
+0.73 0.1 (pointers as derived-type components.  Fortran 95 ther) 72 443.33 B
+0.73 0.1 (efor) 320.1 443.33 B
+0.73 0.1 (e solves this pr) 337.85 443.33 B
+0.73 0.1 (oblem by pr) 407.22 443.33 B
+0.73 0.1 (oviding \050a\051 a) 463.17 443.33 B
+1.08 0.1 (NULL intrinsic function that may be used to nullify a pointer and \050b\051 a means to specify default) 72 431.33 B
+1.14 0.1 (initial values for derived-type components.  In the latter case the speci\336cation of initial values is) 72 419.33 B
+1.32 0.1 (part of the derived-type de\336nition, and objects declar) 72 407.33 B
+1.32 0.1 (ed of this type automatically have all their) 321.88 407.33 B
+0.52 0.1 (components so initialized.) 72 395.33 B
+0 13 Q
+-0.91 (Or) 72 363.33 P
+-0.91 (g) 87.09 363.33 P
+-0.91 (aniza) 95.87 363.33 P
+-0.91 (tion of this Inter) 129.99 363.33 P
+-0.91 (na) 221.92 363.33 P
+-0.91 (tional Standar) 238.36 363.33 P
+-0.91 (d) 324.21 363.33 P
+1 10 Q
+0.41 0.1 (This document is or) 72 344.33 B
+0.41 0.1 (ganized in 14 sections, dealing with 7 conceptual ar) 162.86 344.33 B
+0.41 0.1 (eas.  These 7 ar) 398.32 344.33 B
+0.41 0.1 (eas, and the) 467.64 344.33 B
+0.52 0.1 (sections in which they ar) 72 332.33 B
+0.52 0.1 (e tr) 186 332.33 B
+0.52 0.1 (eated, ar) 201.24 332.33 B
+0.52 0.1 (e :) 240.38 332.33 B
+2 11 Q
+0.55 (High/low level concepts) 72 201.67 P
+1 10 Q
+0.96 0.1 (Section 2 \050Fortran terms and concepts\051 contains many of the high level concepts of Fortran.  This) 72 183.33 B
+0.62 0.1 (includes the concept of a pr) 72 171.33 B
+0.62 0.1 (ogram and the r) 199.32 171.33 B
+0.62 0.1 (elationships among its major parts.  Also included ar) 273.56 171.33 B
+0.62 0.1 (e) 517.11 171.33 B
+1.12 0.1 (the syntax of pr) 72 159.33 B
+1.12 0.1 (ogram units, the r) 145.93 159.33 B
+1.12 0.1 (ules for statement or) 229.88 159.33 B
+1.12 0.1 (dering, and the de\336nitions of many of the) 326.02 159.33 B
+0.52 0.1 (fundamental terms used thr) 72 147.33 B
+0.52 0.1 (oughout the document.) 199.65 147.33 B
+0.57 0.1 (Section 3 \050Characters, lexical tokens, and sour) 72 129.33 B
+0.57 0.1 (ce form\051 describes the low level elements of Fortran,) 281.62 129.33 B
+1.06 0.1 (such as the character set and the allowable forms for sour) 72 117.33 B
+1.06 0.1 (ce pr) 341.65 117.33 B
+1.06 0.1 (ograms.  It also contains the r) 364.72 117.33 B
+1.06 0.1 (ules) 503.63 117.33 B
+3.11 0.1 (for constr) 72 105.33 B
+3.11 0.1 (ucting literal constants and names for Fortran entities, and lists all of the Fortran) 118.44 105.33 B
+0.52 0.1 (operators.) 72 93.33 B
+0.52 0.1 (High/low level concepts) 180.95 313.33 B
+0.52 0.1 (Sections 1, 2, 3) 327.05 313.33 B
+0.52 0.1 (Data concepts) 180.95 299.33 B
+0.52 0.1 (Sections 4, 5, 6) 327.05 299.33 B
+0.1 (Computations) 180.95 285.33 S
+0.52 0.1 (Sections 7, 13) 327.05 285.33 B
+0.52 0.1 (Execution contr) 180.95 271.33 B
+0.52 0.1 (ol) 252.19 271.33 B
+0.52 0.1 (Section 8) 327.05 271.33 B
+0.1 (Input/output) 180.95 257.33 S
+0.52 0.1 (Sections 9, 10) 327.05 257.33 B
+0.52 0.1 (Pr) 180.95 243.33 B
+0.52 0.1 (ogram units) 190.96 243.33 B
+0.52 0.1 (Sections 1) 327.05 243.33 B
+0.52 0.1 (1, 12) 371.69 243.33 B
+0.52 0.1 (Scoping and association r) 180.95 229.33 B
+0.52 0.1 (ules) 297.49 229.33 B
+0.52 0.1 (Section 14) 327.05 229.33 B
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 701.33 S
+0.1 (3) 30 689.33 S
+0.1 (4) 30 677.33 S
+0.1 (5) 30 650.67 S
+0.1 (6) 30 632.33 S
+0.1 (7) 30 620.33 S
+0.1 (8) 30 608.33 S
+0.1 (9) 30 596.33 S
+0.1 (10) 30 584.33 S
+0.1 (11) 30 572.33 S
+0.1 (12) 30 560.33 S
+0.1 (13) 30 548.33 S
+0.1 (14) 30 536.33 S
+0.1 (15) 30 524.33 S
+0.1 (16) 30 497.67 S
+0.1 (17) 30 479.33 S
+0.1 (18) 30 467.33 S
+0.1 (19) 30 455.33 S
+0.1 (20) 30 443.33 S
+0.1 (21) 30 431.33 S
+0.1 (22) 30 419.33 S
+0.1 (23) 30 407.33 S
+0.1 (24) 30 395.33 S
+0.1 (25) 30 363.33 S
+0.1 (26) 30 344.33 S
+0.1 (27) 30 332.33 S
+0.1 (28) 30 313.33 S
+0.1 (29) 30 299.33 S
+0.1 (30) 30 285.33 S
+0.1 (31) 30 271.33 S
+0.1 (32) 30 257.33 S
+0.1 (33) 30 243.33 S
+0.1 (34) 30 229.33 S
+0.1 (35) 30 201.67 S
+0.1 (36) 30 183.33 S
+0.1 (37) 30 171.33 S
+0.1 (38) 30 159.33 S
+0.1 (39) 30 147.33 S
+0.1 (40) 30 129.33 S
+0.1 (41) 30 117.33 S
+0.1 (42) 30 105.33 S
+0.1 (43) 30 93.33 S
+FMENDPAGE
+%%EndPage: "xiv" 2
+%%Page: "xv" 3
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(JUN 1997) 72 748 T
+( WORKING DRAFT) 247.32 748 T
+(J3/97-007) 465.36 748 T
+(JUN 1997) 72 34.67 T
+(WORKING DRAFT) 249 34.67 T
+0 10 Q
+(xv) 510.8 34.67 T
+2 11 Q
+0.55 (Data concepts) 72 712.67 P
+1 10 Q
+0.65 0.1 (The array operations and data str) 72 694.33 B
+0.65 0.1 (uctur) 225.84 694.33 B
+0.65 0.1 (es pr) 249.87 694.33 B
+0.65 0.1 (ovide a rich set of data concepts in Fortran.  The main) 272.33 694.33 B
+1.48 0.1 (concepts ar) 72 682.33 B
+1.48 0.1 (e those of data type, data object, and the use of data objects, which ar) 124.31 682.33 B
+1.48 0.1 (e described in) 456.25 682.33 B
+0.52 0.1 (Sections 4, 5, and 6, r) 72 670.33 B
+0.52 0.1 (espectively) 168.77 670.33 B
+0.52 0.1 (.) 218.11 670.33 B
+1.52 0.1 (Section 4 \050Intrinsic and derived data types\051 describes the distinction between a data type and a) 72 652.33 B
+2.92 0.1 (data object, and then focuses on data type.  It de\336nes a data type as a set of data values,) 72 640.33 B
+2.12 0.1 (corr) 72 628.33 B
+2.12 0.1 (esponding forms \050constants\051 for r) 90.02 628.33 B
+2.12 0.1 (epr) 249.04 628.33 B
+2.12 0.1 (esenting these values, and operations on these values.) 263.91 628.33 B
+0.89 0.1 (The concept of an intrinsic data type is intr) 72 616.33 B
+0.89 0.1 (oduced, and the pr) 272.38 616.33 B
+0.89 0.1 (operties of Fortran\325s intrinsic types) 360.38 616.33 B
+2 0.1 (\050integer) 72 604.33 B
+2 0.1 (, r) 106.47 604.33 B
+2 0.1 (eal, complex, logical, and character\051 ar) 117.54 604.33 B
+2 0.1 (e described.  Note that only type concepts ar) 300.7 604.33 B
+2 0.1 (e) 517.11 604.33 B
+0.52 0.1 (described her) 72 592.33 B
+0.52 0.1 (e, and not the declaration and pr) 133.57 592.33 B
+0.52 0.1 (operties of data objects.) 283.98 592.33 B
+1.41 0.1 (Section 4 also intr) 72 574.33 B
+1.41 0.1 (oduces the concept of derived \050user) 155.92 574.33 B
+1.41 0.1 (-de\336ned\051 data types, which ar) 323.36 574.33 B
+1.41 0.1 (e compound) 464.05 574.33 B
+0.74 0.1 (types whose components ultimately r) 72 562.33 B
+0.74 0.1 (esolve into intrinsic types.  The details of de\336ning a derived) 244.31 562.33 B
+0.33 0.1 (type ar) 72 550.33 B
+0.33 0.1 (e given \050note that this has no counterpart with intrinsic types; intrinsic types ar) 103.92 550.33 B
+0.33 0.1 (e pr) 464.94 550.33 B
+0.33 0.1 (ede\336ned) 482.74 550.33 B
+0.2 0.1 (and ther) 72 538.33 B
+0.2 0.1 (efor) 110.07 538.33 B
+0.2 0.1 (e need not - indeed cannot - be r) 127.82 538.33 B
+0.2 0.1 (ede\336ned by the pr) 274.64 538.33 B
+0.2 0.1 (ogrammer\051.  As with intrinsic types,) 357.63 538.33 B
+0.35 0.1 (this section deals only with type pr) 72 526.33 B
+0.35 0.1 (operties, and not with the declaration of data objects of derived) 232.41 526.33 B
+0.52 0.1 (type.) 72 514.33 B
+0.97 0.1 (Section 5 \050Data object declarations and speci\336cations\051 describes in detail how named data objects) 72 496.33 B
+1.42 0.1 (ar) 72 484.33 B
+1.42 0.1 (e declar) 80.97 484.33 B
+1.42 0.1 (ed and given the desir) 117.5 484.33 B
+1.42 0.1 (ed pr) 223.63 484.33 B
+1.42 0.1 (operties \050attributes\051.  An important attribute \050the only one) 248.73 484.33 B
+0.3 0.1 (r) 72 472.33 B
+0.3 0.1 (equir) 75.87 472.33 B
+0.3 0.1 (ed for each data object\051 is the data type, so the type declaration statement is the main featur) 99.47 472.33 B
+0.3 0.1 (e) 517.11 472.33 B
+2.7 0.1 (of this section.  The various attributes ar) 72 460.33 B
+2.7 0.1 (e described in detail, as well as the two ways that) 272.15 460.33 B
+2.04 0.1 (attributes may be speci\336ed \050type declaration statements and attribute speci\336cation statements\051.) 72 448.33 B
+0.32 0.1 (Implicit typing and storage association \050COMMON and EQUIV) 72 436.33 B
+0.32 0.1 (ALENCE\051 ar) 360.66 436.33 B
+0.32 0.1 (e also described in this) 418.09 436.33 B
+0.52 0.1 (section, as well as data object value initialization.) 72 424.33 B
+2.23 0.1 (Section 6 \050Use of data objects\051 deals mainly with the concept of a variable, and describes the) 72 406.33 B
+1.19 0.1 (various forms that variables may take.  Scalar variables include character strings and substrings,) 72 394.33 B
+2.86 0.1 (str) 72 382.33 B
+2.86 0.1 (uctur) 83.67 382.33 B
+2.86 0.1 (ed \050derived-type\051 objects, str) 107.7 382.33 B
+2.86 0.1 (uctur) 245.52 382.33 B
+2.86 0.1 (e components, and array elements.  Array variables) 269.55 382.33 B
+2.36 0.1 (include whole arrays and array sections.  Among the array facilities described her) 72 370.33 B
+2.36 0.1 (e ar) 469.36 370.33 B
+2.36 0.1 (e array) 488.19 370.33 B
+1.9 0.1 (operations, allocation and deallocation \050user contr) 72 358.33 B
+1.9 0.1 (olled dynamic arrays\051.  New in Fortran 95 is) 307.74 358.33 B
+1.37 0.1 (automatic deallocation of allocatable arrays in situations that caused them in Fortran 90 to have) 72 346.33 B
+2.61 0.1 (unde\336ned allocation status; this decr) 72 334.33 B
+2.61 0.1 (eases potential pr) 248.68 334.33 B
+2.61 0.1 (oblems due to allocated memory leaks.) 332.96 334.33 B
+0.3 0.1 (Note that this applies only to arrays declar) 72 322.33 B
+0.3 0.1 (ed with the ALLOCA) 266.47 322.33 B
+0.3 0.1 (T) 363.76 322.33 B
+0.3 0.1 (ABLE attribute - not to pointers.) 369.25 322.33 B
+2 11 Q
+0.55 (Computations) 72 295.67 P
+1 10 Q
+0.15 0.1 (Section 7 \050Expr) 72 277.33 B
+0.15 0.1 (essions and assignment\051 describes how computations ar) 140.11 277.33 B
+0.15 0.1 (e expr) 393.84 277.33 B
+0.15 0.1 (essed in Fortran.  This) 421.61 277.33 B
+0.15 0.1 (includes the forms that expr) 72 265.33 B
+0.15 0.1 (ession operands \050primaries\051 may take and the r) 199.4 265.33 B
+0.15 0.1 (ole of operators in these) 413.2 265.33 B
+0.35 0.1 (expr) 72 253.33 B
+0.35 0.1 (essions.  Operator pr) 92.13 253.33 B
+0.35 0.1 (ecedence is rigor) 187.04 253.33 B
+0.35 0.1 (ously de\336ned in syntax r) 263.2 253.33 B
+0.35 0.1 (ules and summarized in tabular) 376.51 253.33 B
+1.27 0.1 (form.  This description includes the r) 72 241.33 B
+1.27 0.1 (elationship of de\336ned operators \050user) 246.36 241.33 B
+1.27 0.1 (-de\336ned operators\051 to) 421 241.33 B
+0.6 0.1 (the intrinsic operators \050+,) 72 229.33 B
+3 F
+0.6 0.1 (*) 191.35 229.33 B
+1 F
+0.6 0.1 (,) 196.45 229.33 B
+1 18 Q
+1.09 0.18 (.) 202.25 229.33 B
+1 10 Q
+0.6 0.1 (AND) 206.93 229.33 B
+1 18 Q
+1.09 0.18 (.) 231.06 229.33 B
+1 10 Q
+0.6 0.1 (,) 235.74 229.33 B
+1 18 Q
+1.09 0.18 (.) 241.54 229.33 B
+1 10 Q
+0.6 0.1 (OR) 246.23 229.33 B
+1 18 Q
+1.09 0.18 (.) 260.96 229.33 B
+1 10 Q
+0.6 0.1 (, etc.\051.  The r) 265.64 229.33 B
+0.6 0.1 (ules for both expr) 323.48 229.33 B
+0.6 0.1 (ession evaluation and the) 405.1 229.33 B
+0.52 0.1 (interpr) 72 217.33 B
+0.52 0.1 (etation \050semantics\051 of intrinsic and de\336ned operators ar) 103.21 217.33 B
+0.52 0.1 (e described in detail.) 357.18 217.33 B
+2.93 0.1 (Section 7 also describes assignment of computational r) 72 199.33 B
+2.93 0.1 (esults to data objects, which has four) 338.35 199.33 B
+2.38 0.1 (principal forms: the conventional assignment statement, the pointer assignment statement, the) 72 187.33 B
+1.77 0.1 (WHERE statement and constr) 72 175.33 B
+1.77 0.1 (uct, and the FORALL statement and constr) 211.9 175.33 B
+1.77 0.1 (uct.  The WHERE and) 415.91 175.33 B
+0.96 0.1 (FORALL statements and constr) 72 163.33 B
+0.96 0.1 (ucts allow masked array assignment, the main dif) 216.8 163.33 B
+0.96 0.1 (fer) 447.99 163.33 B
+0.96 0.1 (ence between) 460.18 163.33 B
+1.5 0.1 (WHERE and FORALL being that FORALL makes use of element subscripts wher) 72 151.33 B
+1.5 0.1 (eas WHERE is) 454.4 151.33 B
+0.52 0.1 (whole array oriented.) 72 139.33 B
+3.4 0.1 (Section 13 \050Intrinsic pr) 72 121.33 B
+3.4 0.1 (ocedur) 183.86 121.33 B
+3.4 0.1 (es\051 describes mor) 215.06 121.33 B
+3.4 0.1 (e than one hundr) 299.98 121.33 B
+3.4 0.1 (ed intrinsic pr) 387.59 121.33 B
+3.4 0.1 (ocedur) 457.83 121.33 B
+3.4 0.1 (es that) 489.03 121.33 B
+0.47 0.1 (pr) 72 109.33 B
+0.47 0.1 (ovide a rich set of computational capabilities.  In addition to the Fortran 90 intrinsic pr) 81.98 109.33 B
+0.47 0.1 (ocedur) 478.97 109.33 B
+0.47 0.1 (es,) 510.17 109.33 B
+0.52 0.1 (this includes CPU_TIME, NULL, and extensions to CEILING, FLOOR, MAXLOC, and MINLOC.) 72 97.33 B
+0 X
+0 8 Q
+0.1 (1) 30 712.67 S
+0.1 (2) 30 694.33 S
+0.1 (3) 30 682.33 S
+0.1 (4) 30 670.33 S
+0.1 (5) 30 652.33 S
+0.1 (6) 30 640.33 S
+0.1 (7) 30 628.33 S
+0.1 (8) 30 616.33 S
+0.1 (9) 30 604.33 S
+0.1 (10) 30 592.33 S
+0.1 (11) 30 574.33 S
+0.1 (12) 30 562.33 S
+0.1 (13) 30 550.33 S
+0.1 (14) 30 538.33 S
+0.1 (15) 30 526.33 S
+0.1 (16) 30 514.33 S
+0.1 (17) 30 496.33 S
+0.1 (18) 30 484.33 S
+0.1 (19) 30 472.33 S
+0.1 (20) 30 460.33 S
+0.1 (21) 30 448.33 S
+0.1 (22) 30 436.33 S
+0.1 (23) 30 424.33 S
+0.1 (24) 30 406.33 S
+0.1 (25) 30 394.33 S
+0.1 (26) 30 382.33 S
+0.1 (27) 30 370.33 S
+0.1 (28) 30 358.33 S
+0.1 (29) 30 346.33 S
+0.1 (30) 30 334.33 S
+0.1 (31) 30 322.33 S
+0.1 (32) 30 295.67 S
+0.1 (33) 30 277.33 S
+0.1 (34) 30 265.33 S
+0.1 (35) 30 253.33 S
+0.1 (36) 30 241.33 S
+0.1 (37) 30 229.33 S
+0.1 (38) 30 217.33 S
+0.1 (39) 30 199.33 S
+0.1 (40) 30 187.33 S
+0.1 (41) 30 175.33 S
+0.1 (42) 30 163.33 S
+0.1 (43) 30 151.33 S
+0.1 (44) 30 139.33 S
+0.1 (45) 30 121.33 S
+0.1 (46) 30 109.33 S
+0.1 (47) 30 97.33 S
+FMENDPAGE
+%%EndPage: "xv" 3
+%%Page: "xvi" 4
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(J3/97-007) 72 748 T
+(WORKING DRAFT) 249 748 T
+(JUN 1997) 469.44 748 T
+0 10 Q
+(xvi) 72 34.67 T
+0 12 Q
+(WORKING DRAFT) 249 34.67 T
+(JUN 1997) 469.44 34.67 T
+2 11 Q
+0.55 (Execution contr) 72 712.67 P
+0.55 (ol) 143.34 712.67 P
+1 10 Q
+0.9 0.1 (Section 8 \050Execution contr) 72 694.33 B
+0.9 0.1 (ol\051 describes the contr) 191.79 694.33 B
+0.9 0.1 (ol constr) 293.61 694.33 B
+0.9 0.1 (ucts \050IF) 333.37 694.33 B
+0.9 0.1 (, CASE, and DO\051, and the contr) 366.89 694.33 B
+0.9 0.1 (ol) 513.43 694.33 B
+0.52 0.1 (statements \050IF) 72 682.33 B
+0.52 0.1 (, CONTINUE, GO T) 135.25 682.33 B
+0.52 0.1 (O, and ST) 227.31 682.33 B
+0.52 0.1 (OP\051.) 272.74 682.33 B
+2 11 Q
+0.55 (Input/output) 72 655.67 P
+1 10 Q
+0.71 0.1 (Section 9 \050Input/output statements\051 contains de\336nitions for r) 72 637.33 B
+0.71 0.1 (ecor) 353.09 637.33 B
+0.71 0.1 (ds, \336les, \336le connections \050OPEN,) 371.95 637.33 B
+0.35 0.1 (CLOSE, and pr) 72 625.33 B
+0.35 0.1 (econnected \336les\051, data transfer statements \050READ, WRITE, and PRINT\051 that include) 140.62 625.33 B
+1.86 0.1 (pr) 72 613.33 B
+1.86 0.1 (ocessing of partial and variable length r) 81.98 613.33 B
+1.86 0.1 (ecor) 272.11 613.33 B
+1.86 0.1 (ds, \336le positioning \050REWIND and BACKSP) 290.97 613.33 B
+1.86 0.1 (ACE\051,) 494.59 613.33 B
+0.52 0.1 (and \336le inquiry \050INQUIRE\051.) 72 601.33 B
+0.78 0.1 (Section 10 \050Input/output editing\051 describes input/output formatting.  This includes the FORMA) 72 583.33 B
+0.78 0.1 (T) 515.77 583.33 B
+0.52 0.1 (statement and FMT= speci\336er) 72 571.33 B
+0.52 0.1 (, edit descriptors, list-dir) 207.59 571.33 B
+0.52 0.1 (ected formatting, and namelist formatting.) 320.32 571.33 B
+2 11 Q
+0.55 (Pr) 72 544.67 P
+0.55 (ogram units) 82.8 544.67 P
+1 10 Q
+1.55 0.1 (Section 1) 72 526.33 B
+1.55 0.1 (1 \050Pr) 113.33 526.33 B
+1.55 0.1 (ogram units\051 describes main pr) 136.01 526.33 B
+1.55 0.1 (ograms, external subpr) 282.93 526.33 B
+1.55 0.1 (ograms, modules, and block) 390.02 526.33 B
+1.41 0.1 (data pr) 72 514.33 B
+1.41 0.1 (ogram units.  Modules, along with the USE statement, ar) 105.76 514.33 B
+1.41 0.1 (e described as a mechanism for) 374.13 514.33 B
+0.85 0.1 (encapsulating data and pr) 72 502.33 B
+0.85 0.1 (ocedur) 192.43 502.33 B
+0.85 0.1 (e de\336nitions that ar) 223.63 502.33 B
+0.85 0.1 (e to be used by \050accessible to\051 other pr) 313.96 502.33 B
+0.85 0.1 (ogram) 492.6 502.33 B
+0.89 0.1 (units.  Modules ar) 72 490.33 B
+0.89 0.1 (e described as vehicles for de\336ning global derived-type de\336nitions, global data) 156.5 490.33 B
+0.52 0.1 (object declarations, pr) 72 478.33 B
+0.52 0.1 (ocedur) 172.33 478.33 B
+0.52 0.1 (e libraries, and combinations ther) 203.53 478.33 B
+0.52 0.1 (eof.) 356.74 478.33 B
+5.23 0.1 (Section 12 \050Pr) 72 460.33 B
+5.23 0.1 (ocedur) 143.93 460.33 B
+5.23 0.1 (es\051 contains a compr) 175.13 460.33 B
+5.23 0.1 (ehensive tr) 283.14 460.33 B
+5.23 0.1 (eatment of pr) 337.81 460.33 B
+5.23 0.1 (ocedur) 408.89 460.33 B
+5.23 0.1 (e de\336nition and) 440.09 460.33 B
+0.15 0.1 (invocation, including that for user) 72 448.33 B
+0.15 0.1 (-de\336ned functions and subr) 226.74 448.33 B
+0.15 0.1 (outines.  The concepts of implicit and) 352.1 448.33 B
+1.4 0.1 (explicit pr) 72 436.33 B
+1.4 0.1 (ocedur) 119.17 436.33 B
+1.4 0.1 (e interfaces ar) 150.37 436.33 B
+1.4 0.1 (e explained, and situations r) 215.75 436.33 B
+1.4 0.1 (equiring explicit pr) 348.85 436.33 B
+1.4 0.1 (ocedur) 438.38 436.33 B
+1.4 0.1 (e interfaces) 469.58 436.33 B
+2.64 0.1 (ar) 72 424.33 B
+2.64 0.1 (e identi\336ed.  The r) 80.97 424.33 B
+2.64 0.1 (ules governing actual and dummy ar) 174.07 424.33 B
+2.64 0.1 (guments, and their association, ar) 354.36 424.33 B
+2.64 0.1 (e) 517.01 424.33 B
+0.42 0.1 (described.  PURE pr) 72 412.33 B
+0.42 0.1 (ocedur) 164.41 412.33 B
+0.42 0.1 (es and ELEMENT) 195.61 412.33 B
+0.42 0.1 (AL pr) 276.41 412.33 B
+0.42 0.1 (ocedur) 303.49 412.33 B
+0.42 0.1 (es \050which ar) 334.7 412.33 B
+0.42 0.1 (e PURE pr) 390.19 412.33 B
+0.42 0.1 (ocedur) 438.11 412.33 B
+0.42 0.1 (es that may) 469.3 412.33 B
+0.52 0.1 (be called elementally\051 ar) 72 400.33 B
+0.52 0.1 (e fr) 183.71 400.33 B
+0.52 0.1 (ee of side ef) 199.02 400.33 B
+0.52 0.1 (fects, ther) 253.74 400.33 B
+0.52 0.1 (eby facilitating parallel pr) 298.06 400.33 B
+0.52 0.1 (ocessing.) 416.36 400.33 B
+1.48 0.1 (Section 12 also describes the use of the OPERA) 72 382.33 B
+1.48 0.1 (T) 294.33 382.33 B
+1.48 0.1 (OR option in interface blocks to allow function) 300.38 382.33 B
+2.1 0.1 (invocation in the form of in\336x and pr) 72 370.33 B
+2.1 0.1 (e\336x operators as well as the traditional functional form.) 254.24 370.33 B
+2.29 0.1 (Similarly) 72 358.33 B
+2.29 0.1 (, the use of the ASSIGNMENT option in interface blocks is described as allowing an) 112.02 358.33 B
+1.45 0.1 (alternate syntax for certain subr) 72 346.33 B
+1.45 0.1 (outine calls.  This section also contains descriptions of r) 221.4 346.33 B
+1.45 0.1 (ecursive) 484.4 346.33 B
+5.58 0.1 (pr) 72 334.33 B
+5.58 0.1 (ocedur) 81.98 334.33 B
+5.58 0.1 (es, the RETURN statement, the ENTR) 113.18 334.33 B
+5.58 0.1 (Y statement, internal pr) 310.53 334.33 B
+5.58 0.1 (ocedur) 433.82 334.33 B
+5.58 0.1 (es and the) 465.02 334.33 B
+0.8 0.1 (CONT) 72 322.33 B
+0.8 0.1 (AINS statement, statement functions, generic pr) 101.05 322.33 B
+0.8 0.1 (ocedur) 321.81 322.33 B
+0.8 0.1 (e names, and the means of accessing) 353.01 322.33 B
+0.52 0.1 (non-Fortran pr) 72 310.33 B
+0.52 0.1 (ocedur) 139.63 310.33 B
+0.52 0.1 (es.) 170.83 310.33 B
+2 11 Q
+0.55 (Scoping and association rules) 72 283.67 P
+1 10 Q
+1.24 0.1 (Section 14 \050Scope, association, and de\336nition\051 explains the use of the term "scope" and describes) 72 265.33 B
+1.53 0.1 (the scope pr) 72 253.33 B
+1.53 0.1 (operties of various entities, including names and operators.  Also described ar) 129.86 253.33 B
+1.53 0.1 (e the) 498.81 253.33 B
+5.16 0.1 (general r) 72 241.33 B
+5.16 0.1 (ules governing pr) 117.25 241.33 B
+5.16 0.1 (ocedur) 207.53 241.33 B
+5.16 0.1 (e ar) 238.73 241.33 B
+5.16 0.1 (gument association, pointer association, and storage) 260.35 241.33 B
+0.99 0.1 (association.  Finally) 72 229.33 B
+0.99 0.1 (, Section 14 describes the events that cause variables to become de\336ned \050have) 161.87 229.33 B
+0.52 0.1 (pr) 72 217.33 B
+0.52 0.1 (edictable values\051 and events that cause variables to become unde\336ned.) 81.98 217.33 B
+0 13 Q
+-0.91 (Anne) 72 185.33 P
+-0.91 (x) 105.28 185.33 P
+-0.91 (es) 112.3 185.33 P
+1 10 Q
+0.52 0.1 (Annex A.  A glossary of common and important terms used in this standar) 72 166.33 B
+0.52 0.1 (d.) 416.17 166.33 B
+1.3 0.1 (Annex B.  A list of all obsolescent featur) 72 148.33 B
+1.3 0.1 (es and descriptions of all deleted featur) 262.39 148.33 B
+1.3 0.1 (es.  Obsolescent) 447.93 148.33 B
+2.43 0.1 (featur) 72 136.33 B
+2.43 0.1 (es ar) 98.78 136.33 B
+2.43 0.1 (e still part of Fortran 95 and ar) 122 136.33 B
+2.43 0.1 (e described in the normative part of this standar) 276.52 136.33 B
+2.43 0.1 (d.) 513.19 136.33 B
+1.93 0.1 (Deleted featur) 72 124.33 B
+1.93 0.1 (es ar) 138.4 124.33 B
+1.93 0.1 (e not part of standar) 161.12 124.33 B
+1.93 0.1 (d Fortran 95, but they ar) 260.46 124.33 B
+1.93 0.1 (e described completely in this) 379.72 124.33 B
+0.35 0.1 (annex for the bene\336t of those implementations that pr) 72 112.33 B
+0.35 0.1 (ovide complete backwar) 317.83 112.33 B
+0.35 0.1 (d compatibility with) 428.78 112.33 B
+0.52 0.1 (Fortran 90.) 72 100.33 B
+0 X
+0 8 Q
+0.1 (1) 30 712.67 S
+0.1 (2) 30 694.33 S
+0.1 (3) 30 682.33 S
+0.1 (4) 30 655.67 S
+0.1 (5) 30 637.33 S
+0.1 (6) 30 625.33 S
+0.1 (7) 30 613.33 S
+0.1 (8) 30 601.33 S
+0.1 (9) 30 583.33 S
+0.1 (10) 30 571.33 S
+0.1 (11) 30 544.67 S
+0.1 (12) 30 526.33 S
+0.1 (13) 30 514.33 S
+0.1 (14) 30 502.33 S
+0.1 (15) 30 490.33 S
+0.1 (16) 30 478.33 S
+0.1 (17) 30 460.33 S
+0.1 (18) 30 448.33 S
+0.1 (19) 30 436.33 S
+0.1 (20) 30 424.33 S
+0.1 (21) 30 412.33 S
+0.1 (22) 30 400.33 S
+0.1 (23) 30 382.33 S
+0.1 (24) 30 370.33 S
+0.1 (25) 30 358.33 S
+0.1 (26) 30 346.33 S
+0.1 (27) 30 334.33 S
+0.1 (28) 30 322.33 S
+0.1 (29) 30 310.33 S
+0.1 (30) 30 283.67 S
+0.1 (31) 30 265.33 S
+0.1 (32) 30 253.33 S
+0.1 (33) 30 241.33 S
+0.1 (34) 30 229.33 S
+0.1 (35) 30 217.33 S
+0.1 (36) 30 185.33 S
+0.1 (37) 30 166.33 S
+0.1 (38) 30 148.33 S
+0.1 (39) 30 136.33 S
+0.1 (40) 30 124.33 S
+0.1 (41) 30 112.33 S
+0.1 (42) 30 100.33 S
+FMENDPAGE
+%%EndPage: "xvi" 4
+%%Page: "xvii" 5
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(JUN 1997) 72 748 T
+( WORKING DRAFT) 247.32 748 T
+(J3/97-007) 465.36 748 T
+(JUN 1997) 72 34.67 T
+(WORKING DRAFT) 249 34.67 T
+0 10 Q
+(xvii) 506 34.67 T
+1 F
+3.61 0.1 (Annex C.  Long notes of explanation, examples, rationales and other informative material.) 72 713.33 B
+2.11 0.1 (Wher) 72 701.33 B
+2.11 0.1 (ever feasible such material is integrated into the normative sections of this standar) 96.78 701.33 B
+2.11 0.1 (d, but) 493.36 701.33 B
+1.7 0.1 (clearly identi\336ed as supporting informative material.  In those cases in which such informative) 72 689.33 B
+0.47 0.1 (material is so extensive that it would unduly disr) 72 677.33 B
+0.47 0.1 (upt the \337ow of normative discourse, the material) 297.61 677.33 B
+0.52 0.1 (is placed in this annex.) 72 665.33 B
+1.66 0.1 (Annex D.  A compr) 72 647.33 B
+1.66 0.1 (ehensive index to this standar) 166.24 647.33 B
+1.66 0.1 (d, including the use of principal terms in the) 307.64 647.33 B
+0.52 0.1 (syntax r) 72 635.33 B
+0.52 0.1 (ules.) 108.73 635.33 B
+0 X
+0 8 Q
+0.1 (1) 30 713.33 S
+0.1 (2) 30 701.33 S
+0.1 (3) 30 689.33 S
+0.1 (4) 30 677.33 S
+0.1 (5) 30 665.33 S
+0.1 (6) 30 647.33 S
+0.1 (7) 30 635.33 S
+FMENDPAGE
+%%EndPage: "xvii" 5
+%%Page: "xviii" 6
+612 792 0 FMBEGINPAGE
+[0 0 0 1 0 0 0]
+[ 0 0 0 0 1 1 1]
+[ 0 1 1 0 1 0 0]
+[ 1 0 1 0 0 1 0]
+[ 1 1 0 0 0 0 1]
+[ 1 0 0 0 0 1 1]
+[ 0 1 0 0 1 0 1]
+[ 0 0 1 0 1 1 0]
+ 8 FrameSetSepColors
+FrameNoSep
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 0 0 1 0 0 0 K
+0 12 Q
+0 X
+0 0 0 1 0 0 0 K
+(J3/97-007) 72 748 T
+(WORKING DRAFT) 249 748 T
+(JUN 1997) 469.44 748 T
+0 10 Q
+(xviii) 72 34.67 T
+0 12 Q
+(WORKING DRAFT) 249 34.67 T
+(JUN 1997) 469.44 34.67 T
+0 0 0 1 0 0 0 K
+0 X
+0 8 Q
+FMENDPAGE
+%%EndPage: "xviii" 6
+%%Trailer
+%%BoundingBox: 0 0 612 792
+%%PageOrder: Ascend
+%%Pages: 6
+%%DocumentFonts: AvantGarde-Demi
+%%+ Palatino-Roman
+%%+ Palatino-Italic
+%%+ Symbol
+%%EOF

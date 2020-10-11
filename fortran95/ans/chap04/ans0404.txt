@@ -1,0 +1,8 @@
+integer a,b
+real    ra,rb
+a=2
+b=3
+ra=2.0
+rb=3.0
+write(*,*) b/a    ! 輸出1, 因為使用整數計算, 小數部分會無條件捨去
+write(*,*) rb/ra  ! 輸出1.5
