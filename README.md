@@ -67,3 +67,4 @@
 * [VC++ 数字图像处理第二版（何斌）](./hebin_digital_image_processing_vc)
 * [程序设计语言-实践之路-src）](./code_original)
 * [Fortran95 程序设计随书资料](./fortran95)
+* [逆向工程核心原理](./ReverseProject)
