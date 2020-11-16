@@ -68,3 +68,5 @@
 * [程序设计语言-实践之路-src）](./code_original)
 * [Fortran95 程序设计随书资料](./fortran95)
 * [逆向工程核心原理](./ReverseProject)
+
+* [算法的乐趣-src](./code_for_algo_book)

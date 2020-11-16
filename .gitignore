@@ -1,0 +1,13 @@
+# LInux and windows
+*.exe
+*.out
+*.lib
+*.dll
+*.a
+*.so
+*.obj
+*.idb
+*.pdb
+*.log
+*.tlog
+*.txt
