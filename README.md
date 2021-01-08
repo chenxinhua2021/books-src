@@ -72,3 +72,4 @@
 * [算法的乐趣-src](./code_for_algo_book)
 * [IntelliJ 使用教程](https://github.com/judasn/IntelliJ-IDEA-Tutorial)
 * [Unix 系统编程——通信、并发与线程](./usp)
+* [C++模板元编程实战](./MetaNN-book)
