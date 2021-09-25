@@ -60,7 +60,6 @@
 * [操作系统真象还原-src-1/3](./os_truth_src)
 * [操作系统真象还原-src-2/3](./OS_lab-master)
 * [操作系统真象还原-src-3/3](./tiny-os-master)
-
 * [Windows 程序设计（第5版）](./Windows-programming-5th)
 * [30天自制操作系统-src](./30天自制操作系统)
 * [多核和 GPU 编程课程资料（源码、课后答案、勘误） ](./multi_cores_gpu_programming)
@@ -68,8 +67,10 @@
 * [程序设计语言-实践之路-src）](./code_original)
 * [Fortran95 程序设计随书资料](./fortran95)
 * [逆向工程核心原理](./ReverseProject)
-
 * [算法的乐趣-src](./code_for_algo_book)
 * [IntelliJ 使用教程](https://github.com/judasn/IntelliJ-IDEA-Tutorial)
 * [Unix 系统编程——通信、并发与线程](./usp)
 * [C++模板元编程实战](./MetaNN-book)
+* C 现代编程源码（根目录）
+* [Modern C 两个版本和源码](./modern_C)
+
